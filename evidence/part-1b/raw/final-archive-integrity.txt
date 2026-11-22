@@ -1,0 +1,24 @@
+INTEGRITY_STATUS=PASS
+{
+  "initial": {
+    "name": "initial",
+    "manifest": 37,
+    "files": 37,
+    "metadata": 37,
+    "mismatches": 0
+  },
+  "final": {
+    "name": "final",
+    "manifest": 41,
+    "files": 41,
+    "metadata": 41,
+    "mismatches": 0
+  },
+  "specHashOk": true,
+  "datasetHashOk": true,
+  "metadataRunIdOk": true,
+  "runDatasetHashOk": true,
+  "runAppHashOk": true,
+  "aggregate": "INCONCLUSIVE",
+  "modelCasesSkipped": 18
+}

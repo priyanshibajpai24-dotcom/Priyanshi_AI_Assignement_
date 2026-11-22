@@ -1,0 +1,13 @@
+[EPERM] EPERM: operation not permitted, symlink 'C:\Users\hp\Desktop\project Ai\Part-1B' -> 'C:\Users\hp\AppData\Local\Packages\sandbox.{e40c49b9-db72-4ff6-b11c-147e555c99cd}\AC\pnpm\store\v11\projects\fcf405d2cd08d63f1858d9cf16539121'
+
+pnpm: EPERM: operation not permitted, symlink 'C:\Users\hp\Desktop\project Ai\Part-1B' -> 'C:\Users\hp\AppData\Local\Packages\sandbox.{e40c49b9-db72-4ff6-b11c-147e555c99cd}\AC\pnpm\store\v11\projects\fcf405d2cd08d63f1858d9cf16539121'
+    at async Object.symlink (node:internal/fs/promises:1714:10)
+    at async createSymlinkAsync (file:///C:/Program%20Files/WindowsApps/OpenAI.CodexPrimaryRuntime.v26-1111-570-0_26.1111.570.0_x64__3k8sg7r9htsxt/dependencies/node/node_modules/pnpm/dist/pnpm.mjs:51013:13)
+    at async forceSymlink (file:///C:/Program%20Files/WindowsApps/OpenAI.CodexPrimaryRuntime.v26-1111-570-0_26.1111.570.0_x64__3k8sg7r9htsxt/dependencies/node/node_modules/pnpm/dist/pnpm.mjs:50933:7)
+    at async registerProject (file:///C:/Program%20Files/WindowsApps/OpenAI.CodexPrimaryRuntime.v26-1111-570-0_26.1111.570.0_x64__3k8sg7r9htsxt/dependencies/node/node_modules/pnpm/dist/pnpm.mjs:184446:3)
+    at async getContext (file:///C:/Program%20Files/WindowsApps/OpenAI.CodexPrimaryRuntime.v26-1111-570-0_26.1111.570.0_x64__3k8sg7r9htsxt/dependencies/node/node_modules/pnpm/dist/pnpm.mjs:185166:5)
+    at async mutateModules (file:///C:/Program%20Files/WindowsApps/OpenAI.CodexPrimaryRuntime.v26-1111-570-0_26.1111.570.0_x64__3k8sg7r9htsxt/dependencies/node/node_modules/pnpm/dist/pnpm.mjs:217116:13)
+    at async install (file:///C:/Program%20Files/WindowsApps/OpenAI.CodexPrimaryRuntime.v26-1111-570-0_26.1111.570.0_x64__3k8sg7r9htsxt/dependencies/node/node_modules/pnpm/dist/pnpm.mjs:217039:128)
+    at async installDeps (file:///C:/Program%20Files/WindowsApps/OpenAI.CodexPrimaryRuntime.v26-1111-570-0_26.1111.570.0_x64__3k8sg7r9htsxt/dependencies/node/node_modules/pnpm/dist/pnpm.mjs:225024:118)
+    at async Object.handler5 (file:///C:/Program%20Files/WindowsApps/OpenAI.CodexPrimaryRuntime.v26-1111-570-0_26.1111.570.0_x64__3k8sg7r9htsxt/dependencies/node/node_modules/pnpm/dist/pnpm.mjs:225946:3)
+    at async file:///C:/Program%20Files/WindowsApps/OpenAI.CodexPrimaryRuntime.v26-1111-570-0_26.1111.570.0_x64__3k8sg7r9htsxt/dependencies/node/node_modules/pnpm/dist/pnpm.mjs:328619:19

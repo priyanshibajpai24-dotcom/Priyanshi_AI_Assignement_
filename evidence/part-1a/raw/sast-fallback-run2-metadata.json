@@ -1,0 +1,19 @@
+﻿{
+    "scanner":  "Semgrep Community Edition",
+    "version":  "1.185.0",
+    "package":  "semgrep==1.185.0",
+    "ruleset":  "p/javascript",
+    "scannedPath":  "src",
+    "executionMode":  "Semgrep Core 1.185.0 standalone JSON fallback",
+    "cliJsonExitCode":  2,
+    "coreExitCode":  0,
+    "ruleFileCount":  1,
+    "rulesRunCount":  68,
+    "targetCount":  6,
+    "scannedTargetCount":  6,
+    "generatedRuleFiles":  [
+
+                           ],
+    "startedAtUtc":  "2026-11-13T05:08:03.5905423Z",
+    "finishedAtUtc":  "2026-11-13T05:08:39.8098587Z"
+}

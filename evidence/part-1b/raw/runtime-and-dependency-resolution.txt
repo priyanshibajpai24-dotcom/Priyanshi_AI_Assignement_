@@ -1,0 +1,9 @@
+NODE_VERSION=v24.22.1
+PNPM_VERSION=11.25.0
+ajv/dist/2020.js: MISSING
+ajv-formats: MISSING
+@js-temporal/polyfill: MISSING
+eslint: C:\Users\hp\Desktop\project Ai\node_modules\eslint\lib\api.js
+AI_BASE_URL_SET=False
+AI_MODEL_SET=False
+AI_API_KEY_SET=False

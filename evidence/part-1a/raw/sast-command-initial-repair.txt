@@ -1,0 +1,9 @@
+$ powershell -NoProfile -ExecutionPolicy Bypass -File scripts/run-sast.ps1
+Get-FileHash : The term 'Get-FileHash' is not recognized as the name of a cmdlet, function, script file, or operable 
+program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At C:\Users\hp\Desktop\project Ai\scripts\run-sast.ps1:182 char:27
++                 sha256 = (Get-FileHash -LiteralPath $_.FullName -Algo ...
++                           ~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Get-FileHash:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 

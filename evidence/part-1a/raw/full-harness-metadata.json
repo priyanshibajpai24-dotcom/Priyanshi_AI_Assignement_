@@ -1,0 +1,6 @@
+{
+  "nodeVersion": "v24.22.1",
+  "command": "node harness/run.mjs",
+  "startedAtUtc": "2026-11-12T20:17:27.4077968Z",
+  "finishedAtUtc": "2026-11-12T20:17:31.6476759Z"
+}

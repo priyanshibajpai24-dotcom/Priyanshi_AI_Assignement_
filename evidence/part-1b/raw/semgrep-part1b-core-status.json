@@ -1,0 +1,9 @@
+{
+  "exitCode": 0,
+  "passed": true,
+  "findingCount": 0,
+  "errorCount": 0,
+  "rulesRunCount": 68,
+  "scannedTargetCount": 33,
+  "executionMode": "Semgrep Core JSON fallback"
+}

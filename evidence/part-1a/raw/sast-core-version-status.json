@@ -1,0 +1,4 @@
+{
+  "command": "semgrep-core.exe -version",
+  "exitCode": 0
+}

@@ -1,0 +1,5 @@
+2026-11-13 01:54:23,388 - semgrep.rpc - ERROR - RPC subprocess failed: semgrep-core exited with code 1.
+2026-11-13 01:54:23,388 - semgrep.rule_lang - WARNING - semgrep-core rule validation failed (SemgrepError)
+2026-11-13 01:54:24,510 - semgrep.rpc - ERROR - RPC subprocess failed: semgrep-core exited with code 1.
+2026-11-13 01:54:24,512 - semgrep.rpc - ERROR - RPC subprocess failed: semgrep-core exited with code 1.
+2026-11-13 01:54:24,646 - semgrep.rpc - ERROR - RPC subprocess failed: semgrep-core exited with code 1.

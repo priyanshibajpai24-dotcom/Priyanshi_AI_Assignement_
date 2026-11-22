@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.invalid/reminder-agent/agent-output.schema.json",
+  "title": "Reminder Agent Output",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["decision", "intent", "proposal", "missingInformation", "clarificationQuestion", "unsupportedReason", "evidence"],
+  "properties": {
+    "decision": { "enum": ["propose_action", "clarification_required", "unsupported"] },
+    "intent": { "type": ["string", "null"], "enum": ["create", "reschedule", "snooze", null] },
+    "proposal": {
+      "oneOf": [
+        { "type": "null" },
+        { "$ref": "#/$defs/createProposal" },
+        { "$ref": "#/$defs/targetProposal" }
+      ]
+    },
+    "missingInformation": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "enum": ["title", "date", "time", "time_zone", "target", "ambiguous_time"] }
+    },
+    "clarificationQuestion": { "type": ["string", "null"], "minLength": 1, "maxLength": 500 },
+    "unsupportedReason": { "type": ["string", "null"], "minLength": 1, "maxLength": 500 },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["subjectPhrase", "timePhrase", "targetPhrase"],
+      "properties": {
+        "subjectPhrase": { "type": ["string", "null"], "maxLength": 300 },
+        "timePhrase": { "type": ["string", "null"], "maxLength": 300 },
+        "targetPhrase": { "type": ["string", "null"], "maxLength": 300 }
+      }
+    }
+  },
+  "$defs": {
+    "createProposal": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "title", "dueAt"],
+      "properties": {
+        "kind": { "const": "create" },
+        "title": { "type": "string", "minLength": 1, "maxLength": 160 },
+        "dueAt": { "type": "string", "format": "date-time" }
+      }
+    },
+    "targetProposal": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "targetReminderId", "dueAt"],
+      "properties": {
+        "kind": { "enum": ["reschedule", "snooze"] },
+        "targetReminderId": { "type": "string", "minLength": 1, "maxLength": 64 },
+        "dueAt": { "type": "string", "format": "date-time" }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "decision": { "const": "propose_action" } }, "required": ["decision"] },
+      "then": {
+        "properties": { "intent": { "enum": ["create", "reschedule", "snooze"] }, "proposal": { "type": "object" }, "missingInformation": { "maxItems": 0 }, "clarificationQuestion": { "type": "null" }, "unsupportedReason": { "type": "null" } },
+        "required": ["decision", "intent", "proposal"]
+      }
+    },
+    {
+      "if": { "properties": { "decision": { "const": "clarification_required" } }, "required": ["decision"] },
+      "then": { "properties": { "proposal": { "type": "null" }, "missingInformation": { "minItems": 1 }, "clarificationQuestion": { "type": "string", "minLength": 1 }, "unsupportedReason": { "type": "null" } } }
+    },
+    {
+      "if": { "properties": { "decision": { "const": "unsupported" } }, "required": ["decision"] },
+      "then": { "properties": { "intent": { "type": "null" }, "proposal": { "type": "null" }, "missingInformation": { "maxItems": 0 }, "clarificationQuestion": { "type": "null" }, "unsupportedReason": { "type": "string", "minLength": 1 } } }
+    },
+    {
+      "if": { "properties": { "intent": { "const": "create" } }, "required": ["intent"] },
+      "then": { "properties": { "proposal": { "$ref": "#/$defs/createProposal" } } }
+    },
+    {
+      "if": { "properties": { "intent": { "enum": ["reschedule", "snooze"] } }, "required": ["intent"] },
+      "then": { "properties": { "proposal": { "$ref": "#/$defs/targetProposal" } } }
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "sourceFiles": 37,
+  "datasetSha256": "68f6320fb9bd120d5d8382409ad64e9583855eadfe2a80a2bfa176ae86a2f519",
+  "specSha256": "9bd2e2e21bb8a795966c7cf2670b18afc7f319215146d186a19fbcadd7e236f9",
+  "capturedAt": "2026-11-13T21:10:26.2918641Z",
+  "description": "First complete Part 1B source snapshot archived after the initial implementation passed its then-current unit suite; earlier red TDD and pnpm failures remain in raw evidence.",
+  "snapshotNote": "The original archived README contains a UTF-8 punctuation encoding defect discovered during review; it is preserved as captured in the initial generation and corrected in the final generation."
+}

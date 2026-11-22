@@ -1,0 +1,78 @@
+{
+  "generation": "final",
+  "fileCount": 18,
+  "files": [
+    {
+      "path": "eslint.config.mjs",
+      "sha256": "b618df7c3b701d719d952618ac57789315fc89a10e7ee16a81b7a3282e84293c"
+    },
+    {
+      "path": "harness\\cases.mjs",
+      "sha256": "8784122c4ffa1dad461f985e902b9e1f16204f7778e6e275e9d3c1be7cd704d7"
+    },
+    {
+      "path": "harness\\run.mjs",
+      "sha256": "901ebf08f12afc737b549040e07c12baec3482d39c68020913c31d1ab65f92ed"
+    },
+    {
+      "path": "package.json",
+      "sha256": "0e753ef2172f9105de459d116698735aa6954c9fe322302e51e469916729582a"
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "sha256": "d5628dfcde5035809716d0f04b628a294db1c21940222dd1ba588d0a0eeb0a35"
+    },
+    {
+      "path": "pnpm-workspace.yaml",
+      "sha256": "83033134d09f4f592eec920ffd3f574e4e9685ebae6df80e8aff78b160a44ce6"
+    },
+    {
+      "path": "README.md",
+      "sha256": "f0c7b8f4d2e559b329d510b811e79be5e1f8fde568e7409d51024c31dd3289f1"
+    },
+    {
+      "path": "scripts\\capture-generation.ps1",
+      "sha256": "e8b1340254a36be89b50831ed8b78f3dee632002ff3c3b2af221bb33aaa2362b"
+    },
+    {
+      "path": "scripts\\run-sast.ps1",
+      "sha256": "2ea0874c95354f6c411f0de2f2fd3e7299406dc5e0e86604ee085a56feef50f7"
+    },
+    {
+      "path": "src\\errors.mjs",
+      "sha256": "cf13fba0506c6cea2c74af8fd5f956bb5d51c6827be927f179ddc5b566b8ee4c"
+    },
+    {
+      "path": "src\\http-api.mjs",
+      "sha256": "fa11a0726b5c41de29067318384db46caa3e0dc9696d2e6ed049ab50f694355d"
+    },
+    {
+      "path": "src\\json-store.mjs",
+      "sha256": "bfa34c2546482aca9ef450802f5cdb4edb5f99debcaddd278b20b0a9cb7096f9"
+    },
+    {
+      "path": "src\\server.mjs",
+      "sha256": "2aee73d7d221298fb4ce81c1fc8ce8d562164676b1f82fd2b55a580bb3473cdd"
+    },
+    {
+      "path": "src\\task-service.mjs",
+      "sha256": "ea922244ffd10393e11af3213fb54d26bacff2c3af0e67a2617b1fb2658676cb"
+    },
+    {
+      "path": "src\\validation.mjs",
+      "sha256": "c81f81d3cae71422e1bd30924fc7256985fdd020e9087b6f674632a02eab2bea"
+    },
+    {
+      "path": "tests\\helpers\\temp-data.mjs",
+      "sha256": "5f8d4862c65d37b40b662113cd9cc9f8f3289b3b523ccd716da7b04ff2d37262"
+    },
+    {
+      "path": "tests\\unit\\json-store.test.mjs",
+      "sha256": "12ec7195a603efc6d8d8958545bf5ce9e495abaf56caa5f2d54bfeb2bc3fc267"
+    },
+    {
+      "path": "tests\\unit\\task-service.test.mjs",
+      "sha256": "9db774c4eb4f60bc7abbbe78c55d547ffeee28076778692094faafab3470691d"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+pnpm start
+LISTENING http://127.0.0.1:53487
+GET /tasks => 200, empty list
+POST /tasks => 201, task id 1
+GET /tasks => 200, one task

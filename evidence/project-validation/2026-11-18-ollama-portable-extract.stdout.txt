@@ -1,0 +1,2 @@
+Checksum verified. Extracting the Ollama runtime into the project-local .tools folder.
+Ollama runtime installed at C:\Users\hp\Desktop\project Ai\.tools\ollama-portable\ollama.exe.

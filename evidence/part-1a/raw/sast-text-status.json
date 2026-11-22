@@ -1,0 +1,4 @@
+{
+  "command": "uvx --python project-local-managed-cpython --from semgrep==1.185.0 semgrep scan --config p/javascript --x-rule-validation=none --metrics=off --jobs 1 --text --output evidence/part-1a/raw/sast-text-scan.txt src",
+  "exitCode": 2
+}

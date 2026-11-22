@@ -1,0 +1,8 @@
+﻿{
+    "command":  "uvx --from semgrep==1.185.0 semgrep scan --config p/javascript --json --output evidence/part-1a/raw/sast.json src",
+    "exitCode":  2,
+    "findingCount":  -1,
+    "errorCount":  1,
+    "passed":  false,
+    "parseError":  "Invalid JSON primitive: ."
+}

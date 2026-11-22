@@ -1,0 +1,9 @@
+{
+  "command": "uvx --from semgrep==1.185.0 semgrep --version",
+  "exitCode": 1,
+  "passed": false,
+  "python": "C:\\Users\\hp\\Desktop\\project Ai\\.tools\\bootstrap\\Scripts\\python.exe",
+  "pythonInstallDirectory": "C:\\Users\\hp\\Desktop\\project Ai\\.tools\\uv-python",
+  "toolDirectory": "C:\\Users\\hp\\Desktop\\project Ai\\.tools\\uv-tools",
+  "cacheDirectory": "C:\\Users\\hp\\Desktop\\project Ai\\.tools\\uv-cache"
+}

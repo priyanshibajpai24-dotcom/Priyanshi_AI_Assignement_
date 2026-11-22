@@ -1,0 +1,321 @@
+openapi: 3.1.0
+info:
+  title: Smart Todo Local API
+  version: 1.0.0
+  description: Local-only JSON API for the approved Part 1A Smart Todo specification. Length limits count Unicode code points; surrounding whitespace is trimmed from titles and tags before validation.
+servers:
+  - url: http://127.0.0.1:3000
+    description: Loopback-only local service
+paths:
+  /tasks:
+    get:
+      operationId: listTasks
+      summary: List tasks with optional tag filtering and priority ordering
+      parameters:
+        - name: tag
+          in: query
+          required: false
+          description: Repeat for multiple selected tags; every selected tag must match after trimming and case-folding.
+          style: form
+          explode: true
+          schema:
+            type: array
+            items:
+              type: string
+              minLength: 1
+              maxLength: 32
+        - name: sort
+          in: query
+          required: false
+          description: Omit for ID ascending order; use priority for now, next, later, then ID ascending.
+          schema:
+            type: string
+            enum: [priority]
+      responses:
+        '200':
+          description: Task collection
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [tasks]
+                properties:
+                  tasks:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Task'
+        '400':
+          $ref: '#/components/responses/InvalidRequest'
+        '413':
+          $ref: '#/components/responses/RequestTooLarge'
+        '500':
+          $ref: '#/components/responses/StorageError'
+    post:
+      operationId: createTask
+      summary: Create a task
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateTask'
+      responses:
+        '201':
+          description: Task created and persisted
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [task]
+                properties:
+                  task:
+                    $ref: '#/components/schemas/Task'
+        '400':
+          $ref: '#/components/responses/InvalidRequest'
+        '413':
+          $ref: '#/components/responses/RequestTooLarge'
+        '500':
+          $ref: '#/components/responses/StorageError'
+  /tasks/{id}:
+    parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: integer
+          minimum: 1
+    get:
+      operationId: getTask
+      summary: Retrieve one task
+      responses:
+        '200':
+          description: Task found
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [task]
+                properties:
+                  task:
+                    $ref: '#/components/schemas/Task'
+        '400':
+          $ref: '#/components/responses/InvalidRequest'
+        '404':
+          $ref: '#/components/responses/NotFound'
+        '413':
+          $ref: '#/components/responses/RequestTooLarge'
+        '500':
+          $ref: '#/components/responses/StorageError'
+    patch:
+      operationId: updateTask
+      summary: Update allowed task fields without changing omitted fields
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateTask'
+      responses:
+        '200':
+          description: Updated task persisted
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [task]
+                properties:
+                  task:
+                    $ref: '#/components/schemas/Task'
+        '400':
+          $ref: '#/components/responses/InvalidRequest'
+        '404':
+          $ref: '#/components/responses/NotFound'
+        '413':
+          $ref: '#/components/responses/RequestTooLarge'
+        '500':
+          $ref: '#/components/responses/StorageError'
+    delete:
+      operationId: deleteTask
+      summary: Delete one task
+      responses:
+        '200':
+          description: Task deleted and deletion persisted
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [deleted, id]
+                properties:
+                  deleted:
+                    const: true
+                  id:
+                    type: integer
+        '404':
+          $ref: '#/components/responses/NotFound'
+        '413':
+          $ref: '#/components/responses/RequestTooLarge'
+        '500':
+          $ref: '#/components/responses/StorageError'
+  /tasks/{id}/status:
+    parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: integer
+          minimum: 1
+    patch:
+      operationId: transitionTaskStatus
+      summary: Apply one allowed task status transition
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              additionalProperties: false
+              required: [status]
+              properties:
+                status:
+                  type: string
+                  enum: [queued, active, blocked, done]
+      responses:
+        '200':
+          description: Task status transitioned and persisted
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [task]
+                properties:
+                  task:
+                    $ref: '#/components/schemas/Task'
+        '400':
+          $ref: '#/components/responses/InvalidRequest'
+        '404':
+          $ref: '#/components/responses/NotFound'
+        '409':
+          $ref: '#/components/responses/InvalidTransition'
+        '413':
+          $ref: '#/components/responses/RequestTooLarge'
+        '500':
+          $ref: '#/components/responses/StorageError'
+components:
+  schemas:
+    Task:
+      type: object
+      additionalProperties: false
+      required: [id, title, notes, priority, status, tags]
+      properties:
+        id:
+          type: integer
+          minimum: 1
+        title:
+          type: string
+          minLength: 1
+          maxLength: 120
+        notes:
+          type: string
+          maxLength: 2000
+        priority:
+          type: string
+          enum: [now, next, later]
+        status:
+          type: string
+          enum: [queued, active, blocked, done]
+        tags:
+          type: array
+          maxItems: 10
+          items:
+            type: string
+            minLength: 1
+            maxLength: 32
+    CreateTask:
+      type: object
+      additionalProperties: false
+      required: [title, priority]
+      properties:
+        title:
+          type: string
+          minLength: 1
+          maxLength: 120
+        notes:
+          type: string
+          maxLength: 2000
+        priority:
+          type: string
+          enum: [now, next, later]
+        tags:
+          type: array
+          maxItems: 10
+          items:
+            type: string
+            minLength: 1
+            maxLength: 32
+    UpdateTask:
+      type: object
+      additionalProperties: false
+      minProperties: 1
+      properties:
+        title:
+          type: string
+          minLength: 1
+          maxLength: 120
+        notes:
+          type: string
+          maxLength: 2000
+        priority:
+          type: string
+          enum: [now, next, later]
+        tags:
+          type: array
+          maxItems: 10
+          items:
+            type: string
+            minLength: 1
+            maxLength: 32
+    ApiError:
+      type: object
+      required: [error]
+      properties:
+        error:
+          type: object
+          additionalProperties: false
+          required: [code, message]
+          properties:
+            code:
+              type: string
+            message:
+              type: string
+  responses:
+    InvalidRequest:
+      description: INVALID_REQUEST. Malformed JSON, invalid or unsupported fields, or an invalid field value
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ApiError'
+    RequestTooLarge:
+      description: REQUEST_TOO_LARGE. Request body exceeds 65,536 bytes
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ApiError'
+    NotFound:
+      description: NOT_FOUND. Task identifier does not exist
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ApiError'
+    InvalidTransition:
+      description: INVALID_TRANSITION. Requested status transition is not allowed
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ApiError'
+    StorageError:
+      description: STORAGE_ERROR. Task data could not be read or persisted; response contains no file path or stack trace
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ApiError'
+

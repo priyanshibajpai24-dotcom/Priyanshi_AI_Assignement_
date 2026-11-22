@@ -1,0 +1,14 @@
+✔ creation trims title and supplies the approved defaults (3.162ms)
+✔ creation rejects a blank or overlong title, overlong notes, and missing priority (0.7429ms)
+✔ IDs increase and are not reused after deletion, including concurrent creates (0.4709ms)
+✔ updates only supplied mutable fields and rejects unsupported fields (0.4774ms)
+✔ tag filters trim and case-fold values and require every selected tag (0.685ms)
+✔ priority ordering is now, next, later with ascending ID ties (0.581ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 122.2842

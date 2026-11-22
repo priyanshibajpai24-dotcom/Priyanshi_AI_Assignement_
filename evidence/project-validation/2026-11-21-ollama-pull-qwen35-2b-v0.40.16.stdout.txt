@@ -1,0 +1,10 @@
+[1Gpulling manifest ⠋ [K[1Gpulling manifest ⠙ [K[1Gpulling manifest ⠹ [K[1Gpulling manifest ⠸ [K[1Gpulling manifest ⠼ [K[1Gpulling manifest ⠴ [K[1Gpulling manifest ⠦ [K[1Gpulling manifest ⠧ [K[1Gpulling manifest ⠇ [K[1Gpulling manifest ⠏ [K[1Gpulling manifest ⠋ [K[1Gpulling manifest ⠙ [K[1Gpulling manifest ⠹ [K[1Gpulling manifest ⠸ [K[1Gpulling manifest ⠼ [K[1Gpulling manifest ⠴ [K[1Gpulling manifest ⠦ [K[1Gpulling manifest ⠧ [K[1Gpulling manifest [K
+pulling 5ddf560e3404: 100% ▕██████████████████▏ 671 MB                         [K
+pulling e8bf47d40c5b: 100% ▕██████████████████▏ 2.0 GB                         [K
+pulling b507b9c2f6ca: 100% ▕██████████████████▏   13 B                         [K
+pulling 50cbab8a892c: 100% ▕██████████████████▏  11 KB                         [K
+pulling 9371364b27a5: 100% ▕██████████████████▏   65 B                         [K
+pulling 0f7af3a2d414: 100% ▕██████████████████▏  175 B                         [K
+verifying sha256 digest [K
+writing manifest [K
+success [K

@@ -1,0 +1,7 @@
+uvx.exe : error: failed to create directory `C:\Users\hp\AppData\Roaming\uv\python`: Access is denied. (os error 5)
+At C:\Users\hp\Desktop\project Ai\scripts\run-sast.ps1:21 char:17
++ $versionLines = & $uvx --from $semgrepPin semgrep --version 2>&1
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (error: failed t...d. (os error 5):String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 

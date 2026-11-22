@@ -1,0 +1,769 @@
+✔ uses CLI child boundary and rejects malformed input without provider call (2360.2068ms)
+✔ labels provider outage INCONCLUSIVE (1752.5993ms)
+✔ constructs endpoint and sends Chat Completions JSON mode without tools (142.1573ms)
+✔ uses native Ollama schema output without sending an API key (23.3905ms)
+✔ classifies timeout, rate limit, server error, malformed body, and missing content safely (71.3658ms)
+✔ rejects oversized model content with a bounded provider error (13.1951ms)
+✔ applies all fixed thresholds and stable outcomes (2.4664ms)
+✔ clarifies missing and ambiguous mandatory information without proposals (9.1818ms)
+✔ clarifies daylight-saving gap and overlap rather than accepting ambiguous walls (0.6748ms)
+✔ invalid input exits 2 before provider config and prints typed JSON without stack (922.6322ms)
+✔ valid request with missing provider config exits 3 safely (1036.4358ms)
+✔ valid provider response exits 0 with one structured JSON output (1376.7509ms)
+✔ invalid model JSON exits 4 with a typed error and no stack (1507.5817ms)
+✔ schema-invalid model output exits 5 with a typed error and no stack (1348.887ms)
+✔ requires settings (4.8084ms)
+✔ bounds timeout and redacts endpoint secrets (2.3031ms)
+✔ allows native local Ollama without a hosted API key (0.9782ms)
+✔ rejects unknown provider modes (0.6058ms)
+✔ creates one grounded future proposal without invoking an action tool (12.5281ms)
+✔ accepts a fixed-context relative-time proposal at the expected offset instant (1.758ms)
+✔ keeps malicious request and reminder context inside untrusted user data (6.5568ms)
+✔ accepts unsupported-action response only with no proposal or intent (5.1686ms)
+✔ treats calls and notifications as unsupported actions (1.0524ms)
+✔ accepts valid and rejects unknown fields (6.1552ms)
+✔ enforces request, reminder, timestamp, timezone, uniqueness, and byte bounds (3.9325ms)
+✔ accepts grounded future proposal (43.2004ms)
+✔ rejects past due, missing target, and ungrounded evidence (2.7135ms)
+✔ checks later-of-now-or-due snooze arithmetic independently (1.6725ms)
+✔ rejects a dueAt offset inconsistent with the supplied IANA zone (0.916ms)
+✔ rejects proposal-bearing clarification or unsupported decisions (0.6285ms)
+✔ requires a target ID to identify exactly one context reminder (1.8406ms)
+✔ uses separate system policy and untrusted JSON input (5.8151ms)
+✔ creates a grounded proposal through one injected provider call (9.231ms)
+✔ retries a contract-invalid response once and still enforces validation (1.5411ms)
+✔ preserves clarification and unsupported decisions without proposals (0.5455ms)
+✔ asks for a valid future time when the requested time is past (0.3923ms)
+✔ reschedules one supplied reminder and refuses unknown target IDs (3.1346ms)
+✔ enforces exact snooze duration from later existing due time or now (3.0182ms)
+✔ rejects malformed JSON and schema or invariant violations with distinct codes (1.0492ms)
+✔ uses a single positive duration from the later of reminder time and reference time (11.7203ms)
+✔ rejects negative, zero, and multiple snooze durations (7.4032ms)
+✔ reschedules one uniquely identified reminder to an explicit future time (1.012ms)
+✔ clarifies when the requested target is absent and rejects a duplicated target ID (2.4233ms)
+✔ snoozes across midnight from the later reminder time (1.4945ms)
+✔ accepts contract output and rejects extra fields, mismatch, bad types, enum, and timestamp (10.2909ms)
+✔ weights criteria and compares timestamp instants (3.7041ms)
+✔ supports N/A and concept-based question scoring (0.5655ms)
+✔ requires explicit RFC3339 offset (4.0744ms)
+✔ detects unique, gap, and overlap (40.8092ms)
+✔ returns zone offset (0.7511ms)
+node:fs:483
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'C:\Users\hp\Desktop\project Ai\evidence\part-1b\final-generation\specs\002-natural-language-reminder-agent\contracts\agent-output.schema.json'
+    at Object.readFileSync (node:fs:483:20)
+    at file:///C:/Users/hp/Desktop/project%20Ai/evidence/part-1b/final-generation/source/harness/schema-validator.mjs:5:28
+    at ModuleJob.run (node:internal/modules/esm/module_job:561:25)
+    at async node:internal/modules/esm/loader:647:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\hp\\Desktop\\project Ai\\evidence\\part-1b\\final-generation\\specs\\002-natural-language-reminder-agent\\contracts\\agent-output.schema.json'
+}
+
+Node.js v24.22.3
+✖ evidence\part-1b\final-generation\source\tests\provider\harness-process.test.mjs (258.1696ms)
+✔ constructs endpoint and sends Chat Completions JSON mode without tools (110.7931ms)
+✔ classifies timeout, rate limit, server error, malformed body, and missing content safely (101.911ms)
+✔ rejects oversized model content with a bounded provider error (18.9324ms)
+✔ applies all fixed thresholds and stable outcomes (2.1394ms)
+node:fs:483
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'C:\Users\hp\Desktop\project Ai\evidence\part-1b\final-generation\specs\002-natural-language-reminder-agent\contracts\agent-output.schema.json'
+    at Object.readFileSync (node:fs:483:20)
+    at file:///C:/Users/hp/Desktop/project%20Ai/evidence/part-1b/final-generation/source/src/output-validator.mjs:6:28 {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\hp\\Desktop\\project Ai\\evidence\\part-1b\\final-generation\\specs\\002-natural-language-reminder-agent\\contracts\\agent-output.schema.json'
+}
+
+Node.js v24.22.3
+✖ evidence\part-1b\final-generation\source\tests\unit\clarification-agent.test.mjs (223.5746ms)
+✖ invalid input exits 2 before provider config and prints typed JSON without stack (271.1211ms)
+✖ valid request with missing provider config exits 3 safely (240.1167ms)
+✖ valid provider response exits 0 with one structured JSON output (353.7489ms)
+✖ invalid model JSON exits 4 with a typed error and no stack (324.5209ms)
+✖ schema-invalid model output exits 5 with a typed error and no stack (364.721ms)
+✔ requires settings (2.3627ms)
+✔ bounds timeout and redacts endpoint secrets (6.8944ms)
+node:fs:483
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'C:\Users\hp\Desktop\project Ai\evidence\part-1b\final-generation\specs\002-natural-language-reminder-agent\contracts\agent-output.schema.json'
+    at Object.readFileSync (node:fs:483:20)
+    at file:///C:/Users/hp/Desktop/project%20Ai/evidence/part-1b/final-generation/source/src/output-validator.mjs:6:28 {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\hp\\Desktop\\project Ai\\evidence\\part-1b\\final-generation\\specs\\002-natural-language-reminder-agent\\contracts\\agent-output.schema.json'
+}
+
+Node.js v24.22.3
+✖ evidence\part-1b\final-generation\source\tests\unit\create-agent.test.mjs (273.9159ms)
+node:fs:483
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'C:\Users\hp\Desktop\project Ai\evidence\part-1b\final-generation\specs\002-natural-language-reminder-agent\contracts\agent-output.schema.json'
+    at Object.readFileSync (node:fs:483:20)
+    at file:///C:/Users/hp/Desktop/project%20Ai/evidence/part-1b/final-generation/source/src/output-validator.mjs:6:28 {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\hp\\Desktop\\project Ai\\evidence\\part-1b\\final-generation\\specs\\002-natural-language-reminder-agent\\contracts\\agent-output.schema.json'
+}
+
+Node.js v24.22.3
+✖ evidence\part-1b\final-generation\source\tests\unit\guardrails.test.mjs (233.3881ms)
+node:fs:483
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'C:\Users\hp\Desktop\project Ai\evidence\part-1b\final-generation\specs\002-natural-language-reminder-agent\contracts\request.schema.json'
+    at Object.readFileSync (node:fs:483:20)
+    at file:///C:/Users/hp/Desktop/project%20Ai/evidence/part-1b/final-generation/source/src/input-validator.mjs:6:28 {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\hp\\Desktop\\project Ai\\evidence\\part-1b\\final-generation\\specs\\002-natural-language-reminder-agent\\contracts\\request.schema.json'
+}
+
+Node.js v24.22.3
+✖ evidence\part-1b\final-generation\source\tests\unit\input-validation.test.mjs (183.4896ms)
+✔ accepts grounded future proposal (52.9281ms)
+✔ rejects past due, missing target, and ungrounded evidence (2.1275ms)
+✔ checks later-of-now-or-due snooze arithmetic independently (2.539ms)
+✔ rejects a dueAt offset inconsistent with the supplied IANA zone (2.3065ms)
+✔ rejects proposal-bearing clarification or unsupported decisions (0.8795ms)
+✔ requires a target ID to identify exactly one context reminder (1.102ms)
+✔ uses separate system policy and untrusted JSON input (2.7045ms)
+node:fs:483
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'C:\Users\hp\Desktop\project Ai\evidence\part-1b\final-generation\specs\002-natural-language-reminder-agent\contracts\agent-output.schema.json'
+    at Object.readFileSync (node:fs:483:20)
+    at file:///C:/Users/hp/Desktop/project%20Ai/evidence/part-1b/final-generation/source/src/output-validator.mjs:6:28 {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\hp\\Desktop\\project Ai\\evidence\\part-1b\\final-generation\\specs\\002-natural-language-reminder-agent\\contracts\\agent-output.schema.json'
+}
+
+Node.js v24.22.3
+✖ evidence\part-1b\final-generation\source\tests\unit\reminder-agent.test.mjs (226.7393ms)
+node:fs:483
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'C:\Users\hp\Desktop\project Ai\evidence\part-1b\final-generation\specs\002-natural-language-reminder-agent\contracts\agent-output.schema.json'
+    at Object.readFileSync (node:fs:483:20)
+    at file:///C:/Users/hp/Desktop/project%20Ai/evidence/part-1b/final-generation/source/src/output-validator.mjs:6:28 {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\hp\\Desktop\\project Ai\\evidence\\part-1b\\final-generation\\specs\\002-natural-language-reminder-agent\\contracts\\agent-output.schema.json'
+}
+
+Node.js v24.22.3
+✖ evidence\part-1b\final-generation\source\tests\unit\reschedule-snooze.test.mjs (229.0781ms)
+node:fs:483
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'C:\Users\hp\Desktop\project Ai\evidence\part-1b\final-generation\specs\002-natural-language-reminder-agent\contracts\agent-output.schema.json'
+    at Object.readFileSync (node:fs:483:20)
+    at file:///C:/Users/hp/Desktop/project%20Ai/evidence/part-1b/final-generation/source/harness/schema-validator.mjs:5:28
+    at ModuleJob.run (node:internal/modules/esm/module_job:561:25)
+    at async node:internal/modules/esm/loader:647:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\hp\\Desktop\\project Ai\\evidence\\part-1b\\final-generation\\specs\\002-natural-language-reminder-agent\\contracts\\agent-output.schema.json'
+}
+
+Node.js v24.22.3
+✖ evidence\part-1b\final-generation\source\tests\unit\schema-validator.test.mjs (207.7235ms)
+✔ weights criteria and compares timestamp instants (1.8944ms)
+✔ supports N/A and concept-based question scoring (0.7854ms)
+✔ requires explicit RFC3339 offset (5.6246ms)
+✔ detects unique, gap, and overlap (90.477ms)
+✔ returns zone offset (0.8388ms)
+node:fs:483
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'C:\Users\hp\Desktop\project Ai\evidence\part-1b\initial-generation\specs\002-natural-language-reminder-agent\contracts\agent-output.schema.json'
+    at Object.readFileSync (node:fs:483:20)
+    at file:///C:/Users/hp/Desktop/project%20Ai/evidence/part-1b/initial-generation/source/harness/schema-validator.mjs:5:28
+    at ModuleJob.run (node:internal/modules/esm/module_job:561:25)
+    at async node:internal/modules/esm/loader:647:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\hp\\Desktop\\project Ai\\evidence\\part-1b\\initial-generation\\specs\\002-natural-language-reminder-agent\\contracts\\agent-output.schema.json'
+}
+
+Node.js v24.22.3
+✖ evidence\part-1b\initial-generation\source\tests\provider\harness-process.test.mjs (245.505ms)
+✔ constructs endpoint and sends Chat Completions JSON mode without tools (129.5222ms)
+✔ classifies timeout, rate limit, server error, malformed body, and missing content safely (171.105ms)
+✔ applies fixed threshold and stable outcomes (5.8836ms)
+✖ invalid input exits 2 before provider config and prints typed JSON without stack (255.5622ms)
+✖ valid request with missing provider config exits 3 safely (328.8634ms)
+✔ requires settings (3.8779ms)
+✔ bounds timeout and redacts endpoint secrets (3.7936ms)
+node:fs:483
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'C:\Users\hp\Desktop\project Ai\evidence\part-1b\initial-generation\specs\002-natural-language-reminder-agent\contracts\request.schema.json'
+    at Object.readFileSync (node:fs:483:20)
+    at file:///C:/Users/hp/Desktop/project%20Ai/evidence/part-1b/initial-generation/source/src/input-validator.mjs:6:28 {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\hp\\Desktop\\project Ai\\evidence\\part-1b\\initial-generation\\specs\\002-natural-language-reminder-agent\\contracts\\request.schema.json'
+}
+
+Node.js v24.22.3
+✖ evidence\part-1b\initial-generation\source\tests\unit\input-validation.test.mjs (212.0023ms)
+✔ accepts grounded future proposal (56.979ms)
+✔ rejects past due, missing target, and ungrounded evidence (3.4885ms)
+✔ checks later-of-now-or-due snooze arithmetic independently (2.2204ms)
+✔ separates system rules and untrusted JSON input (4.4319ms)
+node:fs:483
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'C:\Users\hp\Desktop\project Ai\evidence\part-1b\initial-generation\specs\002-natural-language-reminder-agent\contracts\agent-output.schema.json'
+    at Object.readFileSync (node:fs:483:20)
+    at file:///C:/Users/hp/Desktop/project%20Ai/evidence/part-1b/initial-generation/source/src/output-validator.mjs:6:28 {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\hp\\Desktop\\project Ai\\evidence\\part-1b\\initial-generation\\specs\\002-natural-language-reminder-agent\\contracts\\agent-output.schema.json'
+}
+
+Node.js v24.22.3
+✖ evidence\part-1b\initial-generation\source\tests\unit\reminder-agent.test.mjs (310.4166ms)
+node:fs:483
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'C:\Users\hp\Desktop\project Ai\evidence\part-1b\initial-generation\specs\002-natural-language-reminder-agent\contracts\agent-output.schema.json'
+    at Object.readFileSync (node:fs:483:20)
+    at file:///C:/Users/hp/Desktop/project%20Ai/evidence/part-1b/initial-generation/source/harness/schema-validator.mjs:5:28
+    at ModuleJob.run (node:internal/modules/esm/module_job:561:25)
+    at async node:internal/modules/esm/loader:647:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\hp\\Desktop\\project Ai\\evidence\\part-1b\\initial-generation\\specs\\002-natural-language-reminder-agent\\contracts\\agent-output.schema.json'
+}
+
+Node.js v24.22.3
+✖ evidence\part-1b\initial-generation\source\tests\unit\schema-validator.test.mjs (187.0644ms)
+✔ weights criteria and compares timestamp instants (2.4375ms)
+✔ supports N/A and concept-based question scoring (0.8474ms)
+✔ requires explicit RFC3339 offset (5.5511ms)
+✔ detects unique, gap, and overlap (94.8738ms)
+✔ returns zone offset (0.8513ms)
+node:fs:483
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'C:\Users\hp\Desktop\project Ai\evidence\part-1b\previous-final-generation-2026-11-13\specs\002-natural-language-reminder-agent\contracts\agent-output.schema.json'
+    at Object.readFileSync (node:fs:483:20)
+    at file:///C:/Users/hp/Desktop/project%20Ai/evidence/part-1b/previous-final-generation-2026-11-13/source/harness/schema-validator.mjs:5:28
+    at ModuleJob.run (node:internal/modules/esm/module_job:561:25)
+    at async node:internal/modules/esm/loader:647:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\hp\\Desktop\\project Ai\\evidence\\part-1b\\previous-final-generation-2026-11-13\\specs\\002-natural-language-reminder-agent\\contracts\\agent-output.schema.json'
+}
+
+Node.js v24.22.3
+✖ evidence\part-1b\previous-final-generation-2026-11-13\source\tests\provider\harness-process.test.mjs (291.9078ms)
+✔ constructs endpoint and sends Chat Completions JSON mode without tools (142.8967ms)
+✔ classifies timeout, rate limit, server error, malformed body, and missing content safely (106.8009ms)
+✔ rejects oversized model content with a bounded provider error (38.4285ms)
+✔ applies all fixed thresholds and stable outcomes (3.0739ms)
+node:fs:483
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'C:\Users\hp\Desktop\project Ai\evidence\part-1b\previous-final-generation-2026-11-13\specs\002-natural-language-reminder-agent\contracts\agent-output.schema.json'
+    at Object.readFileSync (node:fs:483:20)
+    at file:///C:/Users/hp/Desktop/project%20Ai/evidence/part-1b/previous-final-generation-2026-11-13/source/src/output-validator.mjs:6:28 {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\hp\\Desktop\\project Ai\\evidence\\part-1b\\previous-final-generation-2026-11-13\\specs\\002-natural-language-reminder-agent\\contracts\\agent-output.schema.json'
+}
+
+Node.js v24.22.3
+✖ evidence\part-1b\previous-final-generation-2026-11-13\source\tests\unit\clarification-agent.test.mjs (249.6928ms)
+✖ invalid input exits 2 before provider config and prints typed JSON without stack (319.3879ms)
+✖ valid request with missing provider config exits 3 safely (258.0786ms)
+✖ valid provider response exits 0 with one structured JSON output (316.6853ms)
+✖ invalid model JSON exits 4 with a typed error and no stack (282.6118ms)
+✖ schema-invalid model output exits 5 with a typed error and no stack (403.4763ms)
+✔ requires settings (3.392ms)
+✔ bounds timeout and redacts endpoint secrets (2.9391ms)
+node:fs:483
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'C:\Users\hp\Desktop\project Ai\evidence\part-1b\previous-final-generation-2026-11-13\specs\002-natural-language-reminder-agent\contracts\agent-output.schema.json'
+    at Object.readFileSync (node:fs:483:20)
+    at file:///C:/Users/hp/Desktop/project%20Ai/evidence/part-1b/previous-final-generation-2026-11-13/source/src/output-validator.mjs:6:28 {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\hp\\Desktop\\project Ai\\evidence\\part-1b\\previous-final-generation-2026-11-13\\specs\\002-natural-language-reminder-agent\\contracts\\agent-output.schema.json'
+}
+
+Node.js v24.22.3
+✖ evidence\part-1b\previous-final-generation-2026-11-13\source\tests\unit\create-agent.test.mjs (399.905ms)
+node:fs:483
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'C:\Users\hp\Desktop\project Ai\evidence\part-1b\previous-final-generation-2026-11-13\specs\002-natural-language-reminder-agent\contracts\agent-output.schema.json'
+    at Object.readFileSync (node:fs:483:20)
+    at file:///C:/Users/hp/Desktop/project%20Ai/evidence/part-1b/previous-final-generation-2026-11-13/source/src/output-validator.mjs:6:28 {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\hp\\Desktop\\project Ai\\evidence\\part-1b\\previous-final-generation-2026-11-13\\specs\\002-natural-language-reminder-agent\\contracts\\agent-output.schema.json'
+}
+
+Node.js v24.22.3
+✖ evidence\part-1b\previous-final-generation-2026-11-13\source\tests\unit\guardrails.test.mjs (333.3413ms)
+node:fs:483
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'C:\Users\hp\Desktop\project Ai\evidence\part-1b\previous-final-generation-2026-11-13\specs\002-natural-language-reminder-agent\contracts\request.schema.json'
+    at Object.readFileSync (node:fs:483:20)
+    at file:///C:/Users/hp/Desktop/project%20Ai/evidence/part-1b/previous-final-generation-2026-11-13/source/src/input-validator.mjs:6:28 {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\hp\\Desktop\\project Ai\\evidence\\part-1b\\previous-final-generation-2026-11-13\\specs\\002-natural-language-reminder-agent\\contracts\\request.schema.json'
+}
+
+Node.js v24.22.3
+✖ evidence\part-1b\previous-final-generation-2026-11-13\source\tests\unit\input-validation.test.mjs (298.4516ms)
+✔ accepts grounded future proposal (63.8732ms)
+✔ rejects past due, missing target, and ungrounded evidence (4.4516ms)
+✔ checks later-of-now-or-due snooze arithmetic independently (1.8158ms)
+✔ rejects a dueAt offset inconsistent with the supplied IANA zone (2.996ms)
+✔ rejects proposal-bearing clarification or unsupported decisions (0.5869ms)
+✔ requires a target ID to identify exactly one context reminder (1.1036ms)
+✔ uses separate system policy and untrusted JSON input (4.1985ms)
+node:fs:483
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'C:\Users\hp\Desktop\project Ai\evidence\part-1b\previous-final-generation-2026-11-13\specs\002-natural-language-reminder-agent\contracts\agent-output.schema.json'
+    at Object.readFileSync (node:fs:483:20)
+    at file:///C:/Users/hp/Desktop/project%20Ai/evidence/part-1b/previous-final-generation-2026-11-13/source/src/output-validator.mjs:6:28 {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\hp\\Desktop\\project Ai\\evidence\\part-1b\\previous-final-generation-2026-11-13\\specs\\002-natural-language-reminder-agent\\contracts\\agent-output.schema.json'
+}
+
+Node.js v24.22.3
+✖ evidence\part-1b\previous-final-generation-2026-11-13\source\tests\unit\reminder-agent.test.mjs (269.6791ms)
+node:fs:483
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'C:\Users\hp\Desktop\project Ai\evidence\part-1b\previous-final-generation-2026-11-13\specs\002-natural-language-reminder-agent\contracts\agent-output.schema.json'
+    at Object.readFileSync (node:fs:483:20)
+    at file:///C:/Users/hp/Desktop/project%20Ai/evidence/part-1b/previous-final-generation-2026-11-13/source/src/output-validator.mjs:6:28 {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\hp\\Desktop\\project Ai\\evidence\\part-1b\\previous-final-generation-2026-11-13\\specs\\002-natural-language-reminder-agent\\contracts\\agent-output.schema.json'
+}
+
+Node.js v24.22.3
+✖ evidence\part-1b\previous-final-generation-2026-11-13\source\tests\unit\reschedule-snooze.test.mjs (290.3102ms)
+node:fs:483
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'C:\Users\hp\Desktop\project Ai\evidence\part-1b\previous-final-generation-2026-11-13\specs\002-natural-language-reminder-agent\contracts\agent-output.schema.json'
+    at Object.readFileSync (node:fs:483:20)
+    at file:///C:/Users/hp/Desktop/project%20Ai/evidence/part-1b/previous-final-generation-2026-11-13/source/harness/schema-validator.mjs:5:28
+    at ModuleJob.run (node:internal/modules/esm/module_job:561:25)
+    at async node:internal/modules/esm/loader:647:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\hp\\Desktop\\project Ai\\evidence\\part-1b\\previous-final-generation-2026-11-13\\specs\\002-natural-language-reminder-agent\\contracts\\agent-output.schema.json'
+}
+
+Node.js v24.22.3
+✖ evidence\part-1b\previous-final-generation-2026-11-13\source\tests\unit\schema-validator.test.mjs (205.2659ms)
+✔ weights criteria and compares timestamp instants (2.3763ms)
+✔ supports N/A and concept-based question scoring (0.6324ms)
+✔ requires explicit RFC3339 offset (5.3223ms)
+✔ detects unique, gap, and overlap (108.7796ms)
+✔ returns zone offset (0.8491ms)
+✔ a missing file initializes the empty versioned document (16.8024ms)
+▶ startup rejects unsupported or malformed persisted documents
+  ✔ unsupported version (27.5501ms)
+  ✔ unknown envelope field (31.2216ms)
+  ✔ non-monotonic nextId (27.9896ms)
+  ✔ duplicate task IDs (19.6245ms)
+  ✔ invalid task fields (16.5293ms)
+  ✔ untrimmed stored title (13.0673ms)
+  ✔ duplicate normalized tags (12.9707ms)
+✔ startup rejects unsupported or malformed persisted documents (156.9768ms)
+✔ replacing a document persists it and a new store restores the same IDs (18.3688ms)
+✔ a failed atomic replacement preserves the prior file and in-memory snapshot (18.7603ms)
+✔ creation trims title and supplies the approved defaults (6.2979ms)
+✔ creation rejects a blank or overlong title, overlong notes, and missing priority (2.1455ms)
+✔ IDs increase and are not reused after deletion, including concurrent creates (1.4022ms)
+✔ updates only supplied mutable fields and rejects unsupported fields (1.5478ms)
+✔ tag filters trim and case-fold values and require every selected tag (2.5522ms)
+✔ priority ordering is now, next, later with ascending ID ties (2.4487ms)
+✔ every permitted status transition persists the target state (3.9318ms)
+✔ every prohibited status transition is rejected without changing stored state (6.4012ms)
+✔ invalid transition status values are request errors (1.1835ms)
+ℹ tests 152
+ℹ suites 0
+ℹ pass 120
+ℹ fail 32
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 6692.0705
+
+✖ failing tests:
+
+test at evidence\part-1b\final-generation\source\tests\provider\harness-process.test.mjs:1:1
+✖ evidence\part-1b\final-generation\source\tests\provider\harness-process.test.mjs (258.1696ms)
+  'test failed'
+
+test at evidence\part-1b\final-generation\source\tests\unit\clarification-agent.test.mjs:1:1
+✖ evidence\part-1b\final-generation\source\tests\unit\clarification-agent.test.mjs (223.5746ms)
+  'test failed'
+
+test at evidence\part-1b\final-generation\source\tests\unit\cli.test.mjs:5:1
+✖ invalid input exits 2 before provider config and prints typed JSON without stack (271.1211ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  1 !== 2
+  
+      at TestContext.<anonymous> (file:///C:/Users/hp/Desktop/project%20Ai/evidence/part-1b/final-generation/source/tests/unit/cli.test.mjs:5:131)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.start (node:internal/test_runner/test:1262:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 1,
+    expected: 2,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at evidence\part-1b\final-generation\source\tests\unit\cli.test.mjs:6:1
+✖ valid request with missing provider config exits 3 safely (240.1167ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  1 !== 3
+  
+      at TestContext.<anonymous> (file:///C:/Users/hp/Desktop/project%20Ai/evidence/part-1b/final-generation/source/tests/unit/cli.test.mjs:6:95)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 1,
+    expected: 3,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at evidence\part-1b\final-generation\source\tests\unit\cli.test.mjs:21:1
+✖ valid provider response exits 0 with one structured JSON output (353.7489ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  1 !== 0
+  
+      at TestContext.<anonymous> (file:///C:/Users/hp/Desktop/project%20Ai/evidence/part-1b/final-generation/source/tests/unit/cli.test.mjs:23:9)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 1,
+    expected: 0,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at evidence\part-1b\final-generation\source\tests\unit\cli.test.mjs:25:1
+✖ invalid model JSON exits 4 with a typed error and no stack (324.5209ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  1 !== 4
+  
+      at TestContext.<anonymous> (file:///C:/Users/hp/Desktop/project%20Ai/evidence/part-1b/final-generation/source/tests/unit/cli.test.mjs:27:9)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 1,
+    expected: 4,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at evidence\part-1b\final-generation\source\tests\unit\cli.test.mjs:29:1
+✖ schema-invalid model output exits 5 with a typed error and no stack (364.721ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  1 !== 5
+  
+      at TestContext.<anonymous> (file:///C:/Users/hp/Desktop/project%20Ai/evidence/part-1b/final-generation/source/tests/unit/cli.test.mjs:31:9)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 1,
+    expected: 5,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at evidence\part-1b\final-generation\source\tests\unit\create-agent.test.mjs:1:1
+✖ evidence\part-1b\final-generation\source\tests\unit\create-agent.test.mjs (273.9159ms)
+  'test failed'
+
+test at evidence\part-1b\final-generation\source\tests\unit\guardrails.test.mjs:1:1
+✖ evidence\part-1b\final-generation\source\tests\unit\guardrails.test.mjs (233.3881ms)
+  'test failed'
+
+test at evidence\part-1b\final-generation\source\tests\unit\input-validation.test.mjs:1:1
+✖ evidence\part-1b\final-generation\source\tests\unit\input-validation.test.mjs (183.4896ms)
+  'test failed'
+
+test at evidence\part-1b\final-generation\source\tests\unit\reminder-agent.test.mjs:1:1
+✖ evidence\part-1b\final-generation\source\tests\unit\reminder-agent.test.mjs (226.7393ms)
+  'test failed'
+
+test at evidence\part-1b\final-generation\source\tests\unit\reschedule-snooze.test.mjs:1:1
+✖ evidence\part-1b\final-generation\source\tests\unit\reschedule-snooze.test.mjs (229.0781ms)
+  'test failed'
+
+test at evidence\part-1b\final-generation\source\tests\unit\schema-validator.test.mjs:1:1
+✖ evidence\part-1b\final-generation\source\tests\unit\schema-validator.test.mjs (207.7235ms)
+  'test failed'
+
+test at evidence\part-1b\initial-generation\source\tests\provider\harness-process.test.mjs:1:1
+✖ evidence\part-1b\initial-generation\source\tests\provider\harness-process.test.mjs (245.505ms)
+  'test failed'
+
+test at evidence\part-1b\initial-generation\source\tests\unit\cli.test.mjs:5:1
+✖ invalid input exits 2 before provider config and prints typed JSON without stack (255.5622ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  1 !== 2
+  
+      at TestContext.<anonymous> (file:///C:/Users/hp/Desktop/project%20Ai/evidence/part-1b/initial-generation/source/tests/unit/cli.test.mjs:5:131)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.start (node:internal/test_runner/test:1262:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 1,
+    expected: 2,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at evidence\part-1b\initial-generation\source\tests\unit\cli.test.mjs:6:1
+✖ valid request with missing provider config exits 3 safely (328.8634ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  1 !== 3
+  
+      at TestContext.<anonymous> (file:///C:/Users/hp/Desktop/project%20Ai/evidence/part-1b/initial-generation/source/tests/unit/cli.test.mjs:6:95)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 1,
+    expected: 3,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at evidence\part-1b\initial-generation\source\tests\unit\input-validation.test.mjs:1:1
+✖ evidence\part-1b\initial-generation\source\tests\unit\input-validation.test.mjs (212.0023ms)
+  'test failed'
+
+test at evidence\part-1b\initial-generation\source\tests\unit\reminder-agent.test.mjs:1:1
+✖ evidence\part-1b\initial-generation\source\tests\unit\reminder-agent.test.mjs (310.4166ms)
+  'test failed'
+
+test at evidence\part-1b\initial-generation\source\tests\unit\schema-validator.test.mjs:1:1
+✖ evidence\part-1b\initial-generation\source\tests\unit\schema-validator.test.mjs (187.0644ms)
+  'test failed'
+
+test at evidence\part-1b\previous-final-generation-2026-11-13\source\tests\provider\harness-process.test.mjs:1:1
+✖ evidence\part-1b\previous-final-generation-2026-11-13\source\tests\provider\harness-process.test.mjs (291.9078ms)
+  'test failed'
+
+test at evidence\part-1b\previous-final-generation-2026-11-13\source\tests\unit\clarification-agent.test.mjs:1:1
+✖ evidence\part-1b\previous-final-generation-2026-11-13\source\tests\unit\clarification-agent.test.mjs (249.6928ms)
+  'test failed'
+
+test at evidence\part-1b\previous-final-generation-2026-11-13\source\tests\unit\cli.test.mjs:5:1
+✖ invalid input exits 2 before provider config and prints typed JSON without stack (319.3879ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  1 !== 2
+  
+      at TestContext.<anonymous> (file:///C:/Users/hp/Desktop/project%20Ai/evidence/part-1b/previous-final-generation-2026-11-13/source/tests/unit/cli.test.mjs:5:131)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.start (node:internal/test_runner/test:1262:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 1,
+    expected: 2,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at evidence\part-1b\previous-final-generation-2026-11-13\source\tests\unit\cli.test.mjs:6:1
+✖ valid request with missing provider config exits 3 safely (258.0786ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  1 !== 3
+  
+      at TestContext.<anonymous> (file:///C:/Users/hp/Desktop/project%20Ai/evidence/part-1b/previous-final-generation-2026-11-13/source/tests/unit/cli.test.mjs:6:95)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 1,
+    expected: 3,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at evidence\part-1b\previous-final-generation-2026-11-13\source\tests\unit\cli.test.mjs:21:1
+✖ valid provider response exits 0 with one structured JSON output (316.6853ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  1 !== 0
+  
+      at TestContext.<anonymous> (file:///C:/Users/hp/Desktop/project%20Ai/evidence/part-1b/previous-final-generation-2026-11-13/source/tests/unit/cli.test.mjs:23:9)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 1,
+    expected: 0,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at evidence\part-1b\previous-final-generation-2026-11-13\source\tests\unit\cli.test.mjs:25:1
+✖ invalid model JSON exits 4 with a typed error and no stack (282.6118ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  1 !== 4
+  
+      at TestContext.<anonymous> (file:///C:/Users/hp/Desktop/project%20Ai/evidence/part-1b/previous-final-generation-2026-11-13/source/tests/unit/cli.test.mjs:27:9)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 1,
+    expected: 4,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at evidence\part-1b\previous-final-generation-2026-11-13\source\tests\unit\cli.test.mjs:29:1
+✖ schema-invalid model output exits 5 with a typed error and no stack (403.4763ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  1 !== 5
+  
+      at TestContext.<anonymous> (file:///C:/Users/hp/Desktop/project%20Ai/evidence/part-1b/previous-final-generation-2026-11-13/source/tests/unit/cli.test.mjs:31:9)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 1,
+    expected: 5,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at evidence\part-1b\previous-final-generation-2026-11-13\source\tests\unit\create-agent.test.mjs:1:1
+✖ evidence\part-1b\previous-final-generation-2026-11-13\source\tests\unit\create-agent.test.mjs (399.905ms)
+  'test failed'
+
+test at evidence\part-1b\previous-final-generation-2026-11-13\source\tests\unit\guardrails.test.mjs:1:1
+✖ evidence\part-1b\previous-final-generation-2026-11-13\source\tests\unit\guardrails.test.mjs (333.3413ms)
+  'test failed'
+
+test at evidence\part-1b\previous-final-generation-2026-11-13\source\tests\unit\input-validation.test.mjs:1:1
+✖ evidence\part-1b\previous-final-generation-2026-11-13\source\tests\unit\input-validation.test.mjs (298.4516ms)
+  'test failed'
+
+test at evidence\part-1b\previous-final-generation-2026-11-13\source\tests\unit\reminder-agent.test.mjs:1:1
+✖ evidence\part-1b\previous-final-generation-2026-11-13\source\tests\unit\reminder-agent.test.mjs (269.6791ms)
+  'test failed'
+
+test at evidence\part-1b\previous-final-generation-2026-11-13\source\tests\unit\reschedule-snooze.test.mjs:1:1
+✖ evidence\part-1b\previous-final-generation-2026-11-13\source\tests\unit\reschedule-snooze.test.mjs (290.3102ms)
+  'test failed'
+
+test at evidence\part-1b\previous-final-generation-2026-11-13\source\tests\unit\schema-validator.test.mjs:1:1
+✖ evidence\part-1b\previous-final-generation-2026-11-13\source\tests\unit\schema-validator.test.mjs (205.2659ms)
+  'test failed'

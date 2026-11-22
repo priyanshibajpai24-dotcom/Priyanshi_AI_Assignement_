@@ -1,0 +1,9 @@
+{
+  "installExitCode": 0,
+  "unitExitCode": 0,
+  "harnessExitCode": 1,
+  "lintExitCode": 0,
+  "passed": false,
+  "startedAtUtc": "2026-11-13T06:13:21.9780412Z",
+  "finishedAtUtc": "2026-11-13T06:13:31.7116388Z"
+}

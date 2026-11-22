@@ -1,0 +1,7 @@
+{
+  "command": "pnpm lint",
+  "exitCode": 1,
+  "passed": false,
+  "startedAtUtc": "2026-11-12T20:17:53.1432355Z",
+  "finishedAtUtc": "2026-11-12T20:17:56.2318097Z"
+}

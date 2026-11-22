@@ -1,0 +1,40 @@
+✔ creation trims title and supplies the approved defaults (2.0394ms)
+✔ creation rejects a blank or overlong title, overlong notes, and missing priority (0.8089ms)
+✔ IDs increase and are not reused after deletion, including concurrent creates (0.5081ms)
+✔ updates only supplied mutable fields and rejects unsupported fields (0.73ms)
+✔ tag filters trim and case-fold values and require every selected tag (1.1198ms)
+✔ priority ordering is now, next, later with ascending ID ties (1.114ms)
+✖ every permitted status transition persists the target state (0.7347ms)
+✖ every prohibited status transition is rejected without changing stored state (1.7973ms)
+✖ invalid transition status values are request errors (0.4137ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 6
+ℹ fail 3
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 124.3308
+
+✖ failing tests:
+
+test at tests\unit\task-service.test.mjs:88:1
+✖ every permitted status transition persists the target state (0.7347ms)
+  TypeError [Error]: service.transitionTaskStatus is not a function
+      at TestContext.<anonymous> (file:///C:/Users/hp/Desktop/project%20Ai/tests/unit/task-service.test.mjs:94:29)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+
+test at tests\unit\task-service.test.mjs:100:1
+✖ every prohibited status transition is rejected without changing stored state (1.7973ms)
+  TypeError [Error]: service.transitionTaskStatus is not a function
+      at TestContext.<anonymous> (file:///C:/Users/hp/Desktop/project%20Ai/tests/unit/task-service.test.mjs:126:36)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+
+test at tests\unit\task-service.test.mjs:135:1
+✖ invalid transition status values are request errors (0.4137ms)
+  TypeError [Error]: service.transitionTaskStatus is not a function
+      at TestContext.<anonymous> (file:///C:/Users/hp/Desktop/project%20Ai/tests/unit/task-service.test.mjs:140:34)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7)

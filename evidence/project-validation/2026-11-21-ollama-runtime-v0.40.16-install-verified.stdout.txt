@@ -1,0 +1,24 @@
+Downloading the pinned Ollama Windows standalone bundle. This is about 1.51 GB.
+Downloaded 4% (62 MiB).
+Downloaded 9% (139 MiB).
+Downloaded 14% (216 MiB).
+Downloaded 19% (293 MiB).
+Downloaded 24% (370 MiB).
+Downloaded 29% (448 MiB).
+Downloaded 34% (525 MiB).
+Downloaded 39% (602 MiB).
+Downloaded 44% (679 MiB).
+Downloaded 49% (756 MiB).
+Downloaded 54% (833 MiB).
+Downloaded 59% (911 MiB).
+Downloaded 64% (988 MiB).
+Downloaded 69% (1065 MiB).
+Downloaded 74% (1142 MiB).
+Downloaded 79% (1219 MiB).
+Downloaded 84% (1296 MiB).
+Downloaded 89% (1374 MiB).
+Downloaded 94% (1451 MiB).
+Downloaded 99% (1528 MiB).
+Downloaded 1618244995 bytes from the pinned official release.
+Checksum verified. Extracting the Ollama runtime into the project-local .tools folder.
+Ollama runtime installed at C:\Users\hp\Desktop\project Ai\.tools\ollama-portable-v0.40.16\ollama.exe.

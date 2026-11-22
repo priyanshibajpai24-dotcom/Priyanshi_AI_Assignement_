@@ -1,0 +1,9 @@
+>>> Downloading Ollama for Windows...
+Exception: C:\Users\hp\Desktop\project Ai\.tools\ollama-install.review.ps1:198
+Line |
+ 198 |          throw "Download failed for ${Url}: $($_.Exception.Message)"
+     |          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | Download failed for https://ollama.com/download/OllamaSetup.exe: Exception calling "GetResponse" with "0"
+     | argument(s): "The SSL connection could not be established, see inner exception."
+
+

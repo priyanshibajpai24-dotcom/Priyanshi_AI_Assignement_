@@ -1,0 +1,17 @@
+✔ creation trims title and supplies the approved defaults (1.8605ms)
+✔ creation rejects a blank or overlong title, overlong notes, and missing priority (0.7087ms)
+✔ IDs increase and are not reused after deletion, including concurrent creates (0.4609ms)
+✔ updates only supplied mutable fields and rejects unsupported fields (0.606ms)
+✔ tag filters trim and case-fold values and require every selected tag (0.6673ms)
+✔ priority ordering is now, next, later with ascending ID ties (0.7042ms)
+✔ every permitted status transition persists the target state (2.5258ms)
+✔ every prohibited status transition is rejected without changing stored state (3.9451ms)
+✔ invalid transition status values are request errors (0.5322ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 136.9452

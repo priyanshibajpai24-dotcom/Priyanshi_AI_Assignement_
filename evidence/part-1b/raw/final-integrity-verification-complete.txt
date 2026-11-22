@@ -1,0 +1,22 @@
+INTEGRITY_STATUS=PASS
+{
+  "initial": {
+    "name": "initial",
+    "manifestFiles": 37,
+    "sourceFiles": 37,
+    "metadataFiles": 37,
+    "mismatches": 0
+  },
+  "final": {
+    "name": "final",
+    "manifestFiles": 41,
+    "sourceFiles": 41,
+    "metadataFiles": 41,
+    "mismatches": 0
+  },
+  "specSha256Matches": true,
+  "datasetSha256Matches": true,
+  "finalRunId": "2026-11-13T22-19-58-858Z",
+  "finalRunDatasetHashMatches": true,
+  "finalRunAppHashMatches": true
+}

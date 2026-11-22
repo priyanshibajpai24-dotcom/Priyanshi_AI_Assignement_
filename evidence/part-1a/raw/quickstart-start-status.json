@@ -1,0 +1,7 @@
+{
+  "command": "pnpm start plus GET/POST/GET smoke checks",
+  "exitCode": 0,
+  "passed": true,
+  "startedAtUtc": "2026-11-13T06:19:07.7323541Z",
+  "finishedAtUtc": "2026-11-13T06:19:08.0815176Z"
+}

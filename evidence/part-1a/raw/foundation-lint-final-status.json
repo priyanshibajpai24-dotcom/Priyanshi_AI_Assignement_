@@ -1,0 +1,6 @@
+{
+  "command": "pnpm lint",
+  "exitCode": 0,
+  "stage": "shared foundation final rerun",
+  "passed": true
+}

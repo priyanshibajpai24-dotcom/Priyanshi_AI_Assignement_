@@ -1,0 +1,16 @@
+$ eslint .
+
+C:\Users\hp\Desktop\project Ai\src\http-api.mjs
+  30:32  error  '_request' is defined but never used  no-unused-vars
+  30:42  error  '_url' is defined but never used      no-unused-vars
+  30:48  error  '_body' is defined but never used     no-unused-vars
+  30:55  error  '_service' is defined but never used  no-unused-vars
+
+C:\Users\hp\Desktop\project Ai\src\json-store.mjs
+  40:24  error  'structuredClone' is not defined  no-undef
+  55:12  error  'structuredClone' is not defined  no-undef
+  62:26  error  'structuredClone' is not defined  no-undef
+
+✖ 7 problems (7 errors, 0 warnings)
+
+[ELIFECYCLE] Command failed with exit code 1.

@@ -1,0 +1,117 @@
+$ node harness/run.mjs
+{
+  "selectedGroup": "ALL",
+  "caseCount": 18,
+  "passedCount": 1,
+  "failedCount": 17,
+  "results": [
+    {
+      "name": "US1 create returns stable ID, queued status, and default fields",
+      "story": "US1",
+      "passed": false,
+      "message": "fetch failed"
+    },
+    {
+      "name": "US1 list and retrieve return stored tasks",
+      "story": "US1",
+      "passed": false,
+      "message": "fetch failed"
+    },
+    {
+      "name": "US1 empty task list returns an empty tasks array",
+      "story": "US1",
+      "passed": false,
+      "message": "fetch failed"
+    },
+    {
+      "name": "US1 partial update preserves omitted fields",
+      "story": "US1",
+      "passed": false,
+      "message": "fetch failed"
+    },
+    {
+      "name": "US1 delete confirms removal and later retrieval returns not found",
+      "story": "US1",
+      "passed": false,
+      "message": "fetch failed"
+    },
+    {
+      "name": "US1 unknown IDs do not change any task",
+      "story": "US1",
+      "passed": false,
+      "message": "fetch failed"
+    },
+    {
+      "name": "US2 accepted tasks and monotonic IDs survive restart",
+      "story": "US2",
+      "passed": false,
+      "message": "fetch failed"
+    },
+    {
+      "name": "US2 malformed persisted JSON fails startup without rewriting it",
+      "story": "US2",
+      "passed": true
+    },
+    {
+      "name": "US2 invalid request variants return 400 and preserve persisted state",
+      "story": "US2",
+      "passed": false,
+      "message": "fetch failed"
+    },
+    {
+      "name": "US2 request bodies above 65,536 bytes return 413 for every HTTP method",
+      "story": "US2",
+      "passed": false,
+      "message": "fetch failed"
+    },
+    {
+      "name": "US2 unknown numeric IDs return 404 and preserve every task",
+      "story": "US2",
+      "passed": false,
+      "message": "fetch failed"
+    },
+    {
+      "name": "US2 failed Windows replacement returns generic STORAGE_ERROR without losing live state",
+      "story": "US2",
+      "passed": false,
+      "message": "fetch failed"
+    },
+    {
+      "name": "US3 tag filters trim, ignore case, combine with AND, and allow no matches",
+      "story": "US3",
+      "passed": false,
+      "message": "fetch failed"
+    },
+    {
+      "name": "US3 listing defaults to ID order and priority sorting uses stable ID ties",
+      "story": "US3",
+      "passed": false,
+      "message": "fetch failed"
+    },
+    {
+      "name": "US3 invalid filter values and sort options return INVALID_REQUEST",
+      "story": "US3",
+      "passed": false,
+      "message": "fetch failed"
+    },
+    {
+      "name": "US3 100-task filtered priority sort completes within one second",
+      "story": "US3",
+      "passed": false,
+      "message": "fetch failed"
+    },
+    {
+      "name": "US4 all allowed and prohibited status edges match the complete transition table",
+      "story": "US4",
+      "passed": false,
+      "message": "fetch failed"
+    },
+    {
+      "name": "US4 invalid status values return 400 and an unknown task returns 404",
+      "story": "US4",
+      "passed": false,
+      "message": "fetch failed"
+    }
+  ]
+}
+[ELIFECYCLE] Command failed with exit code 1.

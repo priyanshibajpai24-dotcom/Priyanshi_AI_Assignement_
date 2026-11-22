@@ -1,0 +1,24 @@
+✔ a missing file initializes the empty versioned document (8.9995ms)
+▶ startup rejects unsupported or malformed persisted documents
+  ✔ unsupported version (10.5677ms)
+  ✔ unknown envelope field (7.2693ms)
+  ✔ non-monotonic nextId (5.7322ms)
+  ✔ duplicate task IDs (4.7946ms)
+  ✔ invalid task fields (6.0187ms)
+  ✔ untrimmed stored title (5.532ms)
+  ✔ duplicate normalized tags (5.2654ms)
+✔ startup rejects unsupported or malformed persisted documents (47.9268ms)
+✔ replacing a document persists it and a new store restores the same IDs (9.3583ms)
+✔ a failed atomic replacement preserves the prior file and in-memory snapshot (8.8692ms)
+✔ creation trims title and supplies the approved defaults (3.3657ms)
+✔ creation rejects a blank or overlong title, overlong notes, and missing priority (1.24ms)
+✔ IDs increase and are not reused after deletion, including concurrent creates (0.6956ms)
+✔ updates only supplied mutable fields and rejects unsupported fields (0.6568ms)
+ℹ tests 15
+ℹ suites 0
+ℹ pass 15
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 203.5104

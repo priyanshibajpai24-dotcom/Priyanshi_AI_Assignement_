@@ -1,0 +1,11 @@
+Tool: Semgrep Community Edition CLI
+Ruleset: p/javascript (Semgrep registry JavaScript ruleset)
+Target: C:\Users\hp\Desktop\project Ai\Part-1B
+Version: 1.185.0
+RPC subprocess failed: semgrep-core exited with code 1.
+semgrep-core rule validation failed (SemgrepError)
+RPC subprocess failed: semgrep-core exited with code 1.
+RPC subprocess failed: semgrep-core exited with code 1.
+RPC subprocess failed: semgrep-core exited with code 1.
+<ERROR: missing output>
+Status: SCAN_ERROR exit=2

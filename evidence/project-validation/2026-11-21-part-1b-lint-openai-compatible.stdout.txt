@@ -1,0 +1,22 @@
+node:fs:2872
+      const stats = binding.lstat(base, true, undefined, true /* throwIfNoEntry */);
+                            ^
+
+Error: EPERM: operation not permitted, lstat 'C:\Users\hp\AppData'
+    at Object.realpathSync (node:fs:2872:29)
+    at ../../../../../setup-pnpm/store/v11/links/@/temp-dir/2.0.0/4198b35b752c049d4a3d393f440171b7cd6505e7cfe07700ea9fdea5db17538a/node_modules/temp-dir/index.js (file:///C:/Program%20Files/WindowsApps/OpenAI.CodexPrimaryRuntime.v26-1119-907-0_26.1119.907.0_x64__3k8sg7r9htsxt/dependencies/node/node_modules/pnpm/dist/pnpm.mjs:138144:22)
+    at __require3 (file:///C:/Program%20Files/WindowsApps/OpenAI.CodexPrimaryRuntime.v26-1119-907-0_26.1119.907.0_x64__3k8sg7r9htsxt/dependencies/node/node_modules/pnpm/dist/pnpm.mjs:24:53)
+    at ../../../../../setup-pnpm/store/v11/links/@/tempy/3.0.0/3d67cef696bf4252940e546ecc39f835e45f7d4463663a59cd65519fd5d12c64/node_modules/tempy/index.js (file:///C:/Program%20Files/WindowsApps/OpenAI.CodexPrimaryRuntime.v26-1119-907-0_26.1119.907.0_x64__3k8sg7r9htsxt/dependencies/node/node_modules/pnpm/dist/pnpm.mjs:138171:31)
+    at __init (file:///C:/Program%20Files/WindowsApps/OpenAI.CodexPrimaryRuntime.v26-1119-907-0_26.1119.907.0_x64__3k8sg7r9htsxt/dependencies/node/node_modules/pnpm/dist/pnpm.mjs:17:58)
+    at ../fetching/binary-fetcher/lib/index.js (file:///C:/Program%20Files/WindowsApps/OpenAI.CodexPrimaryRuntime.v26-1119-907-0_26.1119.907.0_x64__3k8sg7r9htsxt/dependencies/node/node_modules/pnpm/dist/pnpm.mjs:138329:5)
+    at __init (file:///C:/Program%20Files/WindowsApps/OpenAI.CodexPrimaryRuntime.v26-1119-907-0_26.1119.907.0_x64__3k8sg7r9htsxt/dependencies/node/node_modules/pnpm/dist/pnpm.mjs:17:58)
+    at ../installing/client/lib/index.js (file:///C:/Program%20Files/WindowsApps/OpenAI.CodexPrimaryRuntime.v26-1119-907-0_26.1119.907.0_x64__3k8sg7r9htsxt/dependencies/node/node_modules/pnpm/dist/pnpm.mjs:141855:5)
+    at __init (file:///C:/Program%20Files/WindowsApps/OpenAI.CodexPrimaryRuntime.v26-1119-907-0_26.1119.907.0_x64__3k8sg7r9htsxt/dependencies/node/node_modules/pnpm/dist/pnpm.mjs:17:58)
+    at lib/checkForUpdates.js (file:///C:/Program%20Files/WindowsApps/OpenAI.CodexPrimaryRuntime.v26-1119-907-0_26.1119.907.0_x64__3k8sg7r9htsxt/dependencies/node/node_modules/pnpm/dist/pnpm.mjs:142417:5) {
+  errno: -4048,
+  code: 'EPERM',
+  syscall: 'lstat',
+  path: 'C:\\Users\\hp\\AppData'
+}
+
+Node.js v24.22.3

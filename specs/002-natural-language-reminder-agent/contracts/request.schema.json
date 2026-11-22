@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.invalid/reminder-agent/request.schema.json",
+  "title": "Reminder Agent Request",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["requestId", "requestText", "context"],
+  "properties": {
+    "requestId": { "type": "string", "minLength": 1, "maxLength": 64 },
+    "requestText": { "type": "string", "minLength": 1, "maxLength": 4000 },
+    "context": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["referenceNow", "timeZone", "reminders"],
+      "properties": {
+        "referenceNow": { "type": "string", "format": "date-time" },
+        "timeZone": { "type": ["string", "null"], "minLength": 1, "maxLength": 128 },
+        "reminders": {
+          "type": "array",
+          "maxItems": 50,
+          "items": { "$ref": "#/$defs/reminder" }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "reminder": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "title", "dueAt"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1, "maxLength": 64 },
+        "title": { "type": "string", "minLength": 1, "maxLength": 160 },
+        "dueAt": { "type": "string", "format": "date-time" }
+      }
+    }
+  }
+}

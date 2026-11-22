@@ -1,0 +1,5 @@
+{
+  "command": "uvx --python project-local-managed-cpython --from semgrep==1.185.0 semgrep --version",
+  "exitCode": 0,
+  "python": "C:\\Users\\hp\\Desktop\\project Ai\\.tools\\uv-python\\cpython-3.12.16-windows-x86_64-none\\python.exe"
+}

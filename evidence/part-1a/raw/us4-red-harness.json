@@ -1,0 +1,20 @@
+{
+  "selectedGroup": "US4",
+  "caseCount": 2,
+  "passedCount": 0,
+  "failedCount": 2,
+  "results": [
+    {
+      "name": "US4 all allowed and prohibited status edges match the complete transition table",
+      "story": "US4",
+      "passed": false,
+      "message": "queued -> queued rejected status\n\n404 !== 409\n"
+    },
+    {
+      "name": "US4 invalid status values return 400 and an unknown task returns 404",
+      "story": "US4",
+      "passed": false,
+      "message": "Expected values to be strictly equal:\n\n404 !== 400\n"
+    }
+  ]
+}

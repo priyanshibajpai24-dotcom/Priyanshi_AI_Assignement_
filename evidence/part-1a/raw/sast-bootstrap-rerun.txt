@@ -1,0 +1,52 @@
+Downloading semgrep (56.8MiB)
+Downloading pywin32 (9.1MiB)
+ Downloaded pywin32
+ Downloaded semgrep
+warning: Failed to hardlink files; falling back to full copy. This may lead to degraded performance.
+         If the cache and target directories are on different filesystems, hardlinking may not be supported.
+         If this is intentional, set `export UV_LINK_MODE=copy` or use `--link-mode=copy` to suppress this warning.
+Installed 68 packages in 6.48s
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\hp\Desktop\project Ai\.tools\uv-cache\archive-v0\X6kYDZtH6Rxzhfgy\Scripts\pysemgrep.exe\__main__.py", line 10, in <module>
+  File "C:\Users\hp\Desktop\project Ai\.tools\uv-cache\archive-v0\X6kYDZtH6Rxzhfgy\Lib\site-packages\semgrep\console_scripts\pysemgrep.py", line 64, in main
+    sys.exit(semgrep.main.main())
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\Desktop\project Ai\.tools\uv-cache\archive-v0\X6kYDZtH6Rxzhfgy\Lib\site-packages\semgrep\main.py", line 146, in main
+    cli(prog_name="semgrep")
+  File "C:\Users\hp\Desktop\project Ai\.tools\uv-cache\archive-v0\X6kYDZtH6Rxzhfgy\Lib\site-packages\click\core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\Desktop\project Ai\.tools\uv-cache\archive-v0\X6kYDZtH6Rxzhfgy\Lib\site-packages\click\core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\Desktop\project Ai\.tools\uv-cache\archive-v0\X6kYDZtH6Rxzhfgy\Lib\site-packages\click\core.py", line 1967, in invoke
+    super().invoke(ctx)
+  File "C:\Users\hp\Desktop\project Ai\.tools\uv-cache\archive-v0\X6kYDZtH6Rxzhfgy\Lib\site-packages\click\core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\Desktop\project Ai\.tools\uv-cache\archive-v0\X6kYDZtH6Rxzhfgy\Lib\site-packages\click\core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\Desktop\project Ai\.tools\uv-cache\archive-v0\X6kYDZtH6Rxzhfgy\Lib\site-packages\click\decorators.py", line 34, in new_func
+    return f(get_current_context(), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\Desktop\project Ai\.tools\uv-cache\archive-v0\X6kYDZtH6Rxzhfgy\Lib\site-packages\semgrep\cli.py", line 74, in cli
+    state = get_state()
+            ^^^^^^^^^^^
+  File "C:\Users\hp\Desktop\project Ai\.tools\uv-cache\archive-v0\X6kYDZtH6Rxzhfgy\Lib\site-packages\semgrep\state.py", line 170, in get_state
+    return ctx.ensure_object(SemgrepState)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\Desktop\project Ai\.tools\uv-cache\archive-v0\X6kYDZtH6Rxzhfgy\Lib\site-packages\click\core.py", line 754, in ensure_object
+    self.obj = rv = object_type()
+                    ^^^^^^^^^^^^^
+  File "<attrs generated methods semgrep.state.SemgrepState>", line 67, in __init__
+  File "<attrs generated methods semgrep.terminal.Terminal>", line 28, in __init__
+  File "C:\Users\hp\Desktop\project Ai\.tools\uv-cache\archive-v0\X6kYDZtH6Rxzhfgy\Lib\site-packages\semgrep\terminal.py", line 39, in __attrs_post_init__
+    self.configure()
+  File "C:\Users\hp\Desktop\project Ai\.tools\uv-cache\archive-v0\X6kYDZtH6Rxzhfgy\Lib\site-packages\semgrep\terminal.py", line 92, in configure
+    env.user_log_file.parent.mkdir(parents=True, exist_ok=True)
+  File "C:\Program Files\WindowsApps\OpenAI.CodexPrimaryRuntime.v26-1110-973-0_26.1110.973.0_x64__3k8sg7r9htsxt\dependencies\python\Lib\pathlib.py", line 1311, in mkdir
+    os.mkdir(self, mode)
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\hp\\.semgrep'

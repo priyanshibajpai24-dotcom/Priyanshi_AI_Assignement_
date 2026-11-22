@@ -1,0 +1,2 @@
+import test from 'node:test'; import assert from 'node:assert/strict'; import { aggregateResults } from '../../harness/aggregate.mjs';
+test('applies fixed threshold and stable outcomes',()=>{const x={schemaValid:true,invariantsValid:true,guardrailViolations:0,providerError:false,semanticApplicable:true,semanticScore:1};assert.equal(aggregateResults([x]).status,'PASS');assert.equal(aggregateResults([{...x,semanticScore:.5}]).status,'FAIL');assert.equal(aggregateResults([{...x,providerError:true}]).status,'INCONCLUSIVE');});

@@ -1,0 +1,14 @@
+{
+  "capturedAt": "2026-11-13T22:43:16.393Z",
+  "description": "Final Part 1B source generation after repair and validation. No API credentials are included.",
+  "sourceFiles": 41,
+  "specSha256": "9bd2e2e21bb8a795966c7cf2670b18afc7f319215146d186a19fbcadd7e236f9",
+  "datasetSha256": "68f6320fb9bd120d5d8382409ad64e9583855eadfe2a80a2bfa176ae86a2f519",
+  "finalEvaluationRunId": "2026-11-13T22-42-55-753Z",
+  "limitations": [
+    "pnpm lockfile generation and frozen install blocked by Windows EPERM while creating its project registry symlink; no lockfile was fabricated",
+    "Ajv, ajv-formats, and Temporal polyfill were unavailable because dependency installation was blocked; host checks exercised local contract and Intl fallbacks",
+    "live evaluation INCONCLUSIVE: required provider environment variables were unset; 18 model cases skipped and 2 deterministic input cases checked",
+    "Semgrep CE 1.185.0 CLI ran with p/javascript, but semgrep-core failed rule validation (exit 2); no findings report was produced"
+  ]
+}

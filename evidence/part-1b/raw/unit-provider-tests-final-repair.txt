@@ -1,0 +1,200 @@
+$ node --test
+✖ uses CLI child boundary and rejects malformed input without provider call (1508.8159ms)
+✔ labels provider outage INCONCLUSIVE (606.4567ms)
+✖ constructs endpoint and sends Chat Completions JSON mode without tools (76.844ms)
+✖ classifies timeout, rate limit, server error, malformed body, and missing content safely (17.5354ms)
+✖ rejects oversized model content with a bounded provider error (25.718ms)
+✔ applies all fixed thresholds and stable outcomes (2.1031ms)
+✔ clarifies missing and ambiguous mandatory information without proposals (6.3692ms)
+✔ clarifies daylight-saving gap and overlap rather than accepting ambiguous walls (1.4436ms)
+✔ invalid input exits 2 before provider config and prints typed JSON without stack (965.031ms)
+✔ valid request with missing provider config exits 3 safely (623.2851ms)
+✖ valid provider response exits 0 with one structured JSON output (532.7589ms)
+✖ invalid model JSON exits 4 with a typed error and no stack (611.5996ms)
+✖ schema-invalid model output exits 5 with a typed error and no stack (529.5913ms)
+✔ requires settings (7.3145ms)
+✔ bounds timeout and redacts endpoint secrets (0.7357ms)
+✔ creates one grounded future proposal without invoking an action tool (11.6288ms)
+✔ accepts a fixed-context relative-time proposal at the expected offset instant (1.6305ms)
+✔ keeps malicious request and reminder context inside untrusted user data (2.2182ms)
+✔ accepts unsupported-action response only with no proposal or intent (4.3036ms)
+✔ treats calls and notifications as unsupported actions (0.6303ms)
+✔ accepts valid and rejects unknown fields (5.7383ms)
+✔ enforces request, reminder, timestamp, timezone, uniqueness, and byte bounds (2.9604ms)
+✔ accepts grounded future proposal (53.3036ms)
+✔ rejects past due, missing target, and ungrounded evidence (3.9152ms)
+✔ checks later-of-now-or-due snooze arithmetic independently (2.3729ms)
+✔ rejects a dueAt offset inconsistent with the supplied IANA zone (5.6205ms)
+✔ rejects proposal-bearing clarification or unsupported decisions (2.9831ms)
+✔ requires a target ID to identify exactly one context reminder (1.1712ms)
+✔ uses separate system policy and untrusted JSON input (6.5254ms)
+✔ creates a grounded proposal through one injected provider call (10.3055ms)
+✔ preserves clarification and unsupported decisions without proposals (1.1537ms)
+✔ asks for a valid future time when the requested time is past (0.4676ms)
+✔ reschedules one supplied reminder and refuses unknown target IDs (2.5908ms)
+✔ enforces exact snooze duration from later existing due time or now (3.5532ms)
+✔ rejects malformed JSON and schema or invariant violations with distinct codes (0.8304ms)
+✔ uses a single positive duration from the later of reminder time and reference time (8.534ms)
+✔ rejects negative, zero, and multiple snooze durations (4.4023ms)
+✔ reschedules one uniquely identified reminder to an explicit future time (1.1727ms)
+✔ clarifies when the requested target is absent and rejects a duplicated target ID (1.3307ms)
+✔ snoozes across midnight from the later reminder time (1.1774ms)
+✔ accepts contract output and rejects extra fields, mismatch, bad types, enum, and timestamp (6.1867ms)
+✔ weights criteria and compares timestamp instants (1.9644ms)
+✔ supports N/A and concept-based question scoring (0.6251ms)
+✔ requires explicit RFC3339 offset (2.7041ms)
+✔ detects unique, gap, and overlap (59.7326ms)
+✔ returns zone offset (1.0129ms)
+ℹ tests 46
+ℹ suites 0
+ℹ pass 39
+ℹ fail 7
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3604.5492
+
+✖ failing tests:
+
+test at tests\provider\harness-process.test.mjs:5:1
+✖ uses CLI child boundary and rejects malformed input without provider call (1508.8159ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  false !== true
+  
+      at TestContext.<anonymous> (file:///C:/Users/hp/Desktop/project%20Ai/Part-1B/tests/provider/harness-process.test.mjs:5:893)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests\provider\provider-protocol.test.mjs:4:1
+✖ constructs endpoint and sends Chat Completions JSON mode without tools (76.844ms)
+  Error [AgentError]: Model provider request failed before a response was received.
+      at requestCompletion (file:///C:/Users/hp/Desktop/project%20Ai/Part-1B/src/provider.mjs:30:11)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async TestContext.<anonymous> (file:///C:/Users/hp/Desktop/project%20Ai/Part-1B/tests/provider/provider-protocol.test.mjs:4:399)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    code: 'PROVIDER_NETWORK_ERROR',
+    exitCode: 3,
+    details: undefined
+  }
+
+test at tests\provider\provider-protocol.test.mjs:5:1
+✖ classifies timeout, rate limit, server error, malformed body, and missing content safely (17.5354ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+    Comparison {
+  +   code: 'PROVIDER_NETWORK_ERROR'
+  -   code: 'PROVIDER_TIMEOUT'
+    }
+  
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async TestContext.<anonymous> (file:///C:/Users/hp/Desktop/project%20Ai/Part-1B/tests/provider/provider-protocol.test.mjs:5:185)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: AgentError: Model provider request failed before a response was received.
+        at requestCompletion (file:///C:/Users/hp/Desktop/project%20Ai/Part-1B/src/provider.mjs:30:11)
+        at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+        at async waitForActual (node:assert:646:5)
+        at async strict.rejects (node:assert:769:25)
+        at async TestContext.<anonymous> (file:///C:/Users/hp/Desktop/project%20Ai/Part-1B/tests/provider/provider-protocol.test.mjs:5:185)
+        at async Test.run (node:internal/test_runner/test:1409:7)
+        at async Test.processPendingSubtests (node:internal/test_runner/test:974:7),
+    expected: { code: 'PROVIDER_TIMEOUT' },
+    operator: 'rejects',
+    diff: 'simple'
+  }
+
+test at tests\provider\provider-protocol.test.mjs:6:1
+✖ rejects oversized model content with a bounded provider error (25.718ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+    Comparison {
+  +   code: 'PROVIDER_NETWORK_ERROR'
+  -   code: 'PROVIDER_INVALID_RESPONSE'
+    }
+  
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async TestContext.<anonymous> (file:///C:/Users/hp/Desktop/project%20Ai/Part-1B/tests/provider/provider-protocol.test.mjs:9:2)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: AgentError: Model provider request failed before a response was received.
+        at requestCompletion (file:///C:/Users/hp/Desktop/project%20Ai/Part-1B/src/provider.mjs:30:11)
+        at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+        at async waitForActual (node:assert:646:5)
+        at async strict.rejects (node:assert:769:25)
+        at async TestContext.<anonymous> (file:///C:/Users/hp/Desktop/project%20Ai/Part-1B/tests/provider/provider-protocol.test.mjs:9:2)
+        at async Test.run (node:internal/test_runner/test:1409:7)
+        at async Test.processPendingSubtests (node:internal/test_runner/test:974:7),
+    expected: { code: 'PROVIDER_INVALID_RESPONSE' },
+    operator: 'rejects',
+    diff: 'simple'
+  }
+
+test at tests\unit\cli.test.mjs:21:1
+✖ valid provider response exits 0 with one structured JSON output (532.7589ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  3 !== 0
+  
+      at TestContext.<anonymous> (file:///C:/Users/hp/Desktop/project%20Ai/Part-1B/tests/unit/cli.test.mjs:23:9)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 3,
+    expected: 0,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests\unit\cli.test.mjs:25:1
+✖ invalid model JSON exits 4 with a typed error and no stack (611.5996ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  3 !== 4
+  
+      at TestContext.<anonymous> (file:///C:/Users/hp/Desktop/project%20Ai/Part-1B/tests/unit/cli.test.mjs:27:9)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 3,
+    expected: 4,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests\unit\cli.test.mjs:29:1
+✖ schema-invalid model output exits 5 with a typed error and no stack (529.5913ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  3 !== 5
+  
+      at TestContext.<anonymous> (file:///C:/Users/hp/Desktop/project%20Ai/Part-1B/tests/unit/cli.test.mjs:31:9)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 3,
+    expected: 5,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+[ELIFECYCLE] Test failed. See above for more details.

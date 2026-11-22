@@ -1,0 +1,3 @@
+STATUS=PASS
+Both generation manifests match all archived files. Current spec and dataset hashes match both archive metadata and final run dataset hash.
+Part-1B dependency isolation: no import from Part-1A application source detected.

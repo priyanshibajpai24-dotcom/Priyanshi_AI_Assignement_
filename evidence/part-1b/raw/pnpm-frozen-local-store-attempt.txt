@@ -1,0 +1,27 @@
+? Verifying lockfile against supply-chain policies (87 entries)...
+Lockfile is up to date, resolution step is skipped
+Packages: +87
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 0, reused 0, downloaded 1, added 0
+Packages are hard linked from the content-addressable store to the virtual store.
+  Content-addressable store is at: C:\Users\hp\Desktop\project Ai\Part-1B\.pnpm-store\v11
+  Virtual store is at:             node_modules/.pnpm
+
+   ╭────────────────────────────────────────────────────────────────────────╮
+   │                                                                        │
+   │                  Update available! 11.25.0 → 12.21.0.                  │
+   │                  Changelog: https://pnpm.io/v/12.21.0                  │
+   │   To update, run: Invoke-WebRequest https://get.pnpm.io/install.ps1    │
+   │                 -UseBasicParsing | Invoke-Expression                   │
+   │                                                                        │
+   ╰────────────────────────────────────────────────────────────────────────╯
+
+Progress: resolved 0, reused 0, downloaded 77, added 14
+✓ Lockfile passes supply-chain policies (87 entries in 2s)
+Progress: resolved 0, reused 0, downloaded 86, added 81
+Progress: resolved 0, reused 0, downloaded 87, added 82
+Progress: resolved 0, reused 0, downloaded 87, added 85
+Progress: resolved 0, reused 0, downloaded 87, added 87
+Progress: resolved 0, reused 0, downloaded 87, added 87, done
+
+Done in 8.8s using pnpm v11.25.0

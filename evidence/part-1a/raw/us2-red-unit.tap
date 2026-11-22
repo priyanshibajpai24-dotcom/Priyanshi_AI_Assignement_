@@ -1,0 +1,145 @@
+✔ a missing file initializes the empty versioned document (7.2733ms)
+▶ startup rejects unsupported or malformed persisted documents
+  ✔ unsupported version (25.4061ms)
+  ✖ unknown envelope field (25.3762ms)
+  ✖ non-monotonic nextId (69.0143ms)
+  ✖ duplicate task IDs (28.0706ms)
+  ✖ invalid task fields (26.9103ms)
+  ✖ untrimmed stored title (30.6614ms)
+  ✖ duplicate normalized tags (27.5604ms)
+✖ startup rejects unsupported or malformed persisted documents (237.6815ms)
+✔ replacing a document persists it and a new store restores the same IDs (24.7732ms)
+✖ a failed atomic replacement preserves the prior file and in-memory snapshot (8.2934ms)
+ℹ tests 11
+ℹ suites 0
+ℹ pass 3
+ℹ fail 8
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 475.0047
+
+✖ failing tests:
+
+test at tests\unit\json-store.test.mjs:43:13
+✖ unknown envelope field (25.3762ms)
+  AssertionError [ERR_ASSERTION]: Missing expected rejection.
+      at async file:///C:/Users/hp/Desktop/project%20Ai/tests/unit/json-store.test.mjs:49:9
+      at async withTemporaryDataDirectory (file:///C:/Users/hp/Desktop/project%20Ai/tests/helpers/temp-data.mjs:16:12)
+      at async TestContext.<anonymous> (file:///C:/Users/hp/Desktop/project%20Ai/tests/unit/json-store.test.mjs:44:7)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async TestContext.<anonymous> (file:///C:/Users/hp/Desktop/project%20Ai/tests/unit/json-store.test.mjs:43:5)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: undefined,
+    operator: 'rejects',
+    diff: 'simple'
+  }
+
+test at tests\unit\json-store.test.mjs:43:13
+✖ non-monotonic nextId (69.0143ms)
+  AssertionError [ERR_ASSERTION]: Missing expected rejection.
+      at async file:///C:/Users/hp/Desktop/project%20Ai/tests/unit/json-store.test.mjs:49:9
+      at async withTemporaryDataDirectory (file:///C:/Users/hp/Desktop/project%20Ai/tests/helpers/temp-data.mjs:16:12)
+      at async TestContext.<anonymous> (file:///C:/Users/hp/Desktop/project%20Ai/tests/unit/json-store.test.mjs:44:7)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async TestContext.<anonymous> (file:///C:/Users/hp/Desktop/project%20Ai/tests/unit/json-store.test.mjs:43:5)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: undefined,
+    operator: 'rejects',
+    diff: 'simple'
+  }
+
+test at tests\unit\json-store.test.mjs:43:13
+✖ duplicate task IDs (28.0706ms)
+  AssertionError [ERR_ASSERTION]: Missing expected rejection.
+      at async file:///C:/Users/hp/Desktop/project%20Ai/tests/unit/json-store.test.mjs:49:9
+      at async withTemporaryDataDirectory (file:///C:/Users/hp/Desktop/project%20Ai/tests/helpers/temp-data.mjs:16:12)
+      at async TestContext.<anonymous> (file:///C:/Users/hp/Desktop/project%20Ai/tests/unit/json-store.test.mjs:44:7)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async TestContext.<anonymous> (file:///C:/Users/hp/Desktop/project%20Ai/tests/unit/json-store.test.mjs:43:5)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: undefined,
+    operator: 'rejects',
+    diff: 'simple'
+  }
+
+test at tests\unit\json-store.test.mjs:43:13
+✖ invalid task fields (26.9103ms)
+  AssertionError [ERR_ASSERTION]: Missing expected rejection.
+      at async file:///C:/Users/hp/Desktop/project%20Ai/tests/unit/json-store.test.mjs:49:9
+      at async withTemporaryDataDirectory (file:///C:/Users/hp/Desktop/project%20Ai/tests/helpers/temp-data.mjs:16:12)
+      at async TestContext.<anonymous> (file:///C:/Users/hp/Desktop/project%20Ai/tests/unit/json-store.test.mjs:44:7)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async TestContext.<anonymous> (file:///C:/Users/hp/Desktop/project%20Ai/tests/unit/json-store.test.mjs:43:5)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: undefined,
+    operator: 'rejects',
+    diff: 'simple'
+  }
+
+test at tests\unit\json-store.test.mjs:43:13
+✖ untrimmed stored title (30.6614ms)
+  AssertionError [ERR_ASSERTION]: Missing expected rejection.
+      at async file:///C:/Users/hp/Desktop/project%20Ai/tests/unit/json-store.test.mjs:49:9
+      at async withTemporaryDataDirectory (file:///C:/Users/hp/Desktop/project%20Ai/tests/helpers/temp-data.mjs:16:12)
+      at async TestContext.<anonymous> (file:///C:/Users/hp/Desktop/project%20Ai/tests/unit/json-store.test.mjs:44:7)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async TestContext.<anonymous> (file:///C:/Users/hp/Desktop/project%20Ai/tests/unit/json-store.test.mjs:43:5)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: undefined,
+    operator: 'rejects',
+    diff: 'simple'
+  }
+
+test at tests\unit\json-store.test.mjs:43:13
+✖ duplicate normalized tags (27.5604ms)
+  AssertionError [ERR_ASSERTION]: Missing expected rejection.
+      at async file:///C:/Users/hp/Desktop/project%20Ai/tests/unit/json-store.test.mjs:49:9
+      at async withTemporaryDataDirectory (file:///C:/Users/hp/Desktop/project%20Ai/tests/helpers/temp-data.mjs:16:12)
+      at async TestContext.<anonymous> (file:///C:/Users/hp/Desktop/project%20Ai/tests/unit/json-store.test.mjs:44:7)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async TestContext.<anonymous> (file:///C:/Users/hp/Desktop/project%20Ai/tests/unit/json-store.test.mjs:43:5)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: undefined,
+    operator: 'rejects',
+    diff: 'simple'
+  }
+
+test at tests\unit\json-store.test.mjs:69:1
+✖ a failed atomic replacement preserves the prior file and in-memory snapshot (8.2934ms)
+  AssertionError [ERR_ASSERTION]: Missing expected rejection.
+      at async file:///C:/Users/hp/Desktop/project%20Ai/tests/unit/json-store.test.mjs:86:5
+      at async withTemporaryDataDirectory (file:///C:/Users/hp/Desktop/project%20Ai/tests/helpers/temp-data.mjs:16:12)
+      at async TestContext.<anonymous> (file:///C:/Users/hp/Desktop/project%20Ai/tests/unit/json-store.test.mjs:70:3)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    operator: 'rejects',
+    diff: 'simple'
+  }

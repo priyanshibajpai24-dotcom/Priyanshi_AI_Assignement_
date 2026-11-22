@@ -1,0 +1,33 @@
+{
+  "selectedGroup": "US3",
+  "caseCount": 4,
+  "passedCount": 4,
+  "failedCount": 0,
+  "results": [
+    {
+      "name": "US3 tag filters trim, ignore case, combine with AND, and allow no matches",
+      "story": "US3",
+      "passed": true
+    },
+    {
+      "name": "US3 listing defaults to ID order and priority sorting uses stable ID ties",
+      "story": "US3",
+      "passed": true
+    },
+    {
+      "name": "US3 invalid filter values and sort options return INVALID_REQUEST",
+      "story": "US3",
+      "passed": true
+    },
+    {
+      "name": "US3 100-task filtered priority sort completes within one second",
+      "story": "US3",
+      "passed": true,
+      "details": {
+        "elapsedMs": 1.91,
+        "taskCount": 100,
+        "resultCount": 20
+      }
+    }
+  ]
+}

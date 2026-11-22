@@ -1,0 +1,16 @@
+﻿uvx.exe :                
+At C:\Users\hp\Desktop\project Ai\scripts\run-sast.ps1:122 char:21
++     $dumpOutput = @(& $uvx @dumpArguments 2>&1)
++                     ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (               :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+               
+┌─────────────┐
+│ Scan Status │
+└─────────────┘
+  Scanning 6 files tracked by git with 74 Code rules:
+  Scanning 6 files with 68 js rules.
+RPC subprocess failed: semgrep-core exited with code 1.
+C:\Users\hp\Desktop\project Ai\.tools\uv-cache\archive-v0\VpKMO-zsS424tJVJ\Lib\site-packages\semgrep\bin\semgrep-core.exe -json -rules C:\Users\hp\Desktop\project Ai\.tools\semgrep-config\.semgrep\semgrep_rules_0.json -use_parmap -j 1 -targets C:\Users\hp\Desktop\project Ai\.tools\semgrep-config\.semgrep\semgrep_targets.txt -timeout 5 -timeout_threshold 3 -max_memory 0 -fast
+

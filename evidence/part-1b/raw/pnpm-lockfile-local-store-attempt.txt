@@ -1,0 +1,22 @@
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Progress: resolved 4, reused 0, downloaded 0, added 0
+
+   ╭────────────────────────────────────────────────────────────────────────╮
+   │                                                                        │
+   │                  Update available! 11.25.0 → 12.21.0.                  │
+   │                  Changelog: https://pnpm.io/v/12.21.0                  │
+   │   To update, run: Invoke-WebRequest https://get.pnpm.io/install.ps1    │
+   │                 -UseBasicParsing | Invoke-Expression                   │
+   │                                                                        │
+   ╰────────────────────────────────────────────────────────────────────────╯
+
+Progress: resolved 29, reused 0, downloaded 0, added 0
+Progress: resolved 36, reused 0, downloaded 0, added 0
+Progress: resolved 61, reused 0, downloaded 0, added 0
+Progress: resolved 67, reused 0, downloaded 0, added 0
+Progress: resolved 75, reused 0, downloaded 0, added 0
+Progress: resolved 81, reused 0, downloaded 0, added 0
+Progress: resolved 85, reused 0, downloaded 0, added 0
+Progress: resolved 87, reused 0, downloaded 0, added 0
+
+Done in 10.7s using pnpm v11.25.0

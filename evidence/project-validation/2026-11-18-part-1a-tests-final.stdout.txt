@@ -1,0 +1,30 @@
+$ node --test tests/unit/json-store.test.mjs tests/unit/task-service.test.mjs
+✔ a missing file initializes the empty versioned document (8.2417ms)
+▶ startup rejects unsupported or malformed persisted documents
+  ✔ unsupported version (9.9213ms)
+  ✔ unknown envelope field (6.9789ms)
+  ✔ non-monotonic nextId (7.4814ms)
+  ✔ duplicate task IDs (6.3949ms)
+  ✔ invalid task fields (6.3612ms)
+  ✔ untrimmed stored title (5.233ms)
+  ✔ duplicate normalized tags (5.0807ms)
+✔ startup rejects unsupported or malformed persisted documents (50.1397ms)
+✔ replacing a document persists it and a new store restores the same IDs (8.3471ms)
+✔ a failed atomic replacement preserves the prior file and in-memory snapshot (8.4775ms)
+✔ creation trims title and supplies the approved defaults (4.0524ms)
+✔ creation rejects a blank or overlong title, overlong notes, and missing priority (1.0304ms)
+✔ IDs increase and are not reused after deletion, including concurrent creates (0.6754ms)
+✔ updates only supplied mutable fields and rejects unsupported fields (0.7345ms)
+✔ tag filters trim and case-fold values and require every selected tag (0.7725ms)
+✔ priority ordering is now, next, later with ascending ID ties (0.6772ms)
+✔ every permitted status transition persists the target state (2.4145ms)
+✔ every prohibited status transition is rejected without changing stored state (2.9194ms)
+✔ invalid transition status values are request errors (0.5231ms)
+ℹ tests 20
+ℹ suites 0
+ℹ pass 20
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 202.3487

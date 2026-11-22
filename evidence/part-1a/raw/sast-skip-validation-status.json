@@ -1,0 +1,4 @@
+{
+  "command": "semgrep scan --config p/javascript --x-rule-validation=none --metrics=off --json --output evidence/part-1a/raw/sast-skip-validation.json src",
+  "exitCode": 2
+}

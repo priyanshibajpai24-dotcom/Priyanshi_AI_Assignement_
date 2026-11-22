@@ -1,0 +1,9 @@
+$ powershell -NoProfile -ExecutionPolicy Bypass -File scripts/start-client-demo.ps1
+Start-Process : This command cannot be run due to the error: Access is denied.
+At C:\Users\hp\Desktop\project Ai\scripts\start-client-demo.ps1:75 char:1
++ Start-Process "http://127.0.0.1:$port/tasks?sort=priority"
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Start-Process], InvalidOperationException
+    + FullyQualifiedErrorId : InvalidOperationException,Microsoft.PowerShell.Commands.StartProcessCommand
+ 
+[ELIFECYCLE] Command failed with exit code 1.

@@ -1,0 +1,11 @@
+﻿{
+    "command":  "Semgrep Core 1.185.0 -json_nodots with rules from p/javascript and explicit src/*.mjs targets",
+    "exitCode":  0,
+    "cliJsonExitCode":  2,
+    "coreExitCode":  0,
+    "findingCount":  0,
+    "errorCount":  0,
+    "passed":  true,
+    "executionMode":  "Semgrep Core 1.185.0 standalone JSON fallback",
+    "parseError":  null
+}

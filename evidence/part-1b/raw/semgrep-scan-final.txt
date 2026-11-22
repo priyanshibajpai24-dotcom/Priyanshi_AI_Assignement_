@@ -1,0 +1,6 @@
+Tool: Semgrep Community Edition CLI
+Ruleset: auto (Semgrep managed default ruleset)
+Target: C:\Users\hp\Desktop\project Ai\Part-1B
+Version: 1.185.0
+[00.16][ERROR]: Cannot create auto config when metrics are off. Please allow metrics or run with a specific config.
+Status: SCAN_ERROR exit=2

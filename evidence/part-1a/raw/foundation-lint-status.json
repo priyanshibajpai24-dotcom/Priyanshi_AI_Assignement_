@@ -1,0 +1,6 @@
+{
+  "command": "pnpm lint",
+  "exitCode": 1,
+  "stage": "shared foundation",
+  "passed": false
+}

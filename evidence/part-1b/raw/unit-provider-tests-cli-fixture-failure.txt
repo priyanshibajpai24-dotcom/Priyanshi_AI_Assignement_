@@ -1,0 +1,66 @@
+✔ uses CLI child boundary and rejects malformed input without provider call (1085.6727ms)
+✔ labels provider outage INCONCLUSIVE (491.9265ms)
+✔ constructs endpoint and sends Chat Completions JSON mode without tools (159.9992ms)
+✔ classifies timeout, rate limit, server error, malformed body, and missing content safely (117.0734ms)
+✔ rejects oversized model content with a bounded provider error (22.6081ms)
+✔ applies all fixed thresholds and stable outcomes (4.6656ms)
+✔ clarifies missing and ambiguous mandatory information without proposals (7.0795ms)
+✔ clarifies daylight-saving gap and overlap rather than accepting ambiguous walls (1.3158ms)
+✔ invalid input exits 2 before provider config and prints typed JSON without stack (289.2522ms)
+✔ valid request with missing provider config exits 3 safely (377.102ms)
+✖ valid provider response exits 0 with one structured JSON output (544.0329ms)
+✔ invalid model JSON exits 4 with a typed error and no stack (509.9349ms)
+✔ schema-invalid model output exits 5 with a typed error and no stack (473.2658ms)
+✔ requires settings (5.7373ms)
+✔ bounds timeout and redacts endpoint secrets (1.562ms)
+✔ creates one grounded future proposal without invoking an action tool (96.293ms)
+✔ keeps malicious request and reminder context inside untrusted user data (4.2412ms)
+✔ accepts unsupported-action response only with no proposal or intent (2.8177ms)
+✔ accepts valid and rejects unknown fields (75.2093ms)
+✔ enforces request, reminder, timestamp, timezone, uniqueness, and byte bounds (5.4526ms)
+✔ accepts grounded future proposal (84.934ms)
+✔ rejects past due, missing target, and ungrounded evidence (6.3218ms)
+✔ checks later-of-now-or-due snooze arithmetic independently (5.2085ms)
+✔ uses separate system policy and untrusted JSON input (8.0647ms)
+✔ creates a grounded proposal through one injected provider call (87.9223ms)
+✔ preserves clarification and unsupported decisions without proposals (1.2755ms)
+✔ asks for a valid future time when the requested time is past (0.7269ms)
+✔ reschedules one supplied reminder and refuses unknown target IDs (5.4886ms)
+✔ enforces exact snooze duration from later existing due time or now (5.2355ms)
+✔ rejects malformed JSON and schema or invariant violations with distinct codes (4.0302ms)
+✔ uses a single positive duration from the later of reminder time and reference time (69.9728ms)
+✔ rejects negative, zero, and multiple snooze durations (6.5459ms)
+✔ accepts contract output and rejects extra fields, mismatch, bad types, enum, and timestamp (9.2556ms)
+✔ weights criteria and compares timestamp instants (2.099ms)
+✔ supports N/A and concept-based question scoring (0.4707ms)
+✔ requires explicit RFC3339 offset (9.5577ms)
+✔ detects unique, gap, and overlap (103.6827ms)
+✔ returns zone offset (0.8118ms)
+ℹ tests 38
+ℹ suites 0
+ℹ pass 37
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2756.03
+
+✖ failing tests:
+
+test at tests\unit\cli.test.mjs:21:1
+✖ valid provider response exits 0 with one structured JSON output (544.0329ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  5 !== 0
+  
+      at TestContext.<anonymous> (file:///C:/Users/hp/Desktop/project%20Ai/Part-1B/tests/unit/cli.test.mjs:23:9)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 5,
+    expected: 0,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

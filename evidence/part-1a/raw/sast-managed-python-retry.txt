@@ -1,0 +1,4 @@
+Downloading cpython-3.12.16-windows-x86_64-none (download) (21.3MiB)
+ Downloaded cpython-3.12.16-windows-x86_64-none (download)
+error: Failed to create Python minor version link directory
+  cause: Access is denied. (os error 5)

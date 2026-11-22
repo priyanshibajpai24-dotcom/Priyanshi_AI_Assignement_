@@ -1,0 +1,4 @@
+Command: wsl --list --quiet
+Access is denied. 
+
+Error code: Wsl/E_ACCESSDENIED

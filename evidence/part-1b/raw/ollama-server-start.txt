@@ -1,0 +1,5 @@
+Command: local Ollama standalone CLI serve
+Host: 127.0.0.1:11434
+Model directory: .tools/ollama-local/models
+User profile: .tools/ollama-local/home
+Process ID: 5468

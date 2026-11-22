@@ -1,0 +1,1 @@
+Initial lint check failed on two no-undef reports for Node's global performance API in harness/cases.mjs, used only to time the approved SC-004 request. The harness behavior and 1,000 ms threshold were unchanged. Repair: declare performance as a read-only Node global in eslint.config.mjs. The rerun is captured in lint.txt and lint-status.json.

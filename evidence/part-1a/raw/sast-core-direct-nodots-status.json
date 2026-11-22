@@ -1,0 +1,7 @@
+{
+  "command": "Semgrep core 1.185.0 -json_nodots -rules local-generated-rules -use_parmap -j 1 -targets local-generated-targets -timeout 5 -timeout_threshold 3 -max_memory 0 -fast",
+  "exitCode": 0,
+  "findingCount": 0,
+  "errorCount": 0,
+  "parseError": null
+}

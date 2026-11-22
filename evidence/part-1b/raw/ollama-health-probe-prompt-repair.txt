@@ -1,0 +1,3 @@
+http://127.0.0.1:11434/ error=HttpRequestException
+http://127.0.0.1:11434/api/version error=HttpRequestException
+http://127.0.0.1:11434/api/tags error=HttpRequestException

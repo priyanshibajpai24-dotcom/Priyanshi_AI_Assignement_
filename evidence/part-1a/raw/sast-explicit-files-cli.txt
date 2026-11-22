@@ -1,0 +1,61 @@
+               
+               
+┌─────────────┐
+│ Scan Status │
+└─────────────┘
+  Scanning 6 files tracked by git with 74 Code rules:
+  Scanning 6 files with 68 js rules.
+semgrep-core exited with 1!
+RPC subprocess failed: semgrep-core exited with code 1.
+[ERROR] Error while running rules: 
+                    You are seeing this because the engine was killed.
+
+                    The most common reason this happens is because it used too much memory.
+                    If your repo is large (~10k files or more), you have three options:
+                    1. Increase the amount of memory available to semgrep
+                    2. Reduce the number of jobs semgrep runs with via `-j <jobs>`.
+                    3. Scan the repo in parts (contact us for help)
+
+                    Otherwise, it is likely that semgrep is hitting the limit on only some
+                    files. In this case, you can try to set the limit on the amount of memory
+                    semgrep can use on each file with `--max-memory <memory>`. We recommend
+                    lowering this to a limit 70% of the available memory. For CI runs with
+                    interfile analysis, the default max-memory is 5000MB. Without, the default
+                    is unlimited.
+
+                    If you have tried all these steps and still are seeing this error, please
+                    contact us.
+
+                       Error: semgrep-core exited with unexpected output
+                    
+exn Unix_error: The data area passed to a system call is too small.
+
+
+ socketpair 
+
+
+
+UnixExit(1):
+
+Unix_error: The data area passed to a system call is too small.
+
+
+ socketpair 
+
+Raised at UCommon.main_boilerplate.(fun) in file "OSS/libs/commons/UCommon.ml", line 126, characters 20-57
+
+Called from UCommon.pp_do_in_zero_box in file "OSS/libs/commons/UCommon.ml" (inlined), line 59, characters 2-6
+
+Called from UCommon.main_boilerplate.(fun) in file "OSS/libs/commons/UCommon.ml", lines 119-126, characters 12-58
+
+Called from Stdlib__Fun.protect in file "fun.ml", line 34, characters 8-15
+
+Re-raised at Stdlib__Fun.protect in file "fun.ml", line 39, characters 6-52
+
+Called from Common.protect in file "OSS/libs/commons/Common.ml", line 53, characters 6-31
+
+Called from UCommon.exn_to_real_unixexit in file "OSS/libs/commons/UCommon.ml", line 43, characters 6-10
+
+
+
+

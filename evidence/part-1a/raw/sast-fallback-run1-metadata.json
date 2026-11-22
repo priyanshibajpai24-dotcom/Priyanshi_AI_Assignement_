@@ -1,0 +1,14 @@
+﻿{
+    "scanner":  "Semgrep Community Edition",
+    "version":  "1.185.0",
+    "package":  "semgrep==1.185.0",
+    "ruleset":  "p/javascript",
+    "scannedPath":  "src",
+    "executionMode":  "Semgrep Core 1.185.0 standalone JSON fallback",
+    "cliJsonExitCode":  2,
+    "coreExitCode":  0,
+    "ruleFileCount":  1,
+    "targetCount":  6,
+    "startedAtUtc":  "2026-11-13T05:06:11.4807834Z",
+    "finishedAtUtc":  "2026-11-13T05:06:51.2890996Z"
+}

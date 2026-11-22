@@ -1,0 +1,153 @@
+{
+  "runId": "2026-11-13T22-19-12-723Z",
+  "createdAt": "2026-11-13T22:19:12.729Z",
+  "datasetSha256": "68f6320fb9bd120d5d8382409ad64e9583855eadfe2a80a2bfa176ae86a2f519",
+  "appGenerationSha256": "944f5f331a8d4be71d68627200b69c2202085fcf1480b960edef50333a212414",
+  "promptVersion": "reminder-agent-v1",
+  "provider": {
+    "configured": false,
+    "baseUrlOrigin": null,
+    "model": null
+  },
+  "results": [
+    {
+      "caseId": "create-absolute",
+      "modelEvaluated": false,
+      "skipped": "provider configuration unavailable",
+      "semanticApplicable": true
+    },
+    {
+      "caseId": "create-relative",
+      "modelEvaluated": false,
+      "skipped": "provider configuration unavailable",
+      "semanticApplicable": true
+    },
+    {
+      "caseId": "year-boundary",
+      "modelEvaluated": false,
+      "skipped": "provider configuration unavailable",
+      "semanticApplicable": true
+    },
+    {
+      "caseId": "date-only",
+      "modelEvaluated": false,
+      "skipped": "provider configuration unavailable",
+      "semanticApplicable": true
+    },
+    {
+      "caseId": "time-only",
+      "modelEvaluated": false,
+      "skipped": "provider configuration unavailable",
+      "semanticApplicable": true
+    },
+    {
+      "caseId": "missing-subject",
+      "modelEvaluated": false,
+      "skipped": "provider configuration unavailable",
+      "semanticApplicable": true
+    },
+    {
+      "caseId": "ambiguous-12-hour",
+      "modelEvaluated": false,
+      "skipped": "provider configuration unavailable",
+      "semanticApplicable": true
+    },
+    {
+      "caseId": "ambiguous-weekday",
+      "modelEvaluated": false,
+      "skipped": "provider configuration unavailable",
+      "semanticApplicable": true
+    },
+    {
+      "caseId": "missing-timezone",
+      "modelEvaluated": false,
+      "skipped": "provider configuration unavailable",
+      "semanticApplicable": true
+    },
+    {
+      "caseId": "dst-gap",
+      "modelEvaluated": false,
+      "skipped": "provider configuration unavailable",
+      "semanticApplicable": true
+    },
+    {
+      "caseId": "dst-overlap",
+      "modelEvaluated": false,
+      "skipped": "provider configuration unavailable",
+      "semanticApplicable": true
+    },
+    {
+      "caseId": "reschedule-unique",
+      "modelEvaluated": false,
+      "skipped": "provider configuration unavailable",
+      "semanticApplicable": true
+    },
+    {
+      "caseId": "reschedule-ambiguous",
+      "modelEvaluated": false,
+      "skipped": "provider configuration unavailable",
+      "semanticApplicable": true
+    },
+    {
+      "caseId": "snooze-duration",
+      "modelEvaluated": false,
+      "skipped": "provider configuration unavailable",
+      "semanticApplicable": true
+    },
+    {
+      "caseId": "snooze-rollover",
+      "modelEvaluated": false,
+      "skipped": "provider configuration unavailable",
+      "semanticApplicable": true
+    },
+    {
+      "caseId": "snooze-incomplete",
+      "modelEvaluated": false,
+      "skipped": "provider configuration unavailable",
+      "semanticApplicable": true
+    },
+    {
+      "caseId": "unsupported-delete",
+      "modelEvaluated": false,
+      "skipped": "provider configuration unavailable",
+      "semanticApplicable": true
+    },
+    {
+      "caseId": "malformed-envelope",
+      "modelEvaluated": false,
+      "validationValid": true,
+      "observedErrorCode": "INPUT_INVALID",
+      "semanticApplicable": false,
+      "providerError": false
+    },
+    {
+      "caseId": "invalid-timezone",
+      "modelEvaluated": false,
+      "validationValid": true,
+      "observedErrorCode": "INPUT_INVALID",
+      "semanticApplicable": false,
+      "providerError": false
+    },
+    {
+      "caseId": "prompt-injection",
+      "modelEvaluated": false,
+      "skipped": "provider configuration unavailable",
+      "semanticApplicable": true
+    }
+  ],
+  "aggregate": {
+    "status": "INCONCLUSIVE",
+    "thresholds": {
+      "schemaRate": 1,
+      "invariantRate": 1,
+      "guardrailViolations": 0,
+      "caseSemanticMin": 0.75,
+      "meanSemanticMin": 0.85
+    },
+    "counts": {
+      "modelCases": 0,
+      "providerErrors": 0,
+      "skipped": 18
+    }
+  }
+}

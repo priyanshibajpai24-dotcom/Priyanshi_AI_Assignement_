@@ -1,0 +1,25 @@
+[Errno 13] Permission denied: 'C:\\Users\\hp\\.cache\\semgrep_version'
+Traceback (most recent call last):
+  File "C:\Users\hp\Desktop\project Ai\.tools\semgrep-1.183-venv\Lib\site-packages\semgrep\commands\wrapper.py", line 49, in wrapper
+    func(*args, **kwargs)
+  File "C:\Users\hp\Desktop\project Ai\.tools\semgrep-1.183-venv\Lib\site-packages\semgrep\commands\scan.py", line 832, in scan
+    version_check()
+  File "C:\Users\hp\Desktop\project Ai\.tools\semgrep-1.183-venv\Lib\site-packages\semgrep\app\version.py", line 251, in version_check
+    _show_banners()
+  File "C:\Users\hp\Desktop\project Ai\.tools\semgrep-1.183-venv\Lib\site-packages\semgrep\app\version.py", line 219, in _show_banners
+    banners = _get_version_filtered_banners()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\Desktop\project Ai\.tools\semgrep-1.183-venv\Lib\site-packages\semgrep\app\version.py", line 193, in _get_version_filtered_banners
+    latest_version_info = _get_version_info()
+                          ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\Desktop\project Ai\.tools\semgrep-1.183-venv\Lib\site-packages\semgrep\app\version.py", line 177, in _get_version_info
+    latest_version_object = _get_latest_version()
+                            ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\Desktop\project Ai\.tools\semgrep-1.183-venv\Lib\site-packages\semgrep\app\version.py", line 168, in _get_latest_version
+    with env.version_check_cache_path.open("w") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\Desktop\project Ai\.tools\uv-python\cpython-3.12.16-windows-x86_64-none\Lib\pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\hp\\.cache\\semgrep_version'
+1.183.0

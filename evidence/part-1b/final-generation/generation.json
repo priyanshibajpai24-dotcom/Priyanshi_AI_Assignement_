@@ -1,0 +1,17 @@
+{
+  "capturedAt": "2026-11-15T14:53:54.4269247Z",
+  "description": "Final Part 1B source generation after pinned dependency installation and prompt-format repair. Local tools, model weights, installed dependencies, and credentials are excluded.",
+  "sourceFiles": 42,
+  "specSha256": "89100a02fc59c6c7f96c37de7fde98ed01f74b3aee2ca3819a71a0cd5173f54c",
+  "datasetSha256": "68f6320fb9bd120d5d8382409ad64e9583855eadfe2a80a2bfa176ae86a2f519",
+  "finalEvaluationRunId": "2026-11-15T14-13-49-865Z",
+  "finalEvaluationModel": "qwen2.5:3b",
+  "finalEvaluationStatus": "FAIL",
+  "evaluationAppGenerationSha256": "3d212d2c492cd68c99c59ee2a51bc81bc1b921cf0f49dbc0efd21f2dafe0d0b4",
+  "limitations": [
+    "Qwen2.5 3B live evaluation after prompt repair FAILed the fixed thresholds: schema and invariant rates were 2/18, semantic mean 0.111, and minimum 0.",
+    "The prior Qwen2.5 0.5B evaluation was INCONCLUSIVE; Qwen2.5 1.5B and the pre-repair 3B run returned non-object outputs.",
+    "The standard Semgrep CLI JSON path failed on the Windows socketpair RPC error; the standalone Core fallback ran 68 p/javascript rules across 33 files with 0 findings and 0 engine errors.",
+    "The pre-implementation Spec Kit Analyze review is not evidenced."
+  ]
+}

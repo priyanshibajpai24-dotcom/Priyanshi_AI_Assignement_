@@ -1,0 +1,44 @@
+{
+  "selectedGroup": "US1",
+  "caseCount": 6,
+  "passedCount": 0,
+  "failedCount": 6,
+  "results": [
+    {
+      "name": "US1 create returns stable ID, queued status, and default fields",
+      "story": "US1",
+      "passed": false,
+      "message": "node:internal/modules/esm/resolve:272\r\n    throw new ERR_MODULE_NOT_FOUND(\r\n          ^\r\n\r\nError [ERR_MODULE_NOT_FOUND]: Cannot find module 'C:\\Users\\hp\\Desktop\\project Ai\\src\\task-service.mjs' imported from C:\\Users\\hp\\Desktop\\project Ai\\src\\server.mjs\r\n    at finalizeResolution (node:internal/modules/esm/resolve:272:11)\r\n    at moduleResolve (node:internal/modules/esm/resolve:879:10)\r\n    at defaultResolve (node:internal/modules/esm/resolve:1006:11)\r\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:705:20)\r\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:725:38)\r\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:763:56)\r\n    at #resolve (node:internal/modules/esm/loader:687:17)\r\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:607:35)\r\n    at ModuleJob.syncLink (node:internal/modules/esm/module_job:276:33)\r\n    at ModuleJob.link (node:internal/modules/esm/module_job:381:17) {\r\n  code: 'ERR_MODULE_NOT_FOUND',\r\n  url: 'file:///C:/Users/hp/Desktop/project%20Ai/src/task-service.mjs'\r\n}\r\n\r\nNode.js v24.22.1"
+    },
+    {
+      "name": "US1 list and retrieve return stored tasks",
+      "story": "US1",
+      "passed": false,
+      "message": "node:internal/modules/esm/resolve:272\r\n    throw new ERR_MODULE_NOT_FOUND(\r\n          ^\r\n\r\nError [ERR_MODULE_NOT_FOUND]: Cannot find module 'C:\\Users\\hp\\Desktop\\project Ai\\src\\task-service.mjs' imported from C:\\Users\\hp\\Desktop\\project Ai\\src\\server.mjs\r\n    at finalizeResolution (node:internal/modules/esm/resolve:272:11)\r\n    at moduleResolve (node:internal/modules/esm/resolve:879:10)\r\n    at defaultResolve (node:internal/modules/esm/resolve:1006:11)\r\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:705:20)\r\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:725:38)\r\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:763:56)\r\n    at #resolve (node:internal/modules/esm/loader:687:17)\r\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:607:35)\r\n    at ModuleJob.syncLink (node:internal/modules/esm/module_job:276:33)\r\n    at ModuleJob.link (node:internal/modules/esm/module_job:381:17) {\r\n  code: 'ERR_MODULE_NOT_FOUND',\r\n  url: 'file:///C:/Users/hp/Desktop/project%20Ai/src/task-service.mjs'\r\n}\r\n\r\nNode.js v24.22.1"
+    },
+    {
+      "name": "US1 empty task list returns an empty tasks array",
+      "story": "US1",
+      "passed": false,
+      "message": "node:internal/modules/esm/resolve:272\r\n    throw new ERR_MODULE_NOT_FOUND(\r\n          ^\r\n\r\nError [ERR_MODULE_NOT_FOUND]: Cannot find module 'C:\\Users\\hp\\Desktop\\project Ai\\src\\task-service.mjs' imported from C:\\Users\\hp\\Desktop\\project Ai\\src\\server.mjs\r\n    at finalizeResolution (node:internal/modules/esm/resolve:272:11)\r\n    at moduleResolve (node:internal/modules/esm/resolve:879:10)\r\n    at defaultResolve (node:internal/modules/esm/resolve:1006:11)\r\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:705:20)\r\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:725:38)\r\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:763:56)\r\n    at #resolve (node:internal/modules/esm/loader:687:17)\r\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:607:35)\r\n    at ModuleJob.syncLink (node:internal/modules/esm/module_job:276:33)\r\n    at ModuleJob.link (node:internal/modules/esm/module_job:381:17) {\r\n  code: 'ERR_MODULE_NOT_FOUND',\r\n  url: 'file:///C:/Users/hp/Desktop/project%20Ai/src/task-service.mjs'\r\n}\r\n\r\nNode.js v24.22.1"
+    },
+    {
+      "name": "US1 partial update preserves omitted fields",
+      "story": "US1",
+      "passed": false,
+      "message": "node:internal/modules/esm/resolve:272\r\n    throw new ERR_MODULE_NOT_FOUND(\r\n          ^\r\n\r\nError [ERR_MODULE_NOT_FOUND]: Cannot find module 'C:\\Users\\hp\\Desktop\\project Ai\\src\\task-service.mjs' imported from C:\\Users\\hp\\Desktop\\project Ai\\src\\server.mjs\r\n    at finalizeResolution (node:internal/modules/esm/resolve:272:11)\r\n    at moduleResolve (node:internal/modules/esm/resolve:879:10)\r\n    at defaultResolve (node:internal/modules/esm/resolve:1006:11)\r\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:705:20)\r\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:725:38)\r\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:763:56)\r\n    at #resolve (node:internal/modules/esm/loader:687:17)\r\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:607:35)\r\n    at ModuleJob.syncLink (node:internal/modules/esm/module_job:276:33)\r\n    at ModuleJob.link (node:internal/modules/esm/module_job:381:17) {\r\n  code: 'ERR_MODULE_NOT_FOUND',\r\n  url: 'file:///C:/Users/hp/Desktop/project%20Ai/src/task-service.mjs'\r\n}\r\n\r\nNode.js v24.22.1"
+    },
+    {
+      "name": "US1 delete confirms removal and later retrieval returns not found",
+      "story": "US1",
+      "passed": false,
+      "message": "node:internal/modules/esm/resolve:272\r\n    throw new ERR_MODULE_NOT_FOUND(\r\n          ^\r\n\r\nError [ERR_MODULE_NOT_FOUND]: Cannot find module 'C:\\Users\\hp\\Desktop\\project Ai\\src\\task-service.mjs' imported from C:\\Users\\hp\\Desktop\\project Ai\\src\\server.mjs\r\n    at finalizeResolution (node:internal/modules/esm/resolve:272:11)\r\n    at moduleResolve (node:internal/modules/esm/resolve:879:10)\r\n    at defaultResolve (node:internal/modules/esm/resolve:1006:11)\r\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:705:20)\r\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:725:38)\r\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:763:56)\r\n    at #resolve (node:internal/modules/esm/loader:687:17)\r\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:607:35)\r\n    at ModuleJob.syncLink (node:internal/modules/esm/module_job:276:33)\r\n    at ModuleJob.link (node:internal/modules/esm/module_job:381:17) {\r\n  code: 'ERR_MODULE_NOT_FOUND',\r\n  url: 'file:///C:/Users/hp/Desktop/project%20Ai/src/task-service.mjs'\r\n}\r\n\r\nNode.js v24.22.1"
+    },
+    {
+      "name": "US1 unknown IDs do not change any task",
+      "story": "US1",
+      "passed": false,
+      "message": "node:internal/modules/esm/resolve:272\r\n    throw new ERR_MODULE_NOT_FOUND(\r\n          ^\r\n\r\nError [ERR_MODULE_NOT_FOUND]: Cannot find module 'C:\\Users\\hp\\Desktop\\project Ai\\src\\task-service.mjs' imported from C:\\Users\\hp\\Desktop\\project Ai\\src\\server.mjs\r\n    at finalizeResolution (node:internal/modules/esm/resolve:272:11)\r\n    at moduleResolve (node:internal/modules/esm/resolve:879:10)\r\n    at defaultResolve (node:internal/modules/esm/resolve:1006:11)\r\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:705:20)\r\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:725:38)\r\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:763:56)\r\n    at #resolve (node:internal/modules/esm/loader:687:17)\r\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:607:35)\r\n    at ModuleJob.syncLink (node:internal/modules/esm/module_job:276:33)\r\n    at ModuleJob.link (node:internal/modules/esm/module_job:381:17) {\r\n  code: 'ERR_MODULE_NOT_FOUND',\r\n  url: 'file:///C:/Users/hp/Desktop/project%20Ai/src/task-service.mjs'\r\n}\r\n\r\nNode.js v24.22.1"
+    }
+  ]
+}

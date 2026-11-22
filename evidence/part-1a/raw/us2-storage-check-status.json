@@ -1,0 +1,4 @@
+{
+  "command": "node harness/run.mjs --group US2",
+  "exitCode": 0
+}

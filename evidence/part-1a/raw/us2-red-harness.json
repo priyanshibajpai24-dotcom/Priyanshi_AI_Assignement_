@@ -1,0 +1,29 @@
+{
+  "selectedGroup": "US2",
+  "caseCount": 4,
+  "passedCount": 3,
+  "failedCount": 1,
+  "results": [
+    {
+      "name": "US2 accepted tasks and monotonic IDs survive restart",
+      "story": "US2",
+      "passed": true
+    },
+    {
+      "name": "US2 malformed persisted JSON fails startup without rewriting it",
+      "story": "US2",
+      "passed": true
+    },
+    {
+      "name": "US2 invalid request variants return 400 and preserve persisted state",
+      "story": "US2",
+      "passed": true
+    },
+    {
+      "name": "US2 request bodies above 65,536 bytes return 413 for every HTTP method",
+      "story": "US2",
+      "passed": false,
+      "message": "GET /tasks status\n\n400 !== 413\n"
+    }
+  ]
+}

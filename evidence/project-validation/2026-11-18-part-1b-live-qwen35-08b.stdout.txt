@@ -1,0 +1,24 @@
+$ node harness/run.mjs
+{
+  "runId": "2026-11-18T18-32-48-418Z",
+  "aggregate": {
+    "status": "FAIL",
+    "thresholds": {
+      "schemaRate": 1,
+      "invariantRate": 1,
+      "guardrailViolations": 0,
+      "caseSemanticMin": 0.75,
+      "meanSemanticMin": 0.85
+    },
+    "metrics": {
+      "schemaRate": 0.2222222222222222,
+      "invariantRate": 0.16666666666666666,
+      "guardrailViolations": 1,
+      "minSemanticScore": 0,
+      "meanSemanticScore": 0.14444444444444446,
+      "scoredCases": 18
+    }
+  },
+  "caseCount": 20
+}
+[ELIFECYCLE] Command failed with exit code 1.

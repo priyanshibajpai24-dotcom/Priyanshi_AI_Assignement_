@@ -1,0 +1,3 @@
+RPC subprocess failed: semgrep-core exited with code 1.
+RPC subprocess failed: semgrep-core exited with code 1.
+RPC subprocess failed: semgrep-core exited with code 1.

@@ -1,0 +1,38 @@
+{
+  "selectedGroup": "US1",
+  "caseCount": 6,
+  "passedCount": 6,
+  "failedCount": 0,
+  "results": [
+    {
+      "name": "US1 create returns stable ID, queued status, and default fields",
+      "story": "US1",
+      "passed": true
+    },
+    {
+      "name": "US1 list and retrieve return stored tasks",
+      "story": "US1",
+      "passed": true
+    },
+    {
+      "name": "US1 empty task list returns an empty tasks array",
+      "story": "US1",
+      "passed": true
+    },
+    {
+      "name": "US1 partial update preserves omitted fields",
+      "story": "US1",
+      "passed": true
+    },
+    {
+      "name": "US1 delete confirms removal and later retrieval returns not found",
+      "story": "US1",
+      "passed": true
+    },
+    {
+      "name": "US1 unknown IDs do not change any task",
+      "story": "US1",
+      "passed": true
+    }
+  ]
+}

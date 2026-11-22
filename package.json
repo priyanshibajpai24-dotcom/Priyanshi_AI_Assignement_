@@ -1,0 +1,22 @@
+{
+  "name": "smart-todo-local-service",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.25.0",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "client-demo": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/start-client-demo.ps1",
+    "start": "node src/server.mjs",
+    "test": "node --test tests/unit/json-store.test.mjs tests/unit/task-service.test.mjs",
+    "harness": "node harness/run.mjs",
+    "lint": "eslint .",
+    "sast": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/run-sast.ps1"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "eslint": "10.14.0"
+  }
+}

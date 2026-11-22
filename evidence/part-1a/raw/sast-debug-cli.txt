@@ -1,0 +1,386 @@
+[00.07][DEBUG](default): Skipping logs for: [networking.http, cohttp.lwt.client, cohttp.lwt.io, conduit_lwt_server, semgrep.engine, semgrep.tainting, semgrep.fixing, semgrep.printing, semgrep.reporting, semgrep.matching, semgrep.parsing, parser_move_on_sui, parser_hack, parser_scala, parser_cpp, semgrep.targeting, semgrep.analyzing, semgrep.prefiltering, ojsonnet.eval, tree-sitter, semgrep.naming, semgrep, parser_javascript, aliengrep, ast_generic, glob, semgrep.spacegrep, lib_parsing, git_wrapper, git.value, git.tree, git.stream, git.blob, paths, process_limits, debug_trace, commons.pcre, commons.textedit, commons, parallelism, telemetry, mirage-crypto-rng.unix, ca-certs, handshake, tls.config, tls.tracing, x509.validation, x509.decoding, mirage-crypto-rng-entropy, cohttp.eio.io, cohttp.eio, cohttp.client, bos]
+[00.07][DEBUG](default): Showing logs for: [application]
+[00.07][DEBUG](default): !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[00.07][DEBUG](default): 
+If you want to show the logs of a particular library
+(e.g., the semgrep targeting library), you'll need to adjust the
+SEMGREP_LOG_SRCS environment variable as in
+
+  SEMGREP_LOG_SRCS="semgrep.targeting" semgrep ... --debug
+
+or for osemgrep you can use it with any log level as in
+
+  SEMGREP_LOG_SRCS="semgrep.targeting" ./bin/osemgrep ... --verbose
+
+You can see the list of possible libraries above in this log as in
+...
+[00.04][DEBUG](default): Skipping logs for semgrep.targeting
+...
+[00.04][DEBUG](default): Skipping logs for commons.pcre
+...
+For more information, See
+https://www.notion.so/semgrep/Logging-in-semgrep-semgrep-core-osemgrep-67c9046fa53744728d9d725a5a244f64
+
+[00.07][DEBUG](default): !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[00.07][DEBUG](default): Logging setup for osemgrep: color=Console.Auto level=debug
+[00.07][DEBUG](default): Executed as: osemgrep scan --config p/javascript --debug --json --output evidence/part-1a/raw/sast-debug.json src
+semgrep version 1.185.0
+Failed to get project url from 'git ls-remote': Command failed with exit code: 128
+-----
+Command failed with output:
+fatal: No remote configured to list refs from.
+
+
+Failed to run 'git ls-remote --get-url'. Possible reasons:
+
+- the git binary is not available
+- the current working directory is not a git repository
+- the baseline commit is not a parent of the current commit
+    (if you are running through semgrep-app, check if you are setting `SEMGREP_BRANCH` or `SEMGREP_BASELINE_COMMIT` properly)
+- the current working directory is not marked as safe
+    (fix with `git config --global --add safe.directory $(pwd)`)
+
+Try running the command yourself to debug the issue.
+Downloading config from https://semgrep.dev/c/p/javascript
+Downloaded config from https://semgrep.dev/c/p/javascript
+Parsing https://semgrep.dev/... as JSON
+Saved rules to C:\Users\hp\AppData\Local\Packages\sandbox.{eb030461-8595-47a0-bd18-14841344c35d}\AC\Temp\semgrep-j1smw7dy.json
+[00.06][INFO]: Executed as: C:\Users\hp\Desktop\project Ai\.tools\uv-cache\archive-v0\X6kYDZtH6Rxzhfgy\Lib\site-packages\semgrep\bin\semgrep-core.exe -rpc -debug
+[00.06][INFO]: Version: 1.185.0 (7c70dec497-dirty)
+[00.06][INFO]: Proxy was configured with { Proxy.http_proxy = None;
+                                           https_proxy = None;
+                                           all_proxy = None; no_proxy = None;
+                                           credentials = <opaque> }
+exn Unix_error: The data area passed to a system call is too small.
+
+ socketpair 
+
+UnixExit(1):
+Unix_error: The data area passed to a system call is too small.
+
+ socketpair 
+Raised at UCommon.main_boilerplate.(fun) in file "OSS/libs/commons/UCommon.ml", line 126, characters 20-57
+Called from UCommon.pp_do_in_zero_box in file "OSS/libs/commons/UCommon.ml" (inlined), line 59, characters 2-6
+Called from UCommon.main_boilerplate.(fun) in file "OSS/libs/commons/UCommon.ml", lines 119-126, characters 12-58
+Called from Stdlib__Fun.protect in file "fun.ml", line 34, characters 8-15
+Re-raised at Stdlib__Fun.protect in file "fun.ml", line 39, characters 6-52
+Called from Common.protect in file "OSS/libs/commons/Common.ml", line 53, characters 6-31
+Called from UCommon.exn_to_real_unixexit in file "OSS/libs/commons/UCommon.ml", line 43, characters 6-10
+
+RPC subprocess failed: semgrep-core exited with code 1.
+--- semgrep-core stderr (last 4096 bytes) ---
+[00.06][INFO]: Executed as: C:\Users\hp\Desktop\project Ai\.tools\uv-cache\archive-v0\X6kYDZtH6Rxzhfgy\Lib\site-packages\semgrep\bin\semgrep-core.exe -rpc -debug
+
+[00.06][INFO]: Version: 1.185.0 (7c70dec497-dirty)
+
+[00.06][INFO]: Proxy was configured with { Proxy.http_proxy = None;
+
+                                           https_proxy = None;
+
+                                           all_proxy = None; no_proxy = None;
+
+                                           credentials = <opaque> }
+
+exn Unix_error: The data area passed to a system call is too small.
+
+
+ socketpair 
+
+
+
+UnixExit(1):
+
+Unix_error: The data area passed to a system call is too small.
+
+
+ socketpair 
+
+Raised at UCommon.main_boilerplate.(fun) in file "OSS/libs/commons/UCommon.ml", line 126, characters 20-57
+
+Called from UCommon.pp_do_in_zero_box in file "OSS/libs/commons/UCommon.ml" (inlined), line 59, characters 2-6
+
+Called from UCommon.main_boilerplate.(fun) in file "OSS/libs/commons/UCommon.ml", lines 119-126, characters 12-58
+
+Called from Stdlib__Fun.protect in file "fun.ml", line 34, characters 8-15
+
+Re-raised at Stdlib__Fun.protect in file "fun.ml", line 39, characters 6-52
+
+Called from Common.protect in file "OSS/libs/commons/Common.ml", line 53, characters 6-31
+
+Called from UCommon.exn_to_real_unixexit in file "OSS/libs/commons/UCommon.ml", line 43, characters 6-10
+Failed to validate semgrep configuration
+semgrep-core validation response: error=CoreError(error_type=ErrorType(value=SemgrepError()), severity=ErrorSeverity(value=Error_()), message='Failed to validate rule configuration at C:\\Users\\hp\\AppData\\Local\\Packages\\sandbox.{eb030461-8595-47a0-bd18-14841344c35d}\\AC\\Temp\\semgrep-j1smw7dy.json', details=None, location=None, rule_id=None)
+semgrep-core rule validation failed (SemgrepError)
+semgrep-core validation error detail: Failed to validate rule configuration at C:\Users\hp\AppData\Local\Packages\sandbox.{eb030461-8595-47a0-bd18-14841344c35d}\AC\Temp\semgrep-j1smw7dy.json
+loaded 1 configs in 2.0339162349700928 with 0 errors and 242 missed rules
+running 74 rules from 1 config remote-registry_0
+Rules:
+- javascript.angular.security.detect-angular-element-taint.detect-angular-element-taint
+- javascript.angular.security.detect-angular-sce-disabled.detect-angular-sce-disabled
+- javascript.angular.security.detect-angular-trust-as-method.detect-angular-trust-as-method
+- javascript.argon2.security.unsafe-argon2-config.unsafe-argon2-config
+- javascript.aws-lambda.security.detect-child-process.detect-child-process
+- javascript.aws-lambda.security.dynamodb-request-object.dynamodb-request-object
+- javascript.aws-lambda.security.knex-sqli.knex-sqli
+- javascript.aws-lambda.security.mysql-sqli.mysql-sqli
+- javascript.aws-lambda.security.pg-sqli.pg-sqli
+- javascript.aws-lambda.security.sequelize-sqli.sequelize-sqli
+- javascript.aws-lambda.security.tainted-html-response.tainted-html-response
+- javascript.aws-lambda.security.tainted-html-string.tainted-html-string
+- javascript.aws-lambda.security.vm-runincontext-injection.vm-runincontext-injection
+- javascript.browser.security.open-redirect.js-open-redirect
+- javascript.browser.security.raw-html-concat.raw-html-concat
+- javascript.browser.security.wildcard-postmessage-configuration.wildcard-postmessage-configuration
+- javascript.chrome-remote-interface.security.audit.chrome-remote-interface-compilescript-injection.chrome-remote-interface-compilescript-injection
+- javascript.deno.security.audit.deno-dangerous-run.deno-dangerous-run
+- javascript.express.security.audit.express-check-directory-listing.express-check-directory-listing
+- javascript.express.security.audit.express-cookie-settings.express-cookie-session-default-name
+- javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-domain
+- javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-expires
+- javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-httponly
+- javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-path
+- javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-secure
+- javascript.express.security.audit.express-jwt-not-revoked.express-jwt-not-revoked
+- javascript.express.security.audit.express-libxml-noent.express-libxml-noent
+- javascript.express.security.audit.express-open-redirect.express-open-redirect
+- javascript.express.security.audit.express-path-join-resolve-traversal.express-path-join-resolve-traversal
+- javascript.express.security.audit.express-res-sendfile.express-res-sendfile
+- javascript.express.security.audit.express-session-hardcoded-secret.express-session-hardcoded-secret
+- javascript.express.security.audit.express-ssrf.express-ssrf
+- javascript.express.security.audit.express-third-party-object-deserialization.express-third-party-object-deserialization
+- javascript.express.security.audit.express-xml2json-xxe-event.express-xml2json-xxe-event
+- javascript.express.security.audit.res-render-injection.res-render-injection
+- javascript.express.security.audit.xss.direct-response-write.direct-response-write
+- javascript.express.security.cors-misconfiguration.cors-misconfiguration
+- javascript.express.security.express-expat-xxe.express-expat-xxe
+- javascript.express.security.express-insecure-template-usage.express-insecure-template-usage
+- javascript.express.security.express-jwt-hardcoded-secret.express-jwt-hardcoded-secret
+- javascript.express.security.express-phantom-injection.express-phantom-injection
+- javascript.express.security.express-puppeteer-injection.express-puppeteer-injection
+- javascript.express.security.express-sandbox-injection.express-sandbox-code-injection
+- javascript.express.security.express-vm-injection.express-vm-injection
+- javascript.express.security.express-vm2-injection.express-vm2-injection
+- javascript.express.security.express-xml2json-xxe.express-xml2json-xxe
+- javascript.express.security.injection.raw-html-format.raw-html-format
+- javascript.express.security.require-request.require-request
+- javascript.express.security.x-frame-options-misconfiguration.x-frame-options-misconfiguration
+- javascript.intercom.security.audit.intercom-settings-user-identifier-without-user-hash.intercom-settings-user-identifier-without-user-hash
+- javascript.jose.security.jwt-hardcode.hardcoded-jwt-secret
+- javascript.jose.security.jwt-none-alg.jwt-none-alg
+- javascript.jsonwebtoken.security.jwt-hardcode.hardcoded-jwt-secret
+- javascript.jsonwebtoken.security.jwt-none-alg.jwt-none-alg
+- javascript.jwt-simple.security.jwt-simple-noverify.jwt-simple-noverify
+- javascript.lang.security.audit.code-string-concat.code-string-concat
+- javascript.lang.security.audit.sqli.node-knex-sqli.node-knex-sqli
+- javascript.lang.security.detect-eval-with-expression.detect-eval-with-expression
+- javascript.node-crypto.security.aead-no-final.aead-no-final
+- javascript.node-crypto.security.create-de-cipher-no-iv.create-de-cipher-no-iv
+- javascript.node-crypto.security.gcm-no-tag-length.gcm-no-tag-length
+- javascript.passport-jwt.security.passport-hardcode.hardcoded-passport-secret
+- javascript.sequelize.security.audit.sequelize-injection-express.express-sequelize-injection
+- problem-based-packs.insecure-transport.js-node.bypass-tls-verification.bypass-tls-verification
+- typescript.angular.security.audit.angular-domsanitizer.angular-bypasssecuritytrust
+- typescript.aws-cdk.security.audit.awscdk-bucket-encryption.awscdk-bucket-encryption
+- typescript.aws-cdk.security.audit.awscdk-bucket-enforcessl.aws-cdk-bucket-enforcessl
+- typescript.aws-cdk.security.audit.awscdk-sqs-unencryptedqueue.awscdk-sqs-unencryptedqueue
+- typescript.aws-cdk.security.awscdk-bucket-grantpublicaccessmethod.awscdk-bucket-grantpublicaccessmethod
+- typescript.aws-cdk.security.awscdk-codebuild-project-public.awscdk-codebuild-project-public
+- typescript.react.security.audit.react-dangerouslysetinnerhtml.react-dangerouslysetinnerhtml
+- typescript.react.security.audit.react-unsanitized-method.react-unsanitized-method
+- typescript.react.security.audit.react-unsanitized-property.react-unsanitized-property
+- typescript.react.security.react-insecure-request.react-insecure-request
+get_targets request: ScanningRoots(root_paths=[Fpath(value='src')], targeting_conf=TargetingConf(exclude=[], max_target_bytes=1000000, respect_gitignore=True, respect_semgrepignore_files=True, always_select_explicit_targets=True, explicit_targets=[], force_novcs_project=False, exclude_minified_files=False, include_=None, extra_gitignore_patterns_to_exclude_git_untracked_files=[], semgrepignore_filename=None, force_project_root=None, include_binary_files=False, baseline_commit=None))
+[00.06][INFO]: Executed as: C:\Users\hp\Desktop\project Ai\.tools\uv-cache\archive-v0\X6kYDZtH6Rxzhfgy\Lib\site-packages\semgrep\bin\semgrep-core.exe -rpc -debug
+[00.06][INFO]: Version: 1.185.0 (7c70dec497-dirty)
+[00.06][INFO]: Proxy was configured with { Proxy.http_proxy = None;
+                                           https_proxy = None;
+                                           all_proxy = None; no_proxy = None;
+                                           credentials = <opaque> }
+exn Unix_error: The data area passed to a system call is too small.
+
+ socketpair 
+
+UnixExit(1):
+Unix_error: The data area passed to a system call is too small.
+
+ socketpair 
+Raised at UCommon.main_boilerplate.(fun) in file "OSS/libs/commons/UCommon.ml", line 126, characters 20-57
+Called from UCommon.pp_do_in_zero_box in file "OSS/libs/commons/UCommon.ml" (inlined), line 59, characters 2-6
+Called from UCommon.main_boilerplate.(fun) in file "OSS/libs/commons/UCommon.ml", lines 119-126, characters 12-58
+Called from Stdlib__Fun.protect in file "fun.ml", line 34, characters 8-15
+Re-raised at Stdlib__Fun.protect in file "fun.ml", line 39, characters 6-52
+Called from Common.protect in file "OSS/libs/commons/Common.ml", line 53, characters 6-31
+Called from UCommon.exn_to_real_unixexit in file "OSS/libs/commons/UCommon.ml", line 43, characters 6-10
+
+[00.07][INFO]: Executed as: C:\Users\hp\Desktop\project Ai\.tools\uv-cache\archive-v0\X6kYDZtH6Rxzhfgy\Lib\site-packages\semgrep\bin\semgrep-core.exe -rpc -debug
+[00.07][INFO]: Version: 1.185.0 (7c70dec497-dirty)
+[00.07][INFO]: Proxy was configured with { Proxy.http_proxy = None;
+                                           https_proxy = None;
+                                           all_proxy = None; no_proxy = None;
+                                           credentials = <opaque> }
+exn Unix_error: The data area passed to a system call is too small.
+
+ socketpair 
+
+UnixExit(1):
+Unix_error: The data area passed to a system call is too small.
+
+ socketpair 
+Raised at UCommon.main_boilerplate.(fun) in file "OSS/libs/commons/UCommon.ml", line 126, characters 20-57
+Called from UCommon.pp_do_in_zero_box in file "OSS/libs/commons/UCommon.ml" (inlined), line 59, characters 2-6
+Called from UCommon.main_boilerplate.(fun) in file "OSS/libs/commons/UCommon.ml", lines 119-126, characters 12-58
+Called from Stdlib__Fun.protect in file "fun.ml", line 34, characters 8-15
+Re-raised at Stdlib__Fun.protect in file "fun.ml", line 39, characters 6-52
+Called from Common.protect in file "OSS/libs/commons/Common.ml", line 53, characters 6-31
+Called from UCommon.exn_to_real_unixexit in file "OSS/libs/commons/UCommon.ml", line 43, characters 6-10
+
+RPC subprocess failed: semgrep-core exited with code 1.
+--- semgrep-core stderr (last 4096 bytes) ---
+[00.06][INFO]: Executed as: C:\Users\hp\Desktop\project Ai\.tools\uv-cache\archive-v0\X6kYDZtH6Rxzhfgy\Lib\site-packages\semgrep\bin\semgrep-core.exe -rpc -debug
+
+[00.06][INFO]: Version: 1.185.0 (7c70dec497-dirty)
+
+[00.06][INFO]: Proxy was configured with { Proxy.http_proxy = None;
+
+                                           https_proxy = None;
+
+                                           all_proxy = None; no_proxy = None;
+
+                                           credentials = <opaque> }
+
+exn Unix_error: The data area passed to a system call is too small.
+
+
+ socketpair 
+
+
+
+UnixExit(1):
+
+Unix_error: The data area passed to a system call is too small.
+
+
+ socketpair 
+
+Raised at UCommon.main_boilerplate.(fun) in file "OSS/libs/commons/UCommon.ml", line 126, characters 20-57
+
+Called from UCommon.pp_do_in_zero_box in file "OSS/libs/commons/UCommon.ml" (inlined), line 59, characters 2-6
+
+Called from UCommon.main_boilerplate.(fun) in file "OSS/libs/commons/UCommon.ml", lines 119-126, characters 12-58
+
+Called from Stdlib__Fun.protect in file "fun.ml", line 34, characters 8-15
+
+Re-raised at Stdlib__Fun.protect in file "fun.ml", line 39, characters 6-52
+
+Called from Common.protect in file "OSS/libs/commons/Common.ml", line 53, characters 6-31
+
+Called from UCommon.exn_to_real_unixexit in file "OSS/libs/commons/UCommon.ml", line 43, characters 6-10
+RPC subprocess failed: semgrep-core exited with code 1.
+--- semgrep-core stderr (last 4096 bytes) ---
+[00.07][INFO]: Executed as: C:\Users\hp\Desktop\project Ai\.tools\uv-cache\archive-v0\X6kYDZtH6Rxzhfgy\Lib\site-packages\semgrep\bin\semgrep-core.exe -rpc -debug
+
+[00.07][INFO]: Version: 1.185.0 (7c70dec497-dirty)
+
+[00.07][INFO]: Proxy was configured with { Proxy.http_proxy = None;
+
+                                           https_proxy = None;
+
+                                           all_proxy = None; no_proxy = None;
+
+                                           credentials = <opaque> }
+
+exn Unix_error: The data area passed to a system call is too small.
+
+
+ socketpair 
+
+
+
+UnixExit(1):
+
+Unix_error: The data area passed to a system call is too small.
+
+
+ socketpair 
+
+Raised at UCommon.main_boilerplate.(fun) in file "OSS/libs/commons/UCommon.ml", line 126, characters 20-57
+
+Called from UCommon.pp_do_in_zero_box in file "OSS/libs/commons/UCommon.ml" (inlined), line 59, characters 2-6
+
+Called from UCommon.main_boilerplate.(fun) in file "OSS/libs/commons/UCommon.ml", lines 119-126, characters 12-58
+
+Called from Stdlib__Fun.protect in file "fun.ml", line 34, characters 8-15
+
+Re-raised at Stdlib__Fun.protect in file "fun.ml", line 39, characters 6-52
+
+Called from Common.protect in file "OSS/libs/commons/Common.ml", line 53, characters 6-31
+
+Called from UCommon.exn_to_real_unixexit in file "OSS/libs/commons/UCommon.ml", line 43, characters 6-10
+Getting API token from settings file
+No API token found in settings file
+[00.07][INFO]: Executed as: C:\Users\hp\Desktop\project Ai\.tools\uv-cache\archive-v0\X6kYDZtH6Rxzhfgy\Lib\site-packages\semgrep\bin\semgrep-core.exe -rpc -debug
+[00.07][INFO]: Version: 1.185.0 (7c70dec497-dirty)
+[00.07][INFO]: Proxy was configured with { Proxy.http_proxy = None;
+                                           https_proxy = None;
+                                           all_proxy = None; no_proxy = None;
+                                           credentials = <opaque> }
+exn Unix_error: The data area passed to a system call is too small.
+
+ socketpair 
+
+UnixExit(1):
+Unix_error: The data area passed to a system call is too small.
+
+ socketpair 
+Raised at UCommon.main_boilerplate.(fun) in file "OSS/libs/commons/UCommon.ml", line 126, characters 20-57
+Called from UCommon.pp_do_in_zero_box in file "OSS/libs/commons/UCommon.ml" (inlined), line 59, characters 2-6
+Called from UCommon.main_boilerplate.(fun) in file "OSS/libs/commons/UCommon.ml", lines 119-126, characters 12-58
+Called from Stdlib__Fun.protect in file "fun.ml", line 34, characters 8-15
+Re-raised at Stdlib__Fun.protect in file "fun.ml", line 39, characters 6-52
+Called from Common.protect in file "OSS/libs/commons/Common.ml", line 53, characters 6-31
+Called from UCommon.exn_to_real_unixexit in file "OSS/libs/commons/UCommon.ml", line 43, characters 6-10
+
+RPC subprocess failed: semgrep-core exited with code 1.
+--- semgrep-core stderr (last 4096 bytes) ---
+[00.07][INFO]: Executed as: C:\Users\hp\Desktop\project Ai\.tools\uv-cache\archive-v0\X6kYDZtH6Rxzhfgy\Lib\site-packages\semgrep\bin\semgrep-core.exe -rpc -debug
+
+[00.07][INFO]: Version: 1.185.0 (7c70dec497-dirty)
+
+[00.07][INFO]: Proxy was configured with { Proxy.http_proxy = None;
+
+                                           https_proxy = None;
+
+                                           all_proxy = None; no_proxy = None;
+
+                                           credentials = <opaque> }
+
+exn Unix_error: The data area passed to a system call is too small.
+
+
+ socketpair 
+
+
+
+UnixExit(1):
+
+Unix_error: The data area passed to a system call is too small.
+
+
+ socketpair 
+
+Raised at UCommon.main_boilerplate.(fun) in file "OSS/libs/commons/UCommon.ml", line 126, characters 20-57
+
+Called from UCommon.pp_do_in_zero_box in file "OSS/libs/commons/UCommon.ml" (inlined), line 59, characters 2-6
+
+Called from UCommon.main_boilerplate.(fun) in file "OSS/libs/commons/UCommon.ml", lines 119-126, characters 12-58
+
+Called from Stdlib__Fun.protect in file "fun.ml", line 34, characters 8-15
+
+Re-raised at Stdlib__Fun.protect in file "fun.ml", line 39, characters 6-52
+
+Called from Common.protect in file "OSS/libs/commons/Common.ml", line 53, characters 6-31
+
+Called from UCommon.exn_to_real_unixexit in file "OSS/libs/commons/UCommon.ml", line 43, characters 6-10
+Sending pseudonymous metrics since metrics are configured to AUTO, registry usage is True, and login status is False
+Sending to https://metrics.semgrep.dev
+response from https://metrics.semgrep.dev {'statusCode': 200, 'body': '{"sourceIp":"157.49.124.110","userAgent":"Semgrep/1.185.0 (command/scan)"}'}

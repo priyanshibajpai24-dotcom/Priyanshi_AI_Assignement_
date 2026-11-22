@@ -1,0 +1,43 @@
+✔ uses CLI child boundary and rejects malformed input without provider call (584.3794ms)
+✔ labels provider outage INCONCLUSIVE (189.5242ms)
+✔ constructs endpoint and sends Chat Completions JSON mode without tools (82.738ms)
+✔ classifies timeout, rate limit, server error, malformed body, and missing content safely (80.0134ms)
+✔ rejects oversized model content with a bounded provider error (23.626ms)
+✔ applies all fixed thresholds and stable outcomes (1.9436ms)
+✔ clarifies missing and ambiguous mandatory information without proposals (2.8894ms)
+✔ clarifies daylight-saving gap and overlap rather than accepting ambiguous walls (0.6587ms)
+✔ invalid input exits 2 before provider config and prints typed JSON without stack (178.346ms)
+✔ valid request with missing provider config exits 3 safely (203.4874ms)
+✔ requires settings (2.4219ms)
+✔ bounds timeout and redacts endpoint secrets (0.76ms)
+✔ creates one grounded future proposal without invoking an action tool (38.147ms)
+✔ keeps malicious request and reminder context inside untrusted user data (2.1338ms)
+✔ accepts unsupported-action response only with no proposal or intent (1.2176ms)
+✔ accepts valid and rejects unknown fields (36.0615ms)
+✔ enforces request, reminder, timestamp, timezone, uniqueness, and byte bounds (1.9488ms)
+✔ accepts grounded future proposal (40.2244ms)
+✔ rejects past due, missing target, and ungrounded evidence (3.7523ms)
+✔ checks later-of-now-or-due snooze arithmetic independently (1.3008ms)
+✔ uses separate system policy and untrusted JSON input (3.5208ms)
+✔ creates a grounded proposal through one injected provider call (36.7895ms)
+✔ preserves clarification and unsupported decisions without proposals (0.6387ms)
+✔ asks for a valid future time when the requested time is past (0.3764ms)
+✔ reschedules one supplied reminder and refuses unknown target IDs (2.442ms)
+✔ enforces exact snooze duration from later existing due time or now (2.5489ms)
+✔ rejects malformed JSON and schema or invariant violations with distinct codes (0.7251ms)
+✔ uses a single positive duration from the later of reminder time and reference time (32.8239ms)
+✔ rejects negative, zero, and multiple snooze durations (3.3709ms)
+✔ accepts contract output and rejects extra fields, mismatch, bad types, enum, and timestamp (3.5467ms)
+✔ weights criteria and compares timestamp instants (1.309ms)
+✔ supports N/A and concept-based question scoring (0.5982ms)
+✔ requires explicit RFC3339 offset (4.6008ms)
+✔ detects unique, gap, and overlap (31.5077ms)
+✔ returns zone offset (1.137ms)
+ℹ tests 35
+ℹ suites 0
+ℹ pass 35
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1116.2321

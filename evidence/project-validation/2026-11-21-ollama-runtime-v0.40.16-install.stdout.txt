@@ -1,0 +1,9 @@
+Downloading the pinned Ollama Windows standalone bundle. This is about 1.51 GB.
+Exception calling "GetResponse" with "0" argument(s): "The underlying connection was closed: An unexpected error 
+occurred on a receive."
+At C:\Users\hp\Desktop\project Ai\scripts\install-local-ollama.ps1:24 char:5
++     $response = $request.GetResponse()
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : WebException
+ 

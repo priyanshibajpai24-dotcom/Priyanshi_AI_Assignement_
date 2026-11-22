@@ -1,0 +1,14 @@
+{
+  "formatVersion": 1,
+  "nextId": 2,
+  "tasks": [
+    {
+      "id": 1,
+      "title": "quickstart smoke",
+      "notes": "",
+      "priority": "now",
+      "status": "queued",
+      "tags": []
+    }
+  ]
+}

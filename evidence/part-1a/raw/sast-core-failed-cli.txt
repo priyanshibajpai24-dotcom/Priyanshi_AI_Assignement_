@@ -1,0 +1,12 @@
+﻿uvx.exe : RPC subprocess failed: semgrep-core exited with code 1.
+At C:\Users\hp\Desktop\project Ai\scripts\run-sast.ps1:67 char:17
++ ... nOutput = @(& $uvx --from $semgrepPin semgrep scan --config $ruleset  ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (RPC subprocess ...ed with code 1.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+semgrep-core rule validation failed (SemgrepError)
+RPC subprocess failed: semgrep-core exited with code 1.
+RPC subprocess failed: semgrep-core exited with code 1.
+RPC subprocess failed: semgrep-core exited with code 1.
+

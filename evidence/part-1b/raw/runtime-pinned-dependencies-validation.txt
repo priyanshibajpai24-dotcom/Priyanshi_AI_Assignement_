@@ -1,0 +1,16 @@
+C:\Users\hp\Desktop\project Ai\Part-1B\node_modules\ajv\dist\core.js:148
+                throw new Error(`no schema with key or ref "${schemaKeyRef}"`);
+                      ^
+
+Error: no schema with key or ref "https://json-schema.org/draft/2020-12/schema"
+    at Ajv.validate (C:\Users\hp\Desktop\project Ai\Part-1B\node_modules\ajv\dist\core.js:148:23)
+    at Ajv.validateSchema (C:\Users\hp\Desktop\project Ai\Part-1B\node_modules\ajv\dist\core.js:261:28)
+    at Ajv._addSchema (C:\Users\hp\Desktop\project Ai\Part-1B\node_modules\ajv\dist\core.js:461:18)
+    at Ajv.compile (C:\Users\hp\Desktop\project Ai\Part-1B\node_modules\ajv\dist\core.js:159:26)
+    at file:///C:/Users/hp/Desktop/project%20Ai/Part-1B/[eval1]:1:379
+    at ModuleJob.run (node:internal/modules/esm/module_job:561:25)
+    at async node:internal/modules/esm/loader:223:26
+    at async ModuleLoader.executeModuleJob (node:internal/modules/esm/loader:220:20)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)
+
+Node.js v24.22.1

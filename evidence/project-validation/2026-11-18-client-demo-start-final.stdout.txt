@@ -1,0 +1,17 @@
+$ powershell -NoProfile -ExecutionPolicy Bypass -File scripts/start-client-demo.ps1
+Could not open the browser automatically. Open the Part 1A URL shown below.
+Client demo is running locally.
+Part 1A tasks: http://127.0.0.1:3000/tasks?sort=priority
+Part 1A process ID: 13012
+Part 1B process ID: 9752
+Part 1A demo data is isolated at: C:\Users\hp\AppData\Local\Packages\openai.codex_2p2nqsd0c76g0\AC\#!sandbox.{d8bcfc38-1fef-4529-975f-28cad66e03b1}\Temp\smart-todo-client-demo-c9e23ec749e141d18dc92da053ff91fd.json
+Leave this launcher window open during the demo. Press Ctrl+C here to stop both applications.
+WARNING: Part 1B has exited. Review its window for the actual result.
+Part 1A stopped. Review its window and restart the demo if needed.
+At C:\Users\hp\Desktop\project Ai\scripts\start-client-demo.ps1:92 char:40
++ ... asExited) { throw 'Part 1A stopped. Review its window and restart the ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (Part 1A stopped...demo if needed.:String) [], RuntimeException
+    + FullyQualifiedErrorId : Part 1A stopped. Review its window and restart the demo if needed.
+ 
+[ELIFECYCLE] Command failed with exit code 1.

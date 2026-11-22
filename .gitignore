@@ -1,0 +1,17 @@
+# Installed tools, local caches, and model runtime
+.tools/
+**/node_modules/
+.pnpm-store/
+**/.pnpm-store/
+
+# Local credentials and environment files
+.env
+.env.*
+!.env.example
+
+# Generated application state
+data/tasks.json
+data/*.tmp
+evidence/client-demo/*.mp4
+evidence/client-demo/*.mov
+coverage/

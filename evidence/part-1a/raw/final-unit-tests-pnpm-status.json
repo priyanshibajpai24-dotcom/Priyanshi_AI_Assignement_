@@ -1,0 +1,7 @@
+{
+  "command": "pnpm test",
+  "exitCode": 0,
+  "passed": true,
+  "startedAtUtc": "2026-11-13T06:16:25.4144136Z",
+  "finishedAtUtc": "2026-11-13T06:16:26.5988570Z"
+}

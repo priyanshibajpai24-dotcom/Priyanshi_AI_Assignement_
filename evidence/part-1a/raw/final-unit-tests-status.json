@@ -1,0 +1,7 @@
+{
+  "command": "node --test --test-reporter=tap",
+  "exitCode": 0,
+  "passed": true,
+  "startedAtUtc": "2026-11-13T11:52:41.3862756Z",
+  "finishedAtUtc": "2026-11-13T11:52:43.2674884Z"
+}

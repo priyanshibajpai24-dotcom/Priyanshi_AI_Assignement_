@@ -1,0 +1,7 @@
+{
+  "command": "node harness/run.mjs",
+  "exitCode": 0,
+  "passed": true,
+  "startedAtUtc": "2026-11-13T11:52:43.3051697Z",
+  "finishedAtUtc": "2026-11-13T11:52:48.1762009Z"
+}

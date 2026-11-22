@@ -1,0 +1,4 @@
+{
+  "command": "Semgrep 1.185.0 --dump-command-for-core with explicit targets",
+  "exitCode": 0
+}

@@ -1,0 +1,12 @@
+{
+  "command": "semgrep 1.185.0 on explicit src/*.mjs targets; JavaScript ruleset; text format",
+  "exitCode": 2,
+  "targets": [
+    "C:\\Users\\hp\\Desktop\\project Ai\\src\\errors.mjs",
+    "C:\\Users\\hp\\Desktop\\project Ai\\src\\http-api.mjs",
+    "C:\\Users\\hp\\Desktop\\project Ai\\src\\json-store.mjs",
+    "C:\\Users\\hp\\Desktop\\project Ai\\src\\server.mjs",
+    "C:\\Users\\hp\\Desktop\\project Ai\\src\\task-service.mjs",
+    "C:\\Users\\hp\\Desktop\\project Ai\\src\\validation.mjs"
+  ]
+}

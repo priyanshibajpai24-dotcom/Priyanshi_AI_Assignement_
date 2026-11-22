@@ -1,0 +1,28 @@
+{
+  "command": "pnpm start",
+  "startup": "LISTENING http://127.0.0.1:53487",
+  "initialList": {
+    "tasks": []
+  },
+  "createdTask": {
+    "id": 1,
+    "title": "quickstart smoke",
+    "notes": "",
+    "priority": "now",
+    "status": "queued",
+    "tags": []
+  },
+  "finalList": {
+    "tasks": [
+      {
+        "id": 1,
+        "title": "quickstart smoke",
+        "notes": "",
+        "priority": "now",
+        "status": "queued",
+        "tags": []
+      }
+    ]
+  },
+  "passed": true
+}

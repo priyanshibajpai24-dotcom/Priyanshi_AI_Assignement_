@@ -1,0 +1,5 @@
+Tool: Semgrep Community Edition CLI
+Ruleset: auto (Semgrep managed default ruleset)
+Target: C:\Users\hp\Desktop\project Ai\Part-1B
+Status: TOOL_UNAVAILABLE
+Semgrep CE executable was not found on PATH; no scan was run.

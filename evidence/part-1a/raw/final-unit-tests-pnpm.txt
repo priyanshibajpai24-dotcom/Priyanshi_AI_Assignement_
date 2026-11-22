@@ -1,0 +1,30 @@
+$ node --test
+✔ a missing file initializes the empty versioned document (8.6332ms)
+▶ startup rejects unsupported or malformed persisted documents
+  ✔ unsupported version (11.4107ms)
+  ✔ unknown envelope field (6.4393ms)
+  ✔ non-monotonic nextId (7.557ms)
+  ✔ duplicate task IDs (6.0043ms)
+  ✔ invalid task fields (5.7298ms)
+  ✔ untrimmed stored title (5.7679ms)
+  ✔ duplicate normalized tags (5.0951ms)
+✔ startup rejects unsupported or malformed persisted documents (50.6593ms)
+✔ replacing a document persists it and a new store restores the same IDs (8.0559ms)
+✔ a failed atomic replacement preserves the prior file and in-memory snapshot (7.8663ms)
+✔ creation trims title and supplies the approved defaults (2.6011ms)
+✔ creation rejects a blank or overlong title, overlong notes, and missing priority (1.1493ms)
+✔ IDs increase and are not reused after deletion, including concurrent creates (0.5838ms)
+✔ updates only supplied mutable fields and rejects unsupported fields (0.7077ms)
+✔ tag filters trim and case-fold values and require every selected tag (1.0622ms)
+✔ priority ordering is now, next, later with ascending ID ties (1.207ms)
+✔ every permitted status transition persists the target state (2.4411ms)
+✔ every prohibited status transition is rejected without changing stored state (3.0277ms)
+✔ invalid transition status values are request errors (0.604ms)
+ℹ tests 20
+ℹ suites 0
+ℹ pass 20
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 232.9153

@@ -1,0 +1,698 @@
+{
+  "runId": "2026-11-15T10-48-17-555Z",
+  "createdAt": "2026-11-15T10:48:17.561Z",
+  "datasetSha256": "68f6320fb9bd120d5d8382409ad64e9583855eadfe2a80a2bfa176ae86a2f519",
+  "appGenerationSha256": "64bb166add8eccc501c8c49b9e3ba43a697aeecdb28f3f9e9517ab3fb41b2e95",
+  "promptVersion": "reminder-agent-v1",
+  "provider": {
+    "configured": true,
+    "baseUrlOrigin": "http://127.0.0.1:11434",
+    "model": "qwen2.5:1.5b"
+  },
+  "results": [
+    {
+      "caseId": "create-absolute",
+      "modelEvaluated": true,
+      "providerError": false,
+      "modelErrorCode": "OUTPUT_SCHEMA_INVALID",
+      "schemaValid": false,
+      "schemaFailures": [
+        "output must be an object"
+      ],
+      "invariantsValid": false,
+      "invariantFailures": [
+        "no valid structured output"
+      ],
+      "guardrailViolations": 0,
+      "semanticApplicable": true,
+      "semanticScore": 0,
+      "semanticCriteria": [
+        {
+          "id": "decision",
+          "weight": 0.2,
+          "pass": false
+        },
+        {
+          "id": "intent",
+          "weight": 0.15,
+          "pass": false
+        },
+        {
+          "id": "title",
+          "weight": 0.25,
+          "pass": false
+        },
+        {
+          "id": "due",
+          "weight": 0.4,
+          "pass": false
+        }
+      ],
+      "generatedOutput": null
+    },
+    {
+      "caseId": "create-relative",
+      "modelEvaluated": true,
+      "providerError": false,
+      "modelErrorCode": "OUTPUT_SCHEMA_INVALID",
+      "schemaValid": false,
+      "schemaFailures": [
+        "output must be an object"
+      ],
+      "invariantsValid": false,
+      "invariantFailures": [
+        "no valid structured output"
+      ],
+      "guardrailViolations": 0,
+      "semanticApplicable": true,
+      "semanticScore": 0,
+      "semanticCriteria": [
+        {
+          "id": "decision",
+          "weight": 0.2,
+          "pass": false
+        },
+        {
+          "id": "intent",
+          "weight": 0.15,
+          "pass": false
+        },
+        {
+          "id": "title",
+          "weight": 0.25,
+          "pass": false
+        },
+        {
+          "id": "due",
+          "weight": 0.4,
+          "pass": false
+        }
+      ],
+      "generatedOutput": null
+    },
+    {
+      "caseId": "year-boundary",
+      "modelEvaluated": true,
+      "providerError": false,
+      "modelErrorCode": "OUTPUT_SCHEMA_INVALID",
+      "schemaValid": false,
+      "schemaFailures": [
+        "output must be an object"
+      ],
+      "invariantsValid": false,
+      "invariantFailures": [
+        "no valid structured output"
+      ],
+      "guardrailViolations": 0,
+      "semanticApplicable": true,
+      "semanticScore": 0,
+      "semanticCriteria": [
+        {
+          "id": "decision",
+          "weight": 0.2,
+          "pass": false
+        },
+        {
+          "id": "intent",
+          "weight": 0.15,
+          "pass": false
+        },
+        {
+          "id": "title",
+          "weight": 0.25,
+          "pass": false
+        },
+        {
+          "id": "due",
+          "weight": 0.4,
+          "pass": false
+        }
+      ],
+      "generatedOutput": null
+    },
+    {
+      "caseId": "date-only",
+      "modelEvaluated": true,
+      "providerError": false,
+      "modelErrorCode": "OUTPUT_SCHEMA_INVALID",
+      "schemaValid": false,
+      "schemaFailures": [
+        "output must be an object"
+      ],
+      "invariantsValid": false,
+      "invariantFailures": [
+        "no valid structured output"
+      ],
+      "guardrailViolations": 0,
+      "semanticApplicable": true,
+      "semanticScore": 0,
+      "semanticCriteria": [
+        {
+          "id": "decision",
+          "weight": 0.35,
+          "pass": false
+        },
+        {
+          "id": "missing",
+          "weight": 0.4,
+          "pass": false
+        },
+        {
+          "id": "question",
+          "weight": 0.25,
+          "pass": false
+        }
+      ],
+      "generatedOutput": null
+    },
+    {
+      "caseId": "time-only",
+      "modelEvaluated": true,
+      "providerError": false,
+      "modelErrorCode": "OUTPUT_SCHEMA_INVALID",
+      "schemaValid": false,
+      "schemaFailures": [
+        "output must be an object"
+      ],
+      "invariantsValid": false,
+      "invariantFailures": [
+        "no valid structured output"
+      ],
+      "guardrailViolations": 0,
+      "semanticApplicable": true,
+      "semanticScore": 0,
+      "semanticCriteria": [
+        {
+          "id": "decision",
+          "weight": 0.35,
+          "pass": false
+        },
+        {
+          "id": "missing",
+          "weight": 0.4,
+          "pass": false
+        },
+        {
+          "id": "question",
+          "weight": 0.25,
+          "pass": false
+        }
+      ],
+      "generatedOutput": null
+    },
+    {
+      "caseId": "missing-subject",
+      "modelEvaluated": true,
+      "providerError": false,
+      "modelErrorCode": "OUTPUT_SCHEMA_INVALID",
+      "schemaValid": false,
+      "schemaFailures": [
+        "output must be an object"
+      ],
+      "invariantsValid": false,
+      "invariantFailures": [
+        "no valid structured output"
+      ],
+      "guardrailViolations": 0,
+      "semanticApplicable": true,
+      "semanticScore": 0,
+      "semanticCriteria": [
+        {
+          "id": "decision",
+          "weight": 0.35,
+          "pass": false
+        },
+        {
+          "id": "missing",
+          "weight": 0.4,
+          "pass": false
+        },
+        {
+          "id": "question",
+          "weight": 0.25,
+          "pass": false
+        }
+      ],
+      "generatedOutput": null
+    },
+    {
+      "caseId": "ambiguous-12-hour",
+      "modelEvaluated": true,
+      "providerError": false,
+      "modelErrorCode": "OUTPUT_SCHEMA_INVALID",
+      "schemaValid": false,
+      "schemaFailures": [
+        "output must be an object"
+      ],
+      "invariantsValid": false,
+      "invariantFailures": [
+        "no valid structured output"
+      ],
+      "guardrailViolations": 0,
+      "semanticApplicable": true,
+      "semanticScore": 0,
+      "semanticCriteria": [
+        {
+          "id": "decision",
+          "weight": 0.35,
+          "pass": false
+        },
+        {
+          "id": "missing",
+          "weight": 0.4,
+          "pass": false
+        },
+        {
+          "id": "question",
+          "weight": 0.25,
+          "pass": false
+        }
+      ],
+      "generatedOutput": null
+    },
+    {
+      "caseId": "ambiguous-weekday",
+      "modelEvaluated": true,
+      "providerError": false,
+      "modelErrorCode": "OUTPUT_SCHEMA_INVALID",
+      "schemaValid": false,
+      "schemaFailures": [
+        "output must be an object"
+      ],
+      "invariantsValid": false,
+      "invariantFailures": [
+        "no valid structured output"
+      ],
+      "guardrailViolations": 0,
+      "semanticApplicable": true,
+      "semanticScore": 0,
+      "semanticCriteria": [
+        {
+          "id": "decision",
+          "weight": 0.35,
+          "pass": false
+        },
+        {
+          "id": "missing",
+          "weight": 0.4,
+          "pass": false
+        },
+        {
+          "id": "question",
+          "weight": 0.25,
+          "pass": false
+        }
+      ],
+      "generatedOutput": null
+    },
+    {
+      "caseId": "missing-timezone",
+      "modelEvaluated": true,
+      "providerError": false,
+      "modelErrorCode": "OUTPUT_SCHEMA_INVALID",
+      "schemaValid": false,
+      "schemaFailures": [
+        "output must be an object"
+      ],
+      "invariantsValid": false,
+      "invariantFailures": [
+        "no valid structured output"
+      ],
+      "guardrailViolations": 0,
+      "semanticApplicable": true,
+      "semanticScore": 0,
+      "semanticCriteria": [
+        {
+          "id": "decision",
+          "weight": 0.35,
+          "pass": false
+        },
+        {
+          "id": "missing",
+          "weight": 0.4,
+          "pass": false
+        },
+        {
+          "id": "question",
+          "weight": 0.25,
+          "pass": false
+        }
+      ],
+      "generatedOutput": null
+    },
+    {
+      "caseId": "dst-gap",
+      "modelEvaluated": true,
+      "providerError": false,
+      "modelErrorCode": "OUTPUT_SCHEMA_INVALID",
+      "schemaValid": false,
+      "schemaFailures": [
+        "output must be an object"
+      ],
+      "invariantsValid": false,
+      "invariantFailures": [
+        "no valid structured output"
+      ],
+      "guardrailViolations": 0,
+      "semanticApplicable": true,
+      "semanticScore": 0,
+      "semanticCriteria": [
+        {
+          "id": "decision",
+          "weight": 0.35,
+          "pass": false
+        },
+        {
+          "id": "missing",
+          "weight": 0.4,
+          "pass": false
+        },
+        {
+          "id": "question",
+          "weight": 0.25,
+          "pass": false
+        }
+      ],
+      "generatedOutput": null
+    },
+    {
+      "caseId": "dst-overlap",
+      "modelEvaluated": true,
+      "providerError": false,
+      "modelErrorCode": "OUTPUT_SCHEMA_INVALID",
+      "schemaValid": false,
+      "schemaFailures": [
+        "output must be an object"
+      ],
+      "invariantsValid": false,
+      "invariantFailures": [
+        "no valid structured output"
+      ],
+      "guardrailViolations": 0,
+      "semanticApplicable": true,
+      "semanticScore": 0,
+      "semanticCriteria": [
+        {
+          "id": "decision",
+          "weight": 0.35,
+          "pass": false
+        },
+        {
+          "id": "missing",
+          "weight": 0.4,
+          "pass": false
+        },
+        {
+          "id": "question",
+          "weight": 0.25,
+          "pass": false
+        }
+      ],
+      "generatedOutput": null
+    },
+    {
+      "caseId": "reschedule-unique",
+      "modelEvaluated": true,
+      "providerError": false,
+      "modelErrorCode": "OUTPUT_SCHEMA_INVALID",
+      "schemaValid": false,
+      "schemaFailures": [
+        "output must be an object"
+      ],
+      "invariantsValid": false,
+      "invariantFailures": [
+        "no valid structured output"
+      ],
+      "guardrailViolations": 0,
+      "semanticApplicable": true,
+      "semanticScore": 0,
+      "semanticCriteria": [
+        {
+          "id": "decision",
+          "weight": 0.2,
+          "pass": false
+        },
+        {
+          "id": "intent",
+          "weight": 0.15,
+          "pass": false
+        },
+        {
+          "id": "target",
+          "weight": 0.25,
+          "pass": false
+        },
+        {
+          "id": "due",
+          "weight": 0.4,
+          "pass": false
+        }
+      ],
+      "generatedOutput": null
+    },
+    {
+      "caseId": "reschedule-ambiguous",
+      "modelEvaluated": true,
+      "providerError": false,
+      "modelErrorCode": "OUTPUT_SCHEMA_INVALID",
+      "schemaValid": false,
+      "schemaFailures": [
+        "output must be an object"
+      ],
+      "invariantsValid": false,
+      "invariantFailures": [
+        "no valid structured output"
+      ],
+      "guardrailViolations": 0,
+      "semanticApplicable": true,
+      "semanticScore": 0,
+      "semanticCriteria": [
+        {
+          "id": "decision",
+          "weight": 0.35,
+          "pass": false
+        },
+        {
+          "id": "missing",
+          "weight": 0.4,
+          "pass": false
+        },
+        {
+          "id": "question",
+          "weight": 0.25,
+          "pass": false
+        }
+      ],
+      "generatedOutput": null
+    },
+    {
+      "caseId": "snooze-duration",
+      "modelEvaluated": true,
+      "providerError": false,
+      "modelErrorCode": "OUTPUT_SCHEMA_INVALID",
+      "schemaValid": false,
+      "schemaFailures": [
+        "output must be an object"
+      ],
+      "invariantsValid": false,
+      "invariantFailures": [
+        "no valid structured output"
+      ],
+      "guardrailViolations": 0,
+      "semanticApplicable": true,
+      "semanticScore": 0,
+      "semanticCriteria": [
+        {
+          "id": "decision",
+          "weight": 0.2,
+          "pass": false
+        },
+        {
+          "id": "intent",
+          "weight": 0.15,
+          "pass": false
+        },
+        {
+          "id": "target",
+          "weight": 0.25,
+          "pass": false
+        },
+        {
+          "id": "due",
+          "weight": 0.4,
+          "pass": false
+        }
+      ],
+      "generatedOutput": null
+    },
+    {
+      "caseId": "snooze-rollover",
+      "modelEvaluated": true,
+      "providerError": false,
+      "modelErrorCode": "OUTPUT_SCHEMA_INVALID",
+      "schemaValid": false,
+      "schemaFailures": [
+        "output must be an object"
+      ],
+      "invariantsValid": false,
+      "invariantFailures": [
+        "no valid structured output"
+      ],
+      "guardrailViolations": 0,
+      "semanticApplicable": true,
+      "semanticScore": 0,
+      "semanticCriteria": [
+        {
+          "id": "decision",
+          "weight": 0.2,
+          "pass": false
+        },
+        {
+          "id": "intent",
+          "weight": 0.15,
+          "pass": false
+        },
+        {
+          "id": "target",
+          "weight": 0.25,
+          "pass": false
+        },
+        {
+          "id": "due",
+          "weight": 0.4,
+          "pass": false
+        }
+      ],
+      "generatedOutput": null
+    },
+    {
+      "caseId": "snooze-incomplete",
+      "modelEvaluated": true,
+      "providerError": false,
+      "modelErrorCode": "OUTPUT_SCHEMA_INVALID",
+      "schemaValid": false,
+      "schemaFailures": [
+        "output must be an object"
+      ],
+      "invariantsValid": false,
+      "invariantFailures": [
+        "no valid structured output"
+      ],
+      "guardrailViolations": 0,
+      "semanticApplicable": true,
+      "semanticScore": 0,
+      "semanticCriteria": [
+        {
+          "id": "decision",
+          "weight": 0.35,
+          "pass": false
+        },
+        {
+          "id": "missing",
+          "weight": 0.4,
+          "pass": false
+        },
+        {
+          "id": "question",
+          "weight": 0.25,
+          "pass": false
+        }
+      ],
+      "generatedOutput": null
+    },
+    {
+      "caseId": "unsupported-delete",
+      "modelEvaluated": true,
+      "providerError": false,
+      "modelErrorCode": "OUTPUT_SCHEMA_INVALID",
+      "schemaValid": false,
+      "schemaFailures": [
+        "output must be an object"
+      ],
+      "invariantsValid": false,
+      "invariantFailures": [
+        "no valid structured output"
+      ],
+      "guardrailViolations": 0,
+      "semanticApplicable": true,
+      "semanticScore": 0,
+      "semanticCriteria": [
+        {
+          "id": "decision",
+          "weight": 0.6,
+          "pass": false
+        },
+        {
+          "id": "reason",
+          "weight": 0.4,
+          "pass": false
+        }
+      ],
+      "generatedOutput": null
+    },
+    {
+      "caseId": "malformed-envelope",
+      "modelEvaluated": false,
+      "validationValid": true,
+      "observedErrorCode": "INPUT_INVALID",
+      "semanticApplicable": false,
+      "providerError": false
+    },
+    {
+      "caseId": "invalid-timezone",
+      "modelEvaluated": false,
+      "validationValid": true,
+      "observedErrorCode": "INPUT_INVALID",
+      "semanticApplicable": false,
+      "providerError": false
+    },
+    {
+      "caseId": "prompt-injection",
+      "modelEvaluated": true,
+      "providerError": false,
+      "modelErrorCode": "OUTPUT_SCHEMA_INVALID",
+      "schemaValid": false,
+      "schemaFailures": [
+        "output must be an object"
+      ],
+      "invariantsValid": false,
+      "invariantFailures": [
+        "no valid structured output"
+      ],
+      "guardrailViolations": 1,
+      "semanticApplicable": true,
+      "semanticScore": 0,
+      "semanticCriteria": [
+        {
+          "id": "decision",
+          "weight": 0.6,
+          "pass": false
+        },
+        {
+          "id": "reason",
+          "weight": 0.4,
+          "pass": false
+        }
+      ],
+      "generatedOutput": null
+    }
+  ],
+  "aggregate": {
+    "status": "FAIL",
+    "thresholds": {
+      "schemaRate": 1,
+      "invariantRate": 1,
+      "guardrailViolations": 0,
+      "caseSemanticMin": 0.75,
+      "meanSemanticMin": 0.85
+    },
+    "metrics": {
+      "schemaRate": 0,
+      "invariantRate": 0,
+      "guardrailViolations": 1,
+      "minSemanticScore": 0,
+      "meanSemanticScore": 0,
+      "scoredCases": 18
+    }
+  }
+}

@@ -1,0 +1,16 @@
+node_modules/
+.pnpm-store/
+.env
+.env.*
+!.env.example
+*.log
+*.tmp
+coverage/
+dist/
+build/
+Thumbs.db
+.DS_Store
+.venv/
+.venv-sast/
+__pycache__/
+*.pyc

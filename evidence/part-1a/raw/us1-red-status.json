@@ -1,0 +1,7 @@
+{
+  "story": "US1",
+  "unitExitCode": 1,
+  "harnessExitCode": 1,
+  "stage": "pre-implementation",
+  "passed": false
+}

@@ -1,0 +1,9 @@
+$ eslint .
+
+C:\Users\hp\Desktop\project Ai\harness\cases.mjs
+  285:25  error  'performance' is not defined  no-undef
+  287:25  error  'performance' is not defined  no-undef
+
+✖ 2 problems (2 errors, 0 warnings)
+
+[ELIFECYCLE] Command failed with exit code 1.

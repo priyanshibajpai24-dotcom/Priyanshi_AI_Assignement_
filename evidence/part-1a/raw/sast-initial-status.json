@@ -1,0 +1,7 @@
+{
+  "command": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/run-sast.ps1",
+  "exitCode": 1,
+  "passed": false,
+  "phase": "uvx startup before Semgrep version check",
+  "observedFailure": "uvx could not create C:\\Users\\hp\\AppData\\Roaming\\uv\\python due to access denied"
+}

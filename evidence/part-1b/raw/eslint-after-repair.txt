@@ -1,0 +1,6 @@
+
+C:\Users\hp\Desktop\project Ai\Part-1B\src\config.mjs
+  15:7  error  The value assigned to 'origin' is not used in subsequent statements  no-useless-assignment
+
+✖ 1 problem (1 error, 0 warnings)
+

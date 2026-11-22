@@ -1,0 +1,21 @@
+Traceback (most recent call last):
+  File "C:\Users\hp\Desktop\project Ai\.tools\uv-cache\archive-v0\X6kYDZtH6Rxzhfgy\Lib\site-packages\semgrep\console_scripts\pysemgrep.py", line 68, in <module>
+    main()
+  File "C:\Users\hp\Desktop\project Ai\.tools\uv-cache\archive-v0\X6kYDZtH6Rxzhfgy\Lib\site-packages\semgrep\console_scripts\pysemgrep.py", line 64, in main
+    sys.exit(semgrep.main.main())
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\Desktop\project Ai\.tools\uv-cache\archive-v0\X6kYDZtH6Rxzhfgy\Lib\site-packages\semgrep\main.py", line 141, in main
+    from semgrep.cli import cli
+  File "C:\Users\hp\Desktop\project Ai\.tools\uv-cache\archive-v0\X6kYDZtH6Rxzhfgy\Lib\site-packages\semgrep\cli.py", line 25, in <module>
+    from semgrep.commands.mcp import semgrep_mcp
+  File "C:\Users\hp\Desktop\project Ai\.tools\uv-cache\archive-v0\X6kYDZtH6Rxzhfgy\Lib\site-packages\semgrep\commands\mcp.py", line 17, in <module>
+    from mcp.server.auth.settings import AuthSettings
+  File "C:\Users\hp\Desktop\project Ai\.tools\uv-cache\archive-v0\X6kYDZtH6Rxzhfgy\Lib\site-packages\mcp\__init__.py", line 2, in <module>
+    from .client.session_group import ClientSessionGroup
+  File "C:\Users\hp\Desktop\project Ai\.tools\uv-cache\archive-v0\X6kYDZtH6Rxzhfgy\Lib\site-packages\mcp\client\session_group.py", line 28, in <module>
+    from mcp.client.stdio import StdioServerParameters
+  File "C:\Users\hp\Desktop\project Ai\.tools\uv-cache\archive-v0\X6kYDZtH6Rxzhfgy\Lib\site-packages\mcp\client\stdio\__init__.py", line 17, in <module>
+    from mcp.os.win32.utilities import (
+  File "C:\Users\hp\Desktop\project Ai\.tools\uv-cache\archive-v0\X6kYDZtH6Rxzhfgy\Lib\site-packages\mcp\os\win32\utilities.py", line 22, in <module>
+    import pywintypes
+ModuleNotFoundError: No module named 'pywintypes'

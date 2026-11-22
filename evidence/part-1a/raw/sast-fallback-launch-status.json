@@ -1,0 +1,5 @@
+{
+  "command": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/run-sast.ps1",
+  "exitCode": 0,
+  "passed": true
+}

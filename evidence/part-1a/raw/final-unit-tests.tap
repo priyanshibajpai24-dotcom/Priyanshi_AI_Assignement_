@@ -1,0 +1,131 @@
+TAP version 13
+# Subtest: a missing file initializes the empty versioned document
+ok 1 - a missing file initializes the empty versioned document
+  ---
+  duration_ms: 10.2047
+  type: 'test'
+  ...
+# Subtest: startup rejects unsupported or malformed persisted documents
+    # Subtest: unsupported version
+    ok 1 - unsupported version
+      ---
+      duration_ms: 13.6846
+      type: 'test'
+      ...
+    # Subtest: unknown envelope field
+    ok 2 - unknown envelope field
+      ---
+      duration_ms: 7.7923
+      type: 'test'
+      ...
+    # Subtest: non-monotonic nextId
+    ok 3 - non-monotonic nextId
+      ---
+      duration_ms: 7.0491
+      type: 'test'
+      ...
+    # Subtest: duplicate task IDs
+    ok 4 - duplicate task IDs
+      ---
+      duration_ms: 6.687
+      type: 'test'
+      ...
+    # Subtest: invalid task fields
+    ok 5 - invalid task fields
+      ---
+      duration_ms: 6.3485
+      type: 'test'
+      ...
+    # Subtest: untrimmed stored title
+    ok 6 - untrimmed stored title
+      ---
+      duration_ms: 8.1584
+      type: 'test'
+      ...
+    # Subtest: duplicate normalized tags
+    ok 7 - duplicate normalized tags
+      ---
+      duration_ms: 6.6973
+      type: 'test'
+      ...
+    1..7
+ok 2 - startup rejects unsupported or malformed persisted documents
+  ---
+  duration_ms: 59.1333
+  type: 'test'
+  ...
+# Subtest: replacing a document persists it and a new store restores the same IDs
+ok 3 - replacing a document persists it and a new store restores the same IDs
+  ---
+  duration_ms: 10.8278
+  type: 'test'
+  ...
+# Subtest: a failed atomic replacement preserves the prior file and in-memory snapshot
+ok 4 - a failed atomic replacement preserves the prior file and in-memory snapshot
+  ---
+  duration_ms: 9.8844
+  type: 'test'
+  ...
+# Subtest: creation trims title and supplies the approved defaults
+ok 5 - creation trims title and supplies the approved defaults
+  ---
+  duration_ms: 3.0576
+  type: 'test'
+  ...
+# Subtest: creation rejects a blank or overlong title, overlong notes, and missing priority
+ok 6 - creation rejects a blank or overlong title, overlong notes, and missing priority
+  ---
+  duration_ms: 1.6638
+  type: 'test'
+  ...
+# Subtest: IDs increase and are not reused after deletion, including concurrent creates
+ok 7 - IDs increase and are not reused after deletion, including concurrent creates
+  ---
+  duration_ms: 0.7066
+  type: 'test'
+  ...
+# Subtest: updates only supplied mutable fields and rejects unsupported fields
+ok 8 - updates only supplied mutable fields and rejects unsupported fields
+  ---
+  duration_ms: 0.784
+  type: 'test'
+  ...
+# Subtest: tag filters trim and case-fold values and require every selected tag
+ok 9 - tag filters trim and case-fold values and require every selected tag
+  ---
+  duration_ms: 1.5717
+  type: 'test'
+  ...
+# Subtest: priority ordering is now, next, later with ascending ID ties
+ok 10 - priority ordering is now, next, later with ascending ID ties
+  ---
+  duration_ms: 0.9797
+  type: 'test'
+  ...
+# Subtest: every permitted status transition persists the target state
+ok 11 - every permitted status transition persists the target state
+  ---
+  duration_ms: 2.5214
+  type: 'test'
+  ...
+# Subtest: every prohibited status transition is rejected without changing stored state
+ok 12 - every prohibited status transition is rejected without changing stored state
+  ---
+  duration_ms: 2.9865
+  type: 'test'
+  ...
+# Subtest: invalid transition status values are request errors
+ok 13 - invalid transition status values are request errors
+  ---
+  duration_ms: 0.7758
+  type: 'test'
+  ...
+1..13
+# tests 20
+# suites 0
+# pass 20
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 327.8554

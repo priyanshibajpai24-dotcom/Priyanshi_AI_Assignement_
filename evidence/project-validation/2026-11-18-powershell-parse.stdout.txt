@@ -1,0 +1,1 @@
+PowerShell parser accepted all three project scripts.

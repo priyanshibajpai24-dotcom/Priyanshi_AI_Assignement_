@@ -1,0 +1,17 @@
+{
+  "scanner": "Semgrep Community Edition",
+  "version": "1.185.0",
+  "ruleset": "p/javascript",
+  "executionMode": "Semgrep Core JSON fallback using the same generated rules",
+  "cliPlanExitCode": 0,
+  "coreExitCode": 0,
+  "findingCount": 0,
+  "errorCount": 0,
+  "rulesRunCount": 68,
+  "targetCount": 33,
+  "scannedTargetCount": 33,
+  "generatedRuleFiles": [
+    "semgrep_rules_0.json"
+  ],
+  "parseError": null
+}

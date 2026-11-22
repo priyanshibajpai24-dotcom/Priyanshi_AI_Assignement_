@@ -1,0 +1,14 @@
+warning: Failed to hardlink files; falling back to full copy. This may lead to degraded performance.
+         If the cache and target directories are on different filesystems, hardlinking may not be supported.
+         If this is intentional, set `export UV_LINK_MODE=copy` or use `--link-mode=copy` to suppress this warning.
+Installed 68 packages in 7.25s
+               
+               
+┌─────────────┐
+│ Scan Status │
+└─────────────┘
+  Scanning 33 files tracked by git with 74 Code rules:
+  Scanning 33 files with 68 js rules.
+RPC subprocess failed: semgrep-core exited with code 1.
+C:\Users\hp\Desktop\project Ai\.tools\uv-cache\archive-v0\vkp4gfJhFuZHBKES\Lib\site-packages\semgrep\bin\semgrep-core.exe -json -rules C:\Users\hp\Desktop\project Ai\.tools\semgrep-config\.semgrep\semgrep_rules_0.json -use_parmap -j 1 -targets C:\Users\hp\Desktop\project Ai\.tools\semgrep-config\.semgrep\semgrep_targets.txt -timeout 5 -timeout_threshold 3 -max_memory 0 -fast
+

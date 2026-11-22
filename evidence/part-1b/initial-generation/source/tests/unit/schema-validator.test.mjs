@@ -1,0 +1,3 @@
+import test from 'node:test'; import assert from 'node:assert/strict'; import { validateOutput } from '../../harness/schema-validator.mjs';
+const out=()=>({decision:'propose_action',intent:'create',proposal:{kind:'create',title:'submit report',dueAt:'2026-11-15T10:00:00+05:30'},missingInformation:[],clarificationQuestion:null,unsupportedReason:null,evidence:{subjectPhrase:'submit report',timePhrase:'tomorrow at 10',targetPhrase:null}});
+test('validates contract and rejects extra/mismatched fields',()=>{assert.equal(validateOutput(out()).valid,true);let x=out();x.secret='x';assert.equal(validateOutput(x).valid,false);x=out();x.intent='reschedule';assert.equal(validateOutput(x).valid,false);});

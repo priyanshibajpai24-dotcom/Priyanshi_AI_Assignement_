@@ -1,0 +1,46 @@
+✔ uses CLI child boundary and rejects malformed input without provider call (1122.4373ms)
+✔ labels provider outage INCONCLUSIVE (534.6485ms)
+✔ constructs endpoint and sends Chat Completions JSON mode without tools (169.5728ms)
+✔ classifies timeout, rate limit, server error, malformed body, and missing content safely (110.6977ms)
+✔ rejects oversized model content with a bounded provider error (32.1214ms)
+✔ applies all fixed thresholds and stable outcomes (6.3912ms)
+✔ clarifies missing and ambiguous mandatory information without proposals (7.2126ms)
+✔ clarifies daylight-saving gap and overlap rather than accepting ambiguous walls (1.3943ms)
+✔ invalid input exits 2 before provider config and prints typed JSON without stack (296.9798ms)
+✔ valid request with missing provider config exits 3 safely (339.9768ms)
+✔ valid provider response exits 0 with one structured JSON output (555.7652ms)
+✔ invalid model JSON exits 4 with a typed error and no stack (474.8321ms)
+✔ schema-invalid model output exits 5 with a typed error and no stack (421.233ms)
+✔ requires settings (6.5829ms)
+✔ bounds timeout and redacts endpoint secrets (1.5363ms)
+✔ creates one grounded future proposal without invoking an action tool (94.1172ms)
+✔ keeps malicious request and reminder context inside untrusted user data (2.9971ms)
+✔ accepts unsupported-action response only with no proposal or intent (2.1577ms)
+✔ accepts valid and rejects unknown fields (82.6036ms)
+✔ enforces request, reminder, timestamp, timezone, uniqueness, and byte bounds (3.9421ms)
+✔ accepts grounded future proposal (85.9312ms)
+✔ rejects past due, missing target, and ungrounded evidence (6.2369ms)
+✔ checks later-of-now-or-due snooze arithmetic independently (2.8639ms)
+✔ uses separate system policy and untrusted JSON input (5.0291ms)
+✔ creates a grounded proposal through one injected provider call (93.68ms)
+✔ preserves clarification and unsupported decisions without proposals (0.4832ms)
+✔ asks for a valid future time when the requested time is past (0.2797ms)
+✔ reschedules one supplied reminder and refuses unknown target IDs (2.7383ms)
+✔ enforces exact snooze duration from later existing due time or now (5.7356ms)
+✔ rejects malformed JSON and schema or invariant violations with distinct codes (2.1479ms)
+✔ uses a single positive duration from the later of reminder time and reference time (78.1374ms)
+✔ rejects negative, zero, and multiple snooze durations (7.2473ms)
+✔ accepts contract output and rejects extra fields, mismatch, bad types, enum, and timestamp (5.4322ms)
+✔ weights criteria and compares timestamp instants (5.0096ms)
+✔ supports N/A and concept-based question scoring (0.516ms)
+✔ requires explicit RFC3339 offset (4.782ms)
+✔ detects unique, gap, and overlap (123.3108ms)
+✔ returns zone offset (0.8706ms)
+ℹ tests 38
+ℹ suites 0
+ℹ pass 38
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2637.6412
